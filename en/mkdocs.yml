@@ -1,0 +1,95 @@
+# Copyright (c) 2024, WSO2 LLC. (https://www.wso2.com) All Rights Reserved.
+#
+# WSO2 LLC. licenses this file to you under the Apache License,
+# Version 2.0 (the "License"); you may not use this file except
+# in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied. See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+# Project information
+site_name: WSO2 Ballerina Integrator Documentation
+site_description: Documentation for WSO2 Ballerina Integrator
+site_author: WSO2
+# site_url: https://ballerina-integrator.docs.wso2.com/en/latest/
+
+# Repository information
+repo_name: wso2/docs-ballerina-integrator
+repo_url: https://github.com/wso2/docs-ballerina-integrator
+edit_uri: https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/
+dev_addr: localhost:8000
+
+# Copyright
+copyright: WSO2 Ballerina Integrator - Documentation
+
+# Strict Mode
+strict: false # Set to true to break the build if there are warnings
+
+# Navigation structure
+nav:
+  - Home: index.md
+
+# Markdown extensions configuration
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      linenums: true
+      use_pygments: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - markdown_include.include:
+      base_path: docs
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path: docs
+  - pymdownx.tabbed:
+        alternate_style: true
+  - attr_list
+
+# Plugins configuration
+plugins:
+  - search
+  - markdownextradata: {}
+  - exclude:
+      glob:
+        - wip/*
+  - redirects:
+      redirect_maps:
+
+# Extra configuration
+extra:
+  social:
+    - type: github
+      link: https://github.com/wso2
+    - type: twitter
+      link: https://twitter.com/wso2
+    - type: linkedin
+      link: https://www.linkedin.com/company/wso2
+  # site_version: Uncomment to specify a version
+  base_path: http://localhost:8000/en/latest
+  #base_path: https://ballerina-integrator.docs.wso2.com/en/main
