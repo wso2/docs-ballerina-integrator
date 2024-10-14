@@ -72,6 +72,10 @@ strict: false # Set to true to break the build if there are warnings
 # Navigation structure
 nav:
   - Home: index.md
+  - Get Started:
+      - Introduction: get-started/introduction.md
+      - Key Concepts: get-started/key-concepts.md
+      - Quick Start Guide: get-started/quick-start-guide.md
 
 # Markdown extensions configuration
 markdown_extensions:
