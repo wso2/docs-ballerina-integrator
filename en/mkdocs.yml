@@ -119,6 +119,28 @@ plugins:
       redirect_maps:
 
 # Extra configuration
+extra_css:
+  # You can select a different theme for syntax highlighting by simply
+  # selecting a different css file below from the available list.
+  - assets/lib/highlightjs/styles/vs.min.css
+  # Make sure to activate only one palette at a time.
+  # If all the palettes are commented out, the default material theme palette will take over
+  - assets/css/blue-palette-alt1.css
+  # - assets/css/blue-palette-alt2.css
+  # - assets/css/blue-palette.css
+  # - assets/css/green-palette.css
+  # - assets/css/orange-palette.css
+  - assets/css/mitheme.css
+  - assets/lib/json-formatter/json-formatter.css
+  - assets/css/config-catalog.css
+  - assets/lib/fontawesome-free-6.3.0-web/css/all.min.css
+  - assets/css/redoc.css
+extra_javascript:
+  - assets/lib/highlightjs/highlight.min.js
+  - assets/lib/json-formatter/json-formatter.umd.js
+  - assets/js/mitheme.js
+  # - assets/lib/backtotop/js/util.js
+  # - assets/lib/backtotop/js/main.js
 extra:
   social:
     - type: github
