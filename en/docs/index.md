@@ -15,9 +15,10 @@ This is the documentation for WSO2 Ballerina Integrator.
     justify-content: space-between;
 }
 
-[//]: # (header.md-header .md-header__button:not&#40;[hidden]&#41; {)
-[//]: # (    /* display: none; */)
+[//]: # (header.md-header .md-header__button:not([hidden]) {)
+[//]: # (    display: none;)
 [//]: # (})
+
 .about-home {
     display: flex;
 }
