@@ -1,0 +1,33 @@
+name: Ballerina Integrator Docs Publish
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  release-bi-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r en/requirements.txt
+
+      - name: Build MkDocs Documentation
+        run: |
+          git config --global user.email "ballerina-bot@ballerina.org"
+          git config --global user.name "ballerina-bot"
+          cd en/
+          mkdocs gh-deploy
