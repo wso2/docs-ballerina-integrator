@@ -1,6 +1,8 @@
 # WSO2 Ballerina Integrator Documentation
 
-This is the documentation for WSO2 Ballerina Integrator.
+WSO2 Ballerina Integrator (WSO2 BI) 1.x is a comprehensive integration solution that simplifies your digital transformation journey.
+
+It streamlines connectivity among applications, services, data, and the cloud using a user-friendly low-code graphical design experience.
 
 {% raw %}
 <style>
