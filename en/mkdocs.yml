@@ -74,8 +74,24 @@ nav:
   - Home: index.md
   - Get Started:
       - Introduction: get-started/introduction.md
-      - Key Concepts: get-started/key-concepts.md
       - Quick Start Guide: get-started/quick-start-guide.md
+      - Key Concepts: get-started/key-concepts.md
+  - Learn:
+      - Use Cases: learn/use-cases.md
+      - Enterprise Integration Patterns: learn/ei-patterns.md
+      - Tutorials: learn/tutorials.md
+  - Develop:
+        - Installation: develop/installation.md
+        - Projects: develop/projects.md
+        - Entry points: develop/entry-points.md
+        - Nodes:  develop/nodes.md
+        - Types: develop/working-with-types.md
+  - Deploy:
+      - Choreo: deploy/choreo.md
+      - WSO2ICP : deploy/wso2-icp.md
+      - Observability & Tracing: deploy/observability-tracing.md
+  - References:
+      - References : references/references.md
 
 # Markdown extensions configuration
 markdown_extensions:
@@ -138,7 +154,7 @@ extra_css:
   - assets/lib/json-formatter/json-formatter.css
   - assets/css/config-catalog.css
   - assets/lib/fontawesome-free-6.3.0-web/css/all.min.css
-  - assets/css/redoc.css
+#  - assets/css/redoc.css
 extra_javascript:
   - assets/lib/highlightjs/highlight.min.js
   - assets/lib/json-formatter/json-formatter.umd.js
