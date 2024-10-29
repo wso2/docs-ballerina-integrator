@@ -1,6 +1,6 @@
-# WSO2 Ballerina Integrator Documentation
+# WSO2 Kola Documentation
 
-WSO2 Ballerina Integrator (WSO2 BI) 1.x is a comprehensive integration solution that simplifies your digital transformation journey.
+WSO2 Kola is a comprehensive integration solution that simplifies your digital transformation journey.
 
 It streamlines connectivity among applications, services, data, and the cloud using a user-friendly low-code graphical design experience.
 

@@ -1,23 +1,62 @@
 ### Step 1: Download the Visual Studio Code (VSCode) IDE.
 Download and install the Visual Studio Code IDE from [here](https://code.visualstudio.com/download).
 
-### Step 3: Download the Ballerina Integrator vsix file.
-Download the Ballerina Integrator vsix file from [here](https://productionresultssa19.blob.core.windows.net/actions-results/d0be5a7f-3bb0-49b6-9531-ed7717a494d6/workflow-job-run-8d802004-fbbb-5f17-b73e-f23de0c1dec8/artifacts/2b27443342a1d434d612d14100bc73039094e0abede10c7c5004355780343e9c.zip?rscd=attachment%3B+filename%3D%22Vsix-Artifact-bi.zip%22&se=2024-10-22T08%3A40%3A24Z&sig=S%2F6KvpU156K8JnF9v6XB%2BbHpygsk4a4MjxDnnQLOdeo%3D&ske=2024-10-22T17%3A14%3A56Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2024-10-22T05%3A14%3A56Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2024-08-04&sp=r&spr=https&sr=b&st=2024-10-22T08%3A30%3A19Z&sv=2024-08-04)
-
-### Step 2: Install the Ballerina Integrator plugin.
+### Step 2: Install the Kola plugin.
 1. Open the Visual Studio Code IDE.
-2. Go to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl + Shift + X` on Windows and Linux, or `shift + ⌘ + X` on a Mac.
-3. Click on the `...` icon in the top right corner of the Extensions view and select `Install from VSIX...`.
-   ![install vsix](img/install-vsix.png)
-4. Select the downloaded Ballerina Integrator vsix file and click `Install`.
-5. Restart the Visual Studio Code IDE.
+2. Go to the Extensions view by clicking on the extension icon on the sidebar or pressing `Ctrl + Shift + X` on Windows and Linux, or `shift + ⌘ + X` on a Mac.
+3. Search for `Kola` in the Extensions view search box.
+4. Click on the `Install` button to install the Ballerina Composer plugin.
+<a href="{{base_path}}/assets/img/get-started/kola-extension.png"><img src="{{base_path}}/assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a>
+5. This will install Kola, KolaB extension to the Visual Studio Code IDE.
+ <a href="{{base_path}}/assets/img/get-started/kola-installed.png"><img src="{{base_path}}/assets/img/get-started/kola-installed.png" alt="Kola Installed" width="70%"></a>
+
+### Step 3: Setup Kola for the first time.
+1. Click on the Kola Integrator icon on the sidebar.
+   <a href="{{base_path}}/assets/img/get-started/kola-icon.png"><img src="{{base_path}}/assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a>
+2. Click on the `Setup` button.
+3. The setup wizard will install and configure the [Ballerina](https://ballerina.io/) distribution required for Kola.
+4. Click on the `Restart VSCode` button to complete the setup.
+   <a href="{{base_path}}/assets/img/get-started/kola-setup.gif"><img src="{{base_path}}/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a>
+
+### Step 4: Create a new Integration Project.
+1. Click on the Kola Integrator icon on the sidebar.
+2. Click on the `Create New Integration` button.
+3. Enter the project name as `HelloWorld`.
+4. Select Project Directory by clicking on the `Select Location` button.
+5. Click on the `Create New Integration` button to create the integration project.
+   <a href="{{base_path}}/assets/img/get-started/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a>
 
 
-### Step 3: Create a new Ballerina Integrator project.
-1. Open the Visual Studio Code IDE.
-2. Click on the Ballerina Integrator icon on the sidebar.
-   ![Ballerina Integrator](img/bi-view.png)
-3. Click on the `Create New Project` button.
-4. Enter the project name as `HelloWorld`.
-5. Select Project Directory by clicking on the `Select Location` button.
-6. Click on the `Create Project` button.
+### Step 4: Create an Integration Service.
+1. In the design view, click on the `Add Construct` button.
+2. Select `Service` from the menu.
+3. Select `HTTP Service` from the Service Type dropdown.
+4. Select `Design From Scratch` option. 
+5. Enter the service name as `HelloWorldService`, path as `/hello`, and `9090` as the port.
+6. Click on the `Create Service` button to create the new service with the specified configurations.
+   <a href="{{base_path}}/assets/img/get-started/create-service.gif"><img src="{{base_path}}/assets/img/get-started/create-service.gif" alt="Create Service" width="70%"></a>
+
+
+### Step 5: Design the Integration.
+1. Now that you have created the service, you can design the integration by adding resources and methods to it. The generated service will have a default resource named `greeting` with a `GET` method.
+2. Click on the `greeting` resource to view the resource details. Let's modify the resource to invoke the [`HelloWorld`](https://apis.wso2.com/zvdz/mi-qsg/v1.0) API endpoint.
+3. Hover to the arrow after start and click the `+` button to add a new action to the resource.
+4. Select `Add Connection` from the node panel on the left. 
+5. Select `HTTP Connection` as the connection type.
+6. Change the variable name to `externalEP`.
+7. Add the URL `https://apis.wso2.com` to the connection URL field and click `Save`.
+   <a href="{{base_path}}/assets/img/get-started/create-connection.gif"><img src="{{base_path}}/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a>
+
+8. Click the `+` button again and select `Connections`->`externalEP`->`Get` from the node panel.
+9. Enter the path `/zvdz/mi-qsg/v1.0` in the URL field and click `Save`.
+   <a href="{{base_path}}/assets/img/get-started/add-action.gif"><img src="{{base_path}}/assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a>
+
+10. Click on the `+` button again and select `Return` from the node panel.
+11. Select the `value` variable from the dropdown and click `Save`. This step will return the response from the `HelloWorld` API endpoint.
+   <a href="{{base_path}}/assets/img/get-started/add-return.gif"><img src="{{base_path}}/assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a>
+
+### Step 6: Run the Integration.
+1. Click on the `Run` on the run button at top right corner to run the integration.
+2. The integration will be compiled and started in the embedded Ballerina runtime.
+3. Once the integration is started, you can access the service by navigating to `http://localhost:9090/hello/greeting` in your web browser.
+   

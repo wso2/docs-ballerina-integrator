@@ -15,8 +15,8 @@
 # under the License.
 
 # Project information
-site_name: WSO2 Ballerina Integrator Documentation
-site_description: Documentation for WSO2 Ballerina Integrator
+site_name: WSO2 Kola Documentation
+site_description: Documentation for Kola Integrator
 site_author: WSO2
 # site_url: https://ballerina-integrator.docs.wso2.com/en/latest/
 
@@ -27,7 +27,7 @@ edit_uri: https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/
 dev_addr: localhost:8000
 
 # Copyright
-copyright: WSO2 Ballerina Integrator - Documentation
+copyright: WSO2 Kola - Documentation
 
 # Configuration
 theme:
@@ -83,7 +83,7 @@ nav:
   - Develop:
         - Installation: develop/installation.md
         - Projects: develop/projects.md
-        - Entry points: develop/entry-points.md
+        - Entrypoint: develop/entrypoint.md
         - Nodes:  develop/nodes.md
         - Types: develop/working-with-types.md
   - Deploy:
@@ -151,6 +151,7 @@ extra_css:
   # - assets/css/green-palette.css
   # - assets/css/orange-palette.css
   - assets/css/mitheme.css
+  - assets/css/image.css
   - assets/lib/json-formatter/json-formatter.css
   - assets/css/config-catalog.css
   - assets/lib/fontawesome-free-6.3.0-web/css/all.min.css
