@@ -1,7 +1,8 @@
 # Transforming JSON to XML
 
-This guide explains how to transform JSON data to XML using the `json-to-xml` function.
-
+## Overview
+This guide explains how to create a simple integration to convert a JSON payload to an XML payload using the Kola. An HTTP service with a single resource (`toXml`) will be created to accept a JSON payload and return the XML representation of the payload.
+<a href="{{base_path}}/assets/img/json-to-xml/introduction.png"><img src="{{base_path}}/assets/img/json-to-xml/introduction.png" alt="JSON to XML" width="70%"></a>
 
 ### Step 1: Create a new Integration Project.
 1. Click on the Kola Integrator icon on the sidebar.
@@ -29,27 +30,29 @@ This guide explains how to transform JSON data to XML using the `json-to-xml` fu
 6. Add a new response of type `HttpBadRequest` under the responses. 
 7. Click on the `Save` button to update the resource with the specified configurations.
     <a href="{{base_path}}/assets/img/json-to-xml/update-resource.png"><img src="{{base_path}}/assets/img/json-to-xml/update-resource.png" alt="Update Resource" width="70%"></a>
-  
-**Note:** To learn more about resources, see [Ballerina Resources](https://ballerina.io/learn/by-example/resource-methods/).
+
+!!! info "Resource Method"
+    To learn more about resources, see [Ballerina Resources](https://ballerina.io/learn/by-example/resource-methods/).
 
 ### Step 4: Add the transformation logic
 1. Click on the `toXml` resource to navigate to the resource implementation designer view.
-2. Hover to the arrow after start and click the `+` button to add a new action to the resource.
+2. Hover to the arrow after start and click the ➕ button to add a new action to the resource.
 3. Select `Variable` from the node panel on the left.
 4. Change the variable name to `xmlData`, type as `xml | ()` and expression to `check xmldata:fromJson(input)`.
    <a href="{{base_path}}/assets/img/json-to-xml/add-variable.png"><img src="{{base_path}}/assets/img/json-to-xml/add-variable.png"" alt="Add variable" width="70%"></a>
 
-**Note:** To learn more about json to xml conversion, see [Ballerina JSON to XML conversion](https://ballerina.io/learn/by-example/xml-from-json-conversion/).
+!!! info "JSON to XML Conversion"
+    To learn more about json to xml conversion, see [Ballerina JSON to XML conversion](https://ballerina.io/learn/by-example/xml-from-json-conversion/).
 
    
 ### Step 5: Error handling
-1. Click on the `+` button again and select `If` from the node panel.
+1. Click on the ➕ button again and select `If` from the node panel.
 2. Enter the condition as `xmlData is xml` and press `save`.
    <a href="{{base_path}}/assets/img/json-to-xml/add-if.png"><img src="{{base_path}}/assets/img/json-to-xml/add-if.png"" alt="Add If" width="70%"></a>
-3. Click on the `If` condition true(`xmlData is xml`)  path `+` sign and add a `Return` from the node panel.
+3. Click on the `If` condition true(`xmlData is xml`)  path ➕ sign and add a `Return` from the node panel.
 4. Select the `xmlData` variable from the dropdown and click `Save`.
    <a href="{{base_path}}/assets/img/json-to-xml/add-return.png"><img src="{{base_path}}/assets/img/json-to-xml/add-return.png"" alt="Add Return" width="70%"></a>
-5. Click on the `If` condition `Else` path `+` sign and add another `Return` from the node panel.
+5. Click on the `If` condition `Else` path ➕ sign and add another `Return` from the node panel.
 6. Enter `http:BadRequest` as the value and click `Save`.
    <a href="{{base_path}}/assets/img/json-to-xml/add-else-return.png"><img src="{{base_path}}/assets/img/json-to-xml/add-else-return.png"" alt="Add Else Return" width="70%"></a>
 7. The final design will look like below.             

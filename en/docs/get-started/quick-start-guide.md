@@ -44,18 +44,18 @@ Download and install the Visual Studio Code IDE from [here](https://code.visuals
 ### Step 5: Design the Integration.
 1. Now that you have created the service, you can design the integration by adding resources and methods to it. The generated service will have a default resource named `greeting` with a `GET` method.
 2. Click on the `greeting` resource to view the resource details. Let's modify the resource to invoke the [`HelloWorld`](https://apis.wso2.com/zvdz/mi-qsg/v1.0) API endpoint.
-3. Hover to the arrow after start and click the `+` button to add a new action to the resource.
+3. Hover to the arrow after start and click the ➕ button to add a new action to the resource.
 4. Select `Add Connection` from the node panel on the left. 
 5. Select `HTTP Connection` as the connection type.
 6. Change the variable name to `externalEP`.
 7. Add the URL `https://apis.wso2.com` to the connection URL field and click `Save`.
    <a href="{{base_path}}/assets/img/get-started/create-connection.gif"><img src="{{base_path}}/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a>
 
-8. Click the `+` button again and select `Connections`->`externalEP`->`Get` from the node panel.
+8. Click the ➕ button again and select `Connections`->`externalEP`->`Get` from the node panel.
 9. Enter the path `/zvdz/mi-qsg/v1.0` in the URL field and click `Save`.
    <a href="{{base_path}}/assets/img/get-started/add-action.gif"><img src="{{base_path}}/assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a>
 
-10. Click on the `+` button again and select `Return` from the node panel.
+10. Click on the ➕ button again and select `Return` from the node panel.
 11. Select the `value` variable from the dropdown and click `Save`. This step will return the response from the `HelloWorld` API endpoint.
    <a href="{{base_path}}/assets/img/get-started/add-return.gif"><img src="{{base_path}}/assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a>
 

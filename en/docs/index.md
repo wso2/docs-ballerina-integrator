@@ -5,7 +5,20 @@ WSO2 Kola is a comprehensive integration solution that simplifies your digital t
 The Kola extension for Visual Studio Code (Kola for VS Code) enables developers to utilize the popular Visual Studio Code editor for integration development, enhancing the overall experience. This AI-assisted development environment offers a faster, customizable, and more intuitive experience, boosting productivity in integration development.
 Kola provides a range of features that streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. By leveraging AI capabilities, Kola empowers developers to focus on high-value tasks, accelerating digital transformation efforts.
 
-### AI-assisted development  
+### Low-code integration development
+Kola provides a streamlined, user-friendly environment for building integrations with minimal coding, opening up integration tasks to both experienced developers and those new to coding. Here’s how Kola’s low-code capabilities simplify the integration development process:
+
+- Visual Designer Interface: Kola includes visual tools that let developers create integration workflows by simply dragging and dropping pre-built components. This visual builder reduces the need for manual coding, allowing users to connect systems and data sources without extensive syntax knowledge.
+- Pre-Built Connectors and Templates: With an extensive library of connectors and templates, Kola enables users to quickly incorporate common integration patterns and connect to popular systems like databases, cloud services, and enterprise applications. This eliminates repetitive setup work and accelerates development.
+- Parameterized Configurations: Kola’s low-code environment supports easy configuration of workflows using parameters, making it possible to adjust integrations without coding. This flexibility simplifies the process of tailoring integrations to specific use cases while maintaining consistency.
+- AI-Powered Recommendations for Components: Kola leverages AI to suggest components, mappings, and configurations based on the current workflow context. This feature helps guide developers through building integrations efficiently, even if they’re not deeply familiar with the underlying code.
+- Testing and Deployment Automation: The low-code environment integrates testing and deployment tools that enable users to validate integrations quickly and push them to production with minimal manual intervention. Automated testing helps ensure that workflows function as intended, while deployment tools streamline the release process.
+- Collaboration-Friendly Design: Low-code tools in Kola for VS Code promote collaboration between developers and business teams by allowing users with different technical backgrounds to contribute to integration projects. This inclusive approach helps bridge the gap between technical and non-technical team members.
+- Visual design: Kola for VS Code provides a visual design experience that simplifies integration development.
+By offering these low-code features, Kola for VS Code makes integration development accessible, faster, and more flexible. It enables teams to focus on delivering value through integration rather than getting bogged down in complex coding tasks, ultimately accelerating digital transformation efforts.
+
+
+### AI-assisted development
 Kola empowers developers by using AI to streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. Here’s how Kola’s AI capabilities make a difference:
 
 - Code Suggestions and Autocompletion: The AI in Kola for VS Code provides context-aware suggestions, helping developers complete lines of code or entire blocks accurately. These real-time prompts assist in selecting the best methods, properties, or configurations, which can significantly speed up the coding process.
@@ -16,18 +29,6 @@ Kola empowers developers by using AI to streamline coding tasks, enhance code qu
 
 Together, these AI-driven features in Kola for VS Code create a more efficient, accurate, and productive development experience, reducing the learning curve and enabling developers to focus on high-value tasks rather than repetitive or error-prone coding tasks.
 
-### Low-code integration development
-Kola provides a streamlined, user-friendly environment for building integrations with minimal coding, opening up integration tasks to both experienced developers and those new to coding. Here’s how Kola’s low-code capabilities simplify the integration development process:
-
-- Visual Designer Interface: Kola includes visual tools that let developers create integration workflows by simply dragging and dropping pre-built components. This visual builder reduces the need for manual coding, allowing users to connect systems and data sources without extensive syntax knowledge.
-- Pre-Built Connectors and Templates: With an extensive library of connectors and templates, Kola enables users to quickly incorporate common integration patterns and connect to popular systems like databases, cloud services, and enterprise applications. This eliminates repetitive setup work and accelerates development.
-- Parameterized Configurations: Kola’s low-code environment supports easy configuration of workflows using parameters, making it possible to adjust integrations without coding. This flexibility simplifies the process of tailoring integrations to specific use cases while maintaining consistency.
-- AI-Powered Recommendations for Components: Kola leverages AI to suggest components, mappings, and configurations based on the current workflow context. This feature helps guide developers through building integrations efficiently, even if they’re not deeply familiar with the underlying code.
-- Testing and Deployment Automation: The low-code environment integrates testing and deployment tools that enable users to validate integrations quickly and push them to production with minimal manual intervention. Automated testing helps ensure that workflows function as intended, while deployment tools streamline the release process.
-- Collaboration-Friendly Design: Low-code tools in Kola for VS Code promote collaboration between developers and business teams by allowing users with different technical backgrounds to contribute to integration projects. This inclusive approach helps bridge the gap between technical and non-technical team members.
-By offering these low-code features, Kola for VS Code makes integration development accessible, faster, and more flexible. It enables teams to focus on delivering value through integration rather than getting bogged down in complex coding tasks, ultimately accelerating digital transformation efforts.
-
-- Visual design: Kola for VS Code provides a visual design experience that simplifies integration development.
 
 ### Leverage the Power of Ballerina
 Kola to take advantage of a language purpose-built for integration development, allowing developers to handle cloud-native, API-driven integrations with simplicity and efficiency. [Ballerina](https://ballerina.io), the foundation of Kola, empowers developers with:
