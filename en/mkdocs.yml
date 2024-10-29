@@ -171,5 +171,5 @@ extra:
     - type: linkedin
       link: https://www.linkedin.com/company/wso2
   # site_version: Uncomment to specify a version
-  base_path: http://localhost:8000/
+  base_path: https://wso2.github.io/docs-ballerina-integrator
   #base_path: https://ballerina-integrator.docs.wso2.com/en/main
