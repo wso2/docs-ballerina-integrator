@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta name="robots" content="noindex, nofollow">
       
-        <meta name="description" content="Documentation for WSO2 Ballerina Integrator">
+        <meta name="description" content="Documentation for Kola Integrator">
       
       
         <meta name="author" content="WSO2">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Quick Start Guide - WSO2 Ballerina Integrator Documentation</title>
+        <title>Quick Start Guide - WSO2 Kola Documentation</title>
       
     
     
@@ -55,6 +55,8 @@
       <link rel="stylesheet" href="../../assets/css/blue-palette-alt1.css">
     
       <link rel="stylesheet" href="../../assets/css/mitheme.css">
+    
+      <link rel="stylesheet" href="../../assets/css/image.css">
     
       <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
     
@@ -135,8 +137,8 @@ This documentation is a work in progress.
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header" id="page-header" data-url="" data-lang="en">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="WSO2 Ballerina Integrator Documentation"
-       class="md-header__button md-logo" aria-label="WSO2 Ballerina Integrator Documentation" data-md-component="logo">
+    <a href="../.." title="WSO2 Kola Documentation"
+       class="md-header__button md-logo" aria-label="WSO2 Kola Documentation" data-md-component="logo">
       
   <img src="../../images/logo.svg" alt="logo">
 
@@ -148,7 +150,7 @@ This documentation is a work in progress.
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-             Ballerina Integrator Documentation
+             Kola Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +387,12 @@ This documentation is a work in progress.
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="WSO2 Ballerina Integrator Documentation" class="md-nav__button md-logo" aria-label="WSO2 Ballerina Integrator Documentation" data-md-component="logo">
+    <a href="../.." title="WSO2 Kola Documentation" class="md-nav__button md-logo" aria-label="WSO2 Kola Documentation" data-md-component="logo">
       
   <img src="../../images/logo.svg" alt="logo">
 
     </a>
-    WSO2 Ballerina Integrator Documentation
+    WSO2 Kola Documentation
   </label>
   
     <div class="md-nav__source">
@@ -510,22 +512,43 @@ This documentation is a work in progress.
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-download-the-ballerina-integrator-vsix-file" class="md-nav__link">
-    Step 3: Download the Ballerina Integrator vsix file.
+  <a href="#step-2-install-the-kola-plugin" class="md-nav__link">
+    Step 2: Install the Kola plugin.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-install-the-ballerina-integrator-plugin" class="md-nav__link">
-    Step 2: Install the Ballerina Integrator plugin.
+  <a href="#step-3-setup-kola-for-the-first-time" class="md-nav__link">
+    Step 3: Setup Kola for the first time.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-create-a-new-ballerina-integrator-project" class="md-nav__link">
-    Step 3: Create a new Ballerina Integrator project.
+  <a href="#step-4-create-a-new-integration-project" class="md-nav__link">
+    Step 4: Create a new Integration Project.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-an-integration-service" class="md-nav__link">
+    Step 4: Create an Integration Service.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-design-the-integration" class="md-nav__link">
+    Step 5: Design the Integration.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-run-the-integration" class="md-nav__link">
+    Step 6: Run the Integration.
   </a>
   
 </li>
@@ -699,8 +722,8 @@ This documentation is a work in progress.
   
   
     <li class="md-nav__item">
-      <a href="../../develop/entry-points/" class="md-nav__link">
-        Entry points
+      <a href="../../develop/entrypoint/" class="md-nav__link">
+        Entrypoint
       </a>
     </li>
   
@@ -899,22 +922,43 @@ This documentation is a work in progress.
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-download-the-ballerina-integrator-vsix-file" class="md-nav__link">
-    Step 3: Download the Ballerina Integrator vsix file.
+  <a href="#step-2-install-the-kola-plugin" class="md-nav__link">
+    Step 2: Install the Kola plugin.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-install-the-ballerina-integrator-plugin" class="md-nav__link">
-    Step 2: Install the Ballerina Integrator plugin.
+  <a href="#step-3-setup-kola-for-the-first-time" class="md-nav__link">
+    Step 3: Setup Kola for the first time.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-create-a-new-ballerina-integrator-project" class="md-nav__link">
-    Step 3: Create a new Ballerina Integrator project.
+  <a href="#step-4-create-a-new-integration-project" class="md-nav__link">
+    Step 4: Create a new Integration Project.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-an-integration-service" class="md-nav__link">
+    Step 4: Create an Integration Service.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-design-the-integration" class="md-nav__link">
+    Step 5: Design the Integration.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-run-the-integration" class="md-nav__link">
+    Step 6: Run the Integration.
   </a>
   
 </li>
@@ -954,26 +998,74 @@ This documentation is a work in progress.
 
 <h3 id="step-1-download-the-visual-studio-code-vscode-ide">Step 1: Download the Visual Studio Code (VSCode) IDE.<a class="headerlink" href="#step-1-download-the-visual-studio-code-vscode-ide" title="Permanent link">&para;</a></h3>
 <p>Download and install the Visual Studio Code IDE from <a href="https://code.visualstudio.com/download">here</a>.</p>
-<h3 id="step-3-download-the-ballerina-integrator-vsix-file">Step 3: Download the Ballerina Integrator vsix file.<a class="headerlink" href="#step-3-download-the-ballerina-integrator-vsix-file" title="Permanent link">&para;</a></h3>
-<p>Download the Ballerina Integrator vsix file from <a href="https://productionresultssa19.blob.core.windows.net/actions-results/d0be5a7f-3bb0-49b6-9531-ed7717a494d6/workflow-job-run-8d802004-fbbb-5f17-b73e-f23de0c1dec8/artifacts/2b27443342a1d434d612d14100bc73039094e0abede10c7c5004355780343e9c.zip?rscd=attachment%3B+filename%3D%22Vsix-Artifact-bi.zip%22&amp;se=2024-10-22T08%3A40%3A24Z&amp;sig=S%2F6KvpU156K8JnF9v6XB%2BbHpygsk4a4MjxDnnQLOdeo%3D&amp;ske=2024-10-22T17%3A14%3A56Z&amp;skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&amp;sks=b&amp;skt=2024-10-22T05%3A14%3A56Z&amp;sktid=398a6654-997b-47e9-b12b-9515b896b4de&amp;skv=2024-08-04&amp;sp=r&amp;spr=https&amp;sr=b&amp;st=2024-10-22T08%3A30%3A19Z&amp;sv=2024-08-04">here</a></p>
-<h3 id="step-2-install-the-ballerina-integrator-plugin">Step 2: Install the Ballerina Integrator plugin.<a class="headerlink" href="#step-2-install-the-ballerina-integrator-plugin" title="Permanent link">&para;</a></h3>
+<h3 id="step-2-install-the-kola-plugin">Step 2: Install the Kola plugin.<a class="headerlink" href="#step-2-install-the-kola-plugin" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Open the Visual Studio Code IDE.</li>
-<li>Go to the Extensions view by clicking on the square icon on the sidebar or pressing <code>Ctrl + Shift + X</code> on Windows and Linux, or <code>shift + ⌘ + X</code> on a Mac.</li>
-<li>Click on the <code>...</code> icon in the top right corner of the Extensions view and select <code>Install from VSIX...</code>.
-   <img alt="install vsix" src="../img/install-vsix.png" /></li>
-<li>Select the downloaded Ballerina Integrator vsix file and click <code>Install</code>.</li>
-<li>Restart the Visual Studio Code IDE.</li>
+<li>Go to the Extensions view by clicking on the extension icon on the sidebar or pressing <code>Ctrl + Shift + X</code> on Windows and Linux, or <code>shift + ⌘ + X</code> on a Mac.</li>
+<li>Search for <code>Kola</code> in the Extensions view search box.</li>
+<li>Click on the <code>Install</code> button to install the Ballerina Composer plugin.
+<a href="http://localhost:8000//assets/img/get-started/kola-extension.png"><img src="http://localhost:8000//assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a></li>
+<li>This will install Kola, KolaB extension to the Visual Studio Code IDE.
+ <a href="http://localhost:8000//assets/img/get-started/kola-installed.png"><img src="http://localhost:8000//assets/img/get-started/kola-installed.png" alt="Kola Installed" width="70%"></a></li>
 </ol>
-<h3 id="step-3-create-a-new-ballerina-integrator-project">Step 3: Create a new Ballerina Integrator project.<a class="headerlink" href="#step-3-create-a-new-ballerina-integrator-project" title="Permanent link">&para;</a></h3>
+<h3 id="step-3-setup-kola-for-the-first-time">Step 3: Setup Kola for the first time.<a class="headerlink" href="#step-3-setup-kola-for-the-first-time" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Open the Visual Studio Code IDE.</li>
-<li>Click on the Ballerina Integrator icon on the sidebar.
-   <img alt="Ballerina Integrator" src="../img/bi-view.png" /></li>
-<li>Click on the <code>Create New Project</code> button.</li>
+<li>Click on the Kola Integrator icon on the sidebar.
+   <a href="http://localhost:8000//assets/img/get-started/kola-icon.png"><img src="http://localhost:8000//assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a></li>
+<li>Click on the <code>Setup</code> button.</li>
+<li>The setup wizard will install and configure the <a href="https://ballerina.io/">Ballerina</a> distribution required for Kola.</li>
+<li>Click on the <code>Restart VSCode</code> button to complete the setup.
+   <a href="http://localhost:8000//assets/img/get-started/kola-setup.gif"><img src="http://localhost:8000//assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a></li>
+</ol>
+<h3 id="step-4-create-a-new-integration-project">Step 4: Create a new Integration Project.<a class="headerlink" href="#step-4-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the Kola Integrator icon on the sidebar.</li>
+<li>Click on the <code>Create New Integration</code> button.</li>
 <li>Enter the project name as <code>HelloWorld</code>.</li>
 <li>Select Project Directory by clicking on the <code>Select Location</code> button.</li>
-<li>Click on the <code>Create Project</code> button.</li>
+<li>Click on the <code>Create New Integration</code> button to create the integration project.
+   <a href="http://localhost:8000//assets/img/get-started/create-integration.gif"><img src="http://localhost:8000//assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a></li>
+</ol>
+<h3 id="step-4-create-an-integration-service">Step 4: Create an Integration Service.<a class="headerlink" href="#step-4-create-an-integration-service" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the design view, click on the <code>Add Construct</code> button.</li>
+<li>Select <code>Service</code> from the menu.</li>
+<li>Select <code>HTTP Service</code> from the Service Type dropdown.</li>
+<li>Select <code>Design From Scratch</code> option. </li>
+<li>Enter the service name as <code>HelloWorldService</code>, path as <code>/hello</code>, and <code>9090</code> as the port.</li>
+<li>Click on the <code>Create Service</code> button to create the new service with the specified configurations.
+   <a href="http://localhost:8000//assets/img/get-started/create-service.gif"><img src="http://localhost:8000//assets/img/get-started/create-service.gif" alt="Create Service" width="70%"></a></li>
+</ol>
+<h3 id="step-5-design-the-integration">Step 5: Design the Integration.<a class="headerlink" href="#step-5-design-the-integration" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Now that you have created the service, you can design the integration by adding resources and methods to it. The generated service will have a default resource named <code>greeting</code> with a <code>GET</code> method.</li>
+<li>Click on the <code>greeting</code> resource to view the resource details. Let's modify the resource to invoke the <a href="https://apis.wso2.com/zvdz/mi-qsg/v1.0"><code>HelloWorld</code></a> API endpoint.</li>
+<li>Hover to the arrow after start and click the <code>+</code> button to add a new action to the resource.</li>
+<li>Select <code>Add Connection</code> from the node panel on the left. </li>
+<li>Select <code>HTTP Connection</code> as the connection type.</li>
+<li>Change the variable name to <code>externalEP</code>.</li>
+<li>
+<p>Add the URL <code>https://apis.wso2.com</code> to the connection URL field and click <code>Save</code>.
+   <a href="http://localhost:8000//assets/img/get-started/create-connection.gif"><img src="http://localhost:8000//assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a></p>
+</li>
+<li>
+<p>Click the <code>+</code> button again and select <code>Connections</code>-&gt;<code>externalEP</code>-&gt;<code>Get</code> from the node panel.</p>
+</li>
+<li>
+<p>Enter the path <code>/zvdz/mi-qsg/v1.0</code> in the URL field and click <code>Save</code>.
+   <a href="http://localhost:8000//assets/img/get-started/add-action.gif"><img src="http://localhost:8000//assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a></p>
+</li>
+<li>
+<p>Click on the <code>+</code> button again and select <code>Return</code> from the node panel.</p>
+</li>
+<li>Select the <code>value</code> variable from the dropdown and click <code>Save</code>. This step will return the response from the <code>HelloWorld</code> API endpoint.
+   <a href="http://localhost:8000//assets/img/get-started/add-return.gif"><img src="http://localhost:8000//assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a></li>
+</ol>
+<h3 id="step-6-run-the-integration">Step 6: Run the Integration.<a class="headerlink" href="#step-6-run-the-integration" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <code>Run</code> on the run button at top right corner to run the integration.</li>
+<li>The integration will be compiled and started in the embedded Ballerina runtime.</li>
+<li>Once the integration is started, you can access the service by navigating to <code>http://localhost:9090/hello/greeting</code> in your web browser.</li>
 </ol>
 
 
@@ -1034,7 +1126,7 @@ This documentation is a work in progress.
   <div class="footer-copyright-left">
   
     <div class="md-copyright__highlight">
-      WSO2 Ballerina Integrator - Documentation
+      WSO2 Kola - Documentation
     </div>
   
   
