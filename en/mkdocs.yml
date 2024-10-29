@@ -73,25 +73,18 @@ strict: false # Set to true to break the build if there are warnings
 nav:
   - Home: index.md
   - Get Started:
-      - Introduction: get-started/introduction.md
       - Quick Start Guide: get-started/quick-start-guide.md
       - Key Concepts: get-started/key-concepts.md
   - Learn:
-      - Use Cases: learn/use-cases.md
-      - Enterprise Integration Patterns: learn/ei-patterns.md
-      - Tutorials: learn/tutorials.md
+      - JSON to XML Transformation: learn/json-xml-transform.md
+      - Work with Database: learn/connect-database.md
   - Develop:
-        - Installation: develop/installation.md
-        - Projects: develop/projects.md
         - Entrypoint: develop/entrypoint.md
         - Nodes:  develop/nodes.md
         - Types: develop/working-with-types.md
   - Deploy:
-      - Choreo: deploy/choreo.md
-      - WSO2ICP : deploy/wso2-icp.md
-      - Observability & Tracing: deploy/observability-tracing.md
-  - References:
-      - References : references/references.md
+      - Deploy in VM: deploy/vm.md
+      - Deploy as a Docker Container : deploy/docker.md
 
 # Markdown extensions configuration
 markdown_extensions:
@@ -172,4 +165,4 @@ extra:
       link: https://www.linkedin.com/company/wso2
   # site_version: Uncomment to specify a version
   base_path: https://wso2.github.io/docs-ballerina-integrator
-  #base_path: https://ballerina-integrator.docs.wso2.com/en/main
+#  base_path: http://localhost:8000

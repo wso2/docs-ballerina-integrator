@@ -2,7 +2,8 @@
 
 WSO2 Kola is a comprehensive integration solution that simplifies your digital transformation journey.
 
-It streamlines connectivity among applications, services, data, and the cloud using a user-friendly low-code graphical design experience.
+The Kola extension for Visual Studio Code (Kola for VS Code) enables developers to utilize the popular Visual Studio Code editor for integration development, enhancing the overall experience. This AI-assisted development environment offers a faster, customizable, and more intuitive experience, boosting productivity in integration development.
+
 
 {% raw %}
 <style>
