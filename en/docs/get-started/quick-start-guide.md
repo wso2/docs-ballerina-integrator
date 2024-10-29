@@ -1,3 +1,7 @@
+## What you'll build
+In this guide, a simple integration will be built using the Kola Integrator plugin for Visual Studio Code. An HTTP service with a single resource (`greeting`) will be created to invoke the public [`HelloWorld`](https://apis.wso2.com/zvdz/mi-qsg/v1.0) API endpoint and return the response.
+<a href="{{base_path}}/assets/img/get-started/introduction.png"><img src="{{base_path}}/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a>
+
 ### Step 1: Download the Visual Studio Code (VSCode) IDE.
 Download and install the Visual Studio Code IDE from [here](https://code.visualstudio.com/download).
 
