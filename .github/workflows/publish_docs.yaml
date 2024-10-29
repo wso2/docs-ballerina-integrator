@@ -1,4 +1,4 @@
-name: Ballerina Integrator Docs Publish
+name: Kola Docs Publish
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  release-bi-docs:
+  release-kola-docs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
