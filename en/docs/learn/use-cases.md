@@ -1,1 +1,0 @@
-# Ballerina Integrator Use Cases
