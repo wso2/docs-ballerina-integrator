@@ -14,17 +14,17 @@
       
       
       
-        <link rel="prev" href="../choreo/">
+        <link rel="prev" href="../../get-started/key-concepts/">
       
       
-        <link rel="next" href="../observability-tracing/">
+        <link rel="next" href="../connect-database/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>WSO2ICP - WSO2 Kola Documentation</title>
+        <title>JSON to XML Transformation - WSO2 Kola Documentation</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploy-in-wso2-integration-control-plane-icp" class="md-skip">
+        <a href="#transforming-json-to-xml" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +156,7 @@ This documentation is a work in progress.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WSO2ICP
+              JSON to XML Transformation
             
           </span>
         </div>
@@ -286,40 +286,8 @@ This documentation is a work in progress.
   
   
     <li class="md-tabs__item">
-      <a href="../../get-started/introduction/" class="md-tabs__link">
+      <a href="../../get-started/quick-start-guide/" class="md-tabs__link">
         Get Started
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../learn/use-cases/" class="md-tabs__link">
-        Learn
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../develop/installation/" class="md-tabs__link">
-        Develop
       </a>
     </li>
   
@@ -336,8 +304,8 @@ This documentation is a work in progress.
   
   
     <li class="md-tabs__item">
-      <a href="../choreo/" class="md-tabs__link md-tabs__link--active">
-        Deploy
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Learn
       </a>
     </li>
   
@@ -352,8 +320,24 @@ This documentation is a work in progress.
   
   
     <li class="md-tabs__item">
-      <a href="../../references/references/" class="md-tabs__link">
-        References
+      <a href="../../develop/entrypoint/" class="md-tabs__link">
+        Develop
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../deploy/vm/" class="md-tabs__link">
+        Deploy
       </a>
     </li>
   
@@ -459,20 +443,6 @@ This documentation is a work in progress.
   
   
     <li class="md-nav__item">
-      <a href="../../get-started/introduction/" class="md-nav__link">
-        Introduction
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../get-started/quick-start-guide/" class="md-nav__link">
         Quick Start Guide
       </a>
@@ -507,14 +477,16 @@ This documentation is a work in progress.
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -523,7 +495,7 @@ This documentation is a work in progress.
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Learn
@@ -534,11 +506,100 @@ This documentation is a work in progress.
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../learn/use-cases/" class="md-nav__link">
-        Use Cases
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          JSON to XML Transformation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        JSON to XML Transformation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new Integration Project.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-an-integration-service" class="md-nav__link">
+    Step 2: Create an Integration Service.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-update-the-resource-method" class="md-nav__link">
+    Step 3: Update the resource method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-add-the-transformation-logic" class="md-nav__link">
+    Step 4: Add the transformation logic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-error-handling" class="md-nav__link">
+    Step 5: Error handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-run-the-integration" class="md-nav__link">
+    Step 6: Run the integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -550,22 +611,8 @@ This documentation is a work in progress.
   
   
     <li class="md-nav__item">
-      <a href="../../learn/ei-patterns/" class="md-nav__link">
-        Enterprise Integration Patterns
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../learn/tutorials/" class="md-nav__link">
-        Tutorials
+      <a href="../connect-database/" class="md-nav__link">
+        Work with Database
       </a>
     </li>
   
@@ -606,34 +653,6 @@ This documentation is a work in progress.
           Develop
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../develop/installation/" class="md-nav__link">
-        Installation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../develop/projects/" class="md-nav__link">
-        Projects
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -689,16 +708,14 @@ This documentation is a work in progress.
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
@@ -707,7 +724,7 @@ This documentation is a work in progress.
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Deploy
@@ -720,33 +737,9 @@ This documentation is a work in progress.
   
   
     <li class="md-nav__item">
-      <a href="../choreo/" class="md-nav__link">
-        Choreo
+      <a href="../../deploy/vm/" class="md-nav__link">
+        Deploy in VM
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        WSO2ICP
-      </a>
-      
     </li>
   
 
@@ -758,57 +751,8 @@ This documentation is a work in progress.
   
   
     <li class="md-nav__item">
-      <a href="../observability-tracing/" class="md-nav__link">
-        Observability & Tracing
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          References
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          References
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../references/references/" class="md-nav__link">
-        References
+      <a href="../../deploy/docker/" class="md-nav__link">
+        Deploy as a Docker Container
       </a>
     </li>
   
@@ -841,6 +785,69 @@ This documentation is a work in progress.
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new Integration Project.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-an-integration-service" class="md-nav__link">
+    Step 2: Create an Integration Service.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-update-the-resource-method" class="md-nav__link">
+    Step 3: Update the resource method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-add-the-transformation-logic" class="md-nav__link">
+    Step 4: Add the transformation logic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-error-handling" class="md-nav__link">
+    Step 5: Error handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-run-the-integration" class="md-nav__link">
+    Step 6: Run the integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -854,7 +861,7 @@ This documentation is a work in progress.
                   
 
   
-    <a href="https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/deploy/wso2-icp.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/learn/json-xml-transform.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -863,14 +870,115 @@ This documentation is a work in progress.
     
       
     
-    <a href="https://github.com/wso2/docs-ballerina-integrator/raw/main/en/docs/deploy/wso2-icp.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-ballerina-integrator/raw/main/en/docs/learn/json-xml-transform.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="deploy-in-wso2-integration-control-plane-icp">Deploy in WSO2 Integration Control Plane (ICP)<a class="headerlink" href="#deploy-in-wso2-integration-control-plane-icp" title="Permanent link">&para;</a></h1>
+<h1 id="transforming-json-to-xml">Transforming JSON to XML<a class="headerlink" href="#transforming-json-to-xml" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This guide explains how to create a simple integration to convert a JSON payload to an XML payload using the Kola. An HTTP service with a single resource (<code>toXml</code>) will be created to accept a JSON payload and return the XML representation of the payload.
+<a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/introduction.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/introduction.png" alt="JSON to XML" width="70%"></a></p>
+<h3 id="step-1-create-a-new-integration-project">Step 1: Create a new Integration Project.<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the Kola Integrator icon on the sidebar.</li>
+<li>Click on the <code>Create New Integration</code> button.</li>
+<li>Enter the project name as <code>JsonToXml</code>.</li>
+<li>Select Project Directory by clicking on the <code>Select Location</code> button.</li>
+<li>Click on the <code>Create New Integration</code> button to create the integration project.
+   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/create-integration.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/create-integration.gif" alt="Create Integration" width="70%"></a></li>
+</ol>
+<h3 id="step-2-create-an-integration-service">Step 2: Create an Integration Service.<a class="headerlink" href="#step-2-create-an-integration-service" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the design view, click on the <code>Add Construct</code> button.</li>
+<li>Select <code>Service</code> from the menu.</li>
+<li>Select <code>HTTP Service</code> from the Service Type dropdown.</li>
+<li>Select <code>Design From Scratch</code> option.</li>
+<li>Enter the service name as <code>JsonToXml</code>, path as <code>/convert</code>, and <code>9090</code> as the port.</li>
+<li>Click on the <code>Create Service</code> button to create the new service with the specified configurations.</li>
+</ol>
+<h3 id="step-3-update-the-resource-method">Step 3: Update the resource method<a class="headerlink" href="#step-3-update-the-resource-method" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on three dots appear in front of the <code>greeting</code> resource and select edit to view and update the resource details.</li>
+<li>Change the resource HTTP method to <code>POST</code>.</li>
+<li>Change the resource name as <code>toXml</code></li>
+<li>Add a payload parameter named <code>input</code> to the resource of type <code>json</code>. </li>
+<li>Change the 200 response return type to <code>xml</code>.</li>
+<li>Add a new response of type <code>HttpBadRequest</code> under the responses. </li>
+<li>Click on the <code>Save</code> button to update the resource with the specified configurations.
+    <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/update-resource.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/update-resource.png" alt="Update Resource" width="70%"></a></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Resource Method</p>
+<p>To learn more about resources, see <a href="https://ballerina.io/learn/by-example/resource-methods/">Ballerina Resources</a>.</p>
+</div>
+<h3 id="step-4-add-the-transformation-logic">Step 4: Add the transformation logic<a class="headerlink" href="#step-4-add-the-transformation-logic" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <code>toXml</code> resource to navigate to the resource implementation designer view.</li>
+<li>Hover to the arrow after start and click the ➕ button to add a new action to the resource.</li>
+<li>Select <code>Variable</code> from the node panel on the left.</li>
+<li>Change the variable name to <code>xmlData</code>, type as <code>xml | ()</code> and expression to <code>check xmldata:fromJson(input)</code>.
+   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-variable.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-variable.png"" alt="Add variable" width="70%"></a></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">JSON to XML Conversion</p>
+<p>To learn more about json to xml conversion, see <a href="https://ballerina.io/learn/by-example/xml-from-json-conversion/">Ballerina JSON to XML conversion</a>.</p>
+</div>
+<h3 id="step-5-error-handling">Step 5: Error handling<a class="headerlink" href="#step-5-error-handling" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the ➕ button again and select <code>If</code> from the node panel.</li>
+<li>Enter the condition as <code>xmlData is xml</code> and press <code>save</code>.
+   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-if.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-if.png"" alt="Add If" width="70%"></a></li>
+<li>Click on the <code>If</code> condition true(<code>xmlData is xml</code>)  path ➕ sign and add a <code>Return</code> from the node panel.</li>
+<li>Select the <code>xmlData</code> variable from the dropdown and click <code>Save</code>.
+   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-return.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-return.png"" alt="Add Return" width="70%"></a></li>
+<li>Click on the <code>If</code> condition <code>Else</code> path ➕ sign and add another <code>Return</code> from the node panel.</li>
+<li>Enter <code>http:BadRequest</code> as the value and click <code>Save</code>.
+   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-else-return.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-else-return.png"" alt="Add Else Return" width="70%"></a></li>
+<li>The final design will look like below.           <br />
+   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/final-design.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/final-design.png"" alt="Final Design" width="70%"></a></li>
+<li>The final code will look like below. The source view can be accessed by clicking on the <code>&lt;/&gt;</code> button in the top right corner.
+   <div class="highlight"><pre><span></span><code>import ballerina/http;
+import ballerina/xmldata;
+
+service /convert on new http:Listener(9090) {
+
+    function init() returns error? {
+    }
+
+    resource function post toXml(@http:Payload json input) returns xml|http:InternalServerError|http:BadRequest {
+        do {
+
+            xml? xmlData = check xmldata:fromJson(input);
+            if xmlData is xml {
+                return xmlData;
+            } else {
+                return http:BAD_REQUEST;
+            }
+
+        } on fail error e {
+            return http:INTERNAL_SERVER_ERROR;
+        }
+    }
+}
+</code></pre></div></li>
+</ol>
+<h3 id="step-6-run-the-integration">Step 6: Run the integration<a class="headerlink" href="#step-6-run-the-integration" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <code>Run</code> on the run button in the top right corner to run the integration.</li>
+<li>The integration will start and the service will be available at <code>http://localhost:9090/convert</code>.</li>
+<li>The service can be tested using a tool like <a href="https://www.postman.com/">Postman</a> or <a href="https://curl.se/">curl</a> by sending a POST request with a JSON payload to the service endpoint.
+   <div class="highlight"><pre><span></span><code>curl -X POST &quot;http://localhost:9090/convert/toXml&quot; -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;car&quot;:&quot;Honda&quot;}&#39;
+</code></pre></div></li>
+<li>The response will be an XML representation of the JSON payload.<br />
+<code>&lt;root&gt;
+        &lt;name&gt;John&lt;/name&gt;
+        &lt;age&gt;30&lt;/age&gt;
+        &lt;car&gt;Honda&lt;/car&gt;
+    &lt;/root&gt;</code></li>
+</ol>
 
 
 
@@ -892,7 +1000,7 @@ This documentation is a work in progress.
   <nav class="md-footer__inner md-grid" aria-label="Footer" >
     
     
-    <a href="../choreo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Choreo" rel="prev">
+    <a href="../../get-started/key-concepts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Key Concepts" rel="prev">
       <div class="md-footer__button md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </div>
@@ -901,20 +1009,20 @@ This documentation is a work in progress.
                 <span class="md-footer__direction">
                   Previous
                 </span>
-          Choreo
+          Key Concepts
         </div>
       </div>
     </a>
     
     
     
-    <a href="../observability-tracing/" class="md-footer__link md-footer__link--next" aria-label="Next: Observability &amp; Tracing" rel="next">
+    <a href="../connect-database/" class="md-footer__link md-footer__link--next" aria-label="Next: Work with Database" rel="next">
       <div class="md-footer__title">
         <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-          Observability & Tracing
+          Work with Database
         </div>
       </div>
       <div class="md-footer__button md-icon">
