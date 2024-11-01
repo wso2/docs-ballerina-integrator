@@ -5,14 +5,15 @@ In this guide, a simple integration will be built using the Kola Integrator plug
 ### Step 1: Download the Visual Studio Code (VSCode) IDE.
 Download and install the Visual Studio Code IDE from [here](https://code.visualstudio.com/download).
 
-### Step 2: Install the Kola plugin.
+### Step 2: Install the Kola VSCode profile.
 1. Open the Visual Studio Code IDE.
-2. Go to the Extensions view by clicking on the extension icon on the sidebar or pressing `Ctrl + Shift + X` on Windows and Linux, or `shift + ⌘ + X` on a Mac.
-3. Search for `Kola` in the Extensions view search box.
-4. Click on the `Install` button to install the Ballerina Composer plugin.
-<a href="{{base_path}}/assets/img/get-started/kola-extension.png"><img src="{{base_path}}/assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a>
-5. This will install Kola, KolaB extension to the Visual Studio Code IDE.
- <a href="{{base_path}}/assets/img/get-started/kola-installed.png"><img src="{{base_path}}/assets/img/get-started/kola-installed.png" alt="Kola Installed" width="70%"></a>
+2. Download and unzip the Kola VSCode profile from [here](https://gist.github.com/anuruddhal/4d66cef8f06d8570c061623b32af48a9/archive/c6b8e636e6e7e8051638be906098616d7d0d6072.zip).
+3. Navigate to Settings->Profile->Profiles.
+4. Click on Profile dropdown and select `Import Profile`.
+5. Select the extracted Kola VSCode `Kola.code-profile` profile and click `Create`.
+    <a href="{{base_path}}/assets/img/get-started/import-profile.gif"><img src="{{base_path}}/assets/img/get-started/import-profile.gif" alt="Import Profile" width="70%"></a>
+6. Navigate to Settings->Profile and select the `Kola` profile from the dropdown.
+
 
 ### Step 3: Setup Kola for the first time.
 1. Click on the Kola Integrator icon on the sidebar.
