@@ -1,6 +1,8 @@
-# Working with Databases
+# Connecting to Redis with Kola
 
-In this guide, you will learn how to connect to a database using Kola. Kola provides a set of built-in SQL client libraries that you can use to connect to a database.
+In this guide, you will learn how to connect to a redis server and perform basic operations such as `set`, `get`, `delete`, and `exists` using the Kola Integrator.
+
+
 
 
 
