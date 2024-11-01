@@ -880,7 +880,7 @@ This documentation is a work in progress.
 <h1 id="transforming-json-to-xml">Transforming JSON to XML<a class="headerlink" href="#transforming-json-to-xml" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This guide explains how to create a simple integration to convert a JSON payload to an XML payload using the Kola. An HTTP service with a single resource (<code>toXml</code>) will be created to accept a JSON payload and return the XML representation of the payload.
-<a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/introduction.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/introduction.png" alt="JSON to XML" width="70%"></a></p>
+<a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/introduction.png" alt="JSON to XML" width="70%"></a></p>
 <h3 id="step-1-create-a-new-integration-project">Step 1: Create a new Integration Project.<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the Kola Integrator icon on the sidebar.</li>
@@ -888,7 +888,7 @@ This documentation is a work in progress.
 <li>Enter the project name as <code>JsonToXml</code>.</li>
 <li>Select Project Directory by clicking on the <code>Select Location</code> button.</li>
 <li>Click on the <code>Create New Integration</code> button to create the integration project.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/create-integration.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/create-integration.gif" alt="Create Integration" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/create-integration.gif"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/create-integration.gif" alt="Create Integration" width="70%"></a></li>
 </ol>
 <h3 id="step-2-create-an-integration-service">Step 2: Create an Integration Service.<a class="headerlink" href="#step-2-create-an-integration-service" title="Permanent link">&para;</a></h3>
 <ol>
@@ -908,7 +908,7 @@ This documentation is a work in progress.
 <li>Change the 200 response return type to <code>xml</code>.</li>
 <li>Add a new response of type <code>HttpBadRequest</code> under the responses. </li>
 <li>Click on the <code>Save</code> button to update the resource with the specified configurations.
-    <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/update-resource.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/update-resource.png" alt="Update Resource" width="70%"></a></li>
+    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/update-resource.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/update-resource.png" alt="Update Resource" width="70%"></a></li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Resource Method</p>
@@ -920,7 +920,7 @@ This documentation is a work in progress.
 <li>Hover to the arrow after start and click the ➕ button to add a new action to the resource.</li>
 <li>Select <code>Variable</code> from the node panel on the left.</li>
 <li>Change the variable name to <code>xmlData</code>, type as <code>xml | ()</code> and expression to <code>check xmldata:fromJson(input)</code>.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-variable.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-variable.png"" alt="Add variable" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-variable.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-variable.png"" alt="Add variable" width="70%"></a></li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">JSON to XML Conversion</p>
@@ -930,15 +930,15 @@ This documentation is a work in progress.
 <ol>
 <li>Click on the ➕ button again and select <code>If</code> from the node panel.</li>
 <li>Enter the condition as <code>xmlData is xml</code> and press <code>save</code>.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-if.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-if.png"" alt="Add If" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-if.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-if.png"" alt="Add If" width="70%"></a></li>
 <li>Click on the <code>If</code> condition true(<code>xmlData is xml</code>)  path ➕ sign and add a <code>Return</code> from the node panel.</li>
 <li>Select the <code>xmlData</code> variable from the dropdown and click <code>Save</code>.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-return.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-return.png"" alt="Add Return" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-return.png"" alt="Add Return" width="70%"></a></li>
 <li>Click on the <code>If</code> condition <code>Else</code> path ➕ sign and add another <code>Return</code> from the node panel.</li>
 <li>Enter <code>http:BadRequest</code> as the value and click <code>Save</code>.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-else-return.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/add-else-return.png"" alt="Add Else Return" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-else-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-else-return.png"" alt="Add Else Return" width="70%"></a></li>
 <li>The final design will look like below.           <br />
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/final-design.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/json-to-xml/final-design.png"" alt="Final Design" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/final-design.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/final-design.png"" alt="Final Design" width="70%"></a></li>
 <li>The final code will look like below. The source view can be accessed by clicking on the <code>&lt;/&gt;</code> button in the top right corner.
    <div class="highlight"><pre><span></span><code>import ballerina/http;
 import ballerina/xmldata;

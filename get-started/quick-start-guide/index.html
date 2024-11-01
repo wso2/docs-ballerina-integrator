@@ -889,7 +889,7 @@ This documentation is a work in progress.
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>In this guide, a simple integration will be built using the Kola Integrator plugin for Visual Studio Code. An HTTP service with a single resource (<code>greeting</code>) will be created to invoke the public <a href="https://apis.wso2.com/zvdz/mi-qsg/v1.0"><code>HelloWorld</code></a> API endpoint and return the response.
-<a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/introduction.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a></p>
+<a href="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a></p>
 <h3 id="step-1-download-the-visual-studio-code-vscode-ide">Step 1: Download the Visual Studio Code (VSCode) IDE.<a class="headerlink" href="#step-1-download-the-visual-studio-code-vscode-ide" title="Permanent link">&para;</a></h3>
 <p>Download and install the Visual Studio Code IDE from <a href="https://code.visualstudio.com/download">here</a>.</p>
 <h3 id="step-2-install-the-kola-plugin">Step 2: Install the Kola plugin.<a class="headerlink" href="#step-2-install-the-kola-plugin" title="Permanent link">&para;</a></h3>
@@ -898,18 +898,18 @@ This documentation is a work in progress.
 <li>Go to the Extensions view by clicking on the extension icon on the sidebar or pressing <code>Ctrl + Shift + X</code> on Windows and Linux, or <code>shift + ⌘ + X</code> on a Mac.</li>
 <li>Search for <code>Kola</code> in the Extensions view search box.</li>
 <li>Click on the <code>Install</code> button to install the Ballerina Composer plugin.
-<a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-extension.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a></li>
+<a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-extension.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a></li>
 <li>This will install Kola, KolaB extension to the Visual Studio Code IDE.
- <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-installed.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-installed.png" alt="Kola Installed" width="70%"></a></li>
+ <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-installed.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-installed.png" alt="Kola Installed" width="70%"></a></li>
 </ol>
 <h3 id="step-3-setup-kola-for-the-first-time">Step 3: Setup Kola for the first time.<a class="headerlink" href="#step-3-setup-kola-for-the-first-time" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the Kola Integrator icon on the sidebar.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-icon.png"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-icon.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a></li>
 <li>Click on the <code>Setup</code> button.</li>
 <li>The setup wizard will install and configure the <a href="https://ballerina.io/">Ballerina</a> distribution required for Kola.</li>
 <li>Click on the <code>Restart VSCode</code> button to complete the setup.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-setup.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-setup.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a></li>
 </ol>
 <h3 id="step-4-create-a-new-integration-project">Step 4: Create a new Integration Project.<a class="headerlink" href="#step-4-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
 <ol>
@@ -918,7 +918,7 @@ This documentation is a work in progress.
 <li>Enter the project name as <code>HelloWorld</code>.</li>
 <li>Select Project Directory by clicking on the <code>Select Location</code> button.</li>
 <li>Click on the <code>Create New Integration</code> button to create the integration project.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/create-integration.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-integration.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a></li>
 </ol>
 <h3 id="step-4-create-an-integration-service">Step 4: Create an Integration Service.<a class="headerlink" href="#step-4-create-an-integration-service" title="Permanent link">&para;</a></h3>
 <ol>
@@ -928,7 +928,7 @@ This documentation is a work in progress.
 <li>Select <code>Design From Scratch</code> option. </li>
 <li>Enter the service name as <code>HelloWorldService</code>, path as <code>/hello</code>, and <code>9090</code> as the port.</li>
 <li>Click on the <code>Create Service</code> button to create the new service with the specified configurations.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/create-service.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/create-service.gif" alt="Create Service" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-service.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-service.gif" alt="Create Service" width="70%"></a></li>
 </ol>
 <h3 id="step-5-design-the-integration">Step 5: Design the Integration.<a class="headerlink" href="#step-5-design-the-integration" title="Permanent link">&para;</a></h3>
 <ol>
@@ -940,20 +940,20 @@ This documentation is a work in progress.
 <li>Change the variable name to <code>externalEP</code>.</li>
 <li>
 <p>Add the URL <code>https://apis.wso2.com</code> to the connection URL field and click <code>Save</code>.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/create-connection.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a></p>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-connection.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a></p>
 </li>
 <li>
 <p>Click the ➕ button again and select <code>Connections</code>-&gt;<code>externalEP</code>-&gt;<code>Get</code> from the node panel.</p>
 </li>
 <li>
 <p>Enter the path <code>/zvdz/mi-qsg/v1.0</code> in the URL field and click <code>Save</code>.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/add-action.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a></p>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/add-action.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a></p>
 </li>
 <li>
 <p>Click on the ➕ button again and select <code>Return</code> from the node panel.</p>
 </li>
 <li>Select the <code>value</code> variable from the dropdown and click <code>Save</code>. This step will return the response from the <code>HelloWorld</code> API endpoint.
-   <a href="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/add-return.gif"><img src="https://wso2.github.io/docs-ballerina-integrator/assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a></li>
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/add-return.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a></li>
 </ol>
 <h3 id="step-6-run-the-integration">Step 6: Run the Integration.<a class="headerlink" href="#step-6-run-the-integration" title="Permanent link">&para;</a></h3>
 <ol>
