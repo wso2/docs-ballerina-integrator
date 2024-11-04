@@ -82,9 +82,11 @@ nav:
         - Entrypoint: develop/entrypoint.md
         - Nodes:  develop/nodes.md
         - Types: develop/working-with-types.md
-  - Deploy:
-      - Deploy in VM: deploy/vm.md
-      - Deploy as a Docker Container : deploy/docker.md
+  - Build:
+      - Build an executable JAR: build/jar.md
+      - Build a Docker Image : build/docker.md
+  - Roadmap:
+      - Roadmap: roadmap/roadmap.md
 
 # Markdown extensions configuration
 markdown_extensions:
