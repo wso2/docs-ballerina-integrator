@@ -76,7 +76,7 @@ nav:
       - Quick Start Guide: get-started/quick-start-guide.md
       - Key Concepts: get-started/key-concepts.md
   - Learn:
-      - JSON to XML Transformation: learn/json-xml-transform.md
+      - Message Transformation: learn/json-xml-transform.md
       - Work with Database: learn/connect-database.md
   - Develop:
         - Entrypoint: develop/entrypoint.md
