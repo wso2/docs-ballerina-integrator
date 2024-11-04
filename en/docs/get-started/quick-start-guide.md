@@ -7,7 +7,7 @@ Download and install the Visual Studio Code IDE from [here](https://code.visuals
 
 ### Step 2: Install the Kola VSCode profile.
 1. Open the Visual Studio Code IDE.
-2. Download and unzip the Kola VSCode profile from [here](https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/7094ecfbd0aadd86346726832d495a8d6dff72c5.zip).
+2. Download and unzip the Kola VSCode profile from [here](https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/e3facddf34e08ac5c0e4f15b98527354388b6fc1.zip).
 3. Navigate to Settings->Profile->Profiles.
 4. Click on Profile dropdown and select `Import Profile`.
 5. Select the extracted Kola VSCode `Kola.code-profile` profile and click `Create`.
