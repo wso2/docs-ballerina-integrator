@@ -1,46 +1,91 @@
-# WSO2 Kola Documentation
-
-WSO2 Kola is a comprehensive integration solution that simplifies your digital transformation journey.
-
-The Kola extension for Visual Studio Code (Kola for VS Code) enables developers to utilize the popular Visual Studio Code editor for integration development, enhancing the overall experience. This AI-assisted development environment offers a faster, customizable, and more intuitive experience, boosting productivity in integration development.
-Kola provides a range of features that streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. By leveraging AI capabilities, Kola empowers developers to focus on high-value tasks, accelerating digital transformation efforts.
-
-### Low-code integration development
-Kola provides a streamlined, user-friendly environment for building integrations with minimal coding, opening up integration tasks to both experienced developers and those new to coding. Here’s how Kola’s low-code capabilities simplify the integration development process:
-
-- **Visual Designer Interface:** Kola includes visual tools that let developers create integration workflows by simply dragging and dropping pre-built components. This visual builder reduces the need for manual coding, allowing users to connect systems and data sources without extensive syntax knowledge.
-- **Pre-Built Connectors and Templates:** With an extensive library of connectors and templates, Kola enables users to quickly incorporate common integration patterns and connect to popular systems like databases, cloud services, and enterprise applications. This eliminates repetitive setup work and accelerates development.
-- **Parameterized Configurations:** Kola’s low-code environment supports easy configuration of workflows using parameters, making it possible to adjust integrations without coding. This flexibility simplifies the process of tailoring integrations to specific use cases while maintaining consistency.
-- **AI-Powered Recommendations for Components:** Kola leverages AI to suggest components, mappings, and configurations based on the current workflow context. This feature helps guide developers through building integrations efficiently, even if they’re not deeply familiar with the underlying code.
-- **Testing and Deployment Automation:** The low-code environment integrates testing and deployment tools that enable users to validate integrations quickly and push them to production with minimal manual intervention. Automated testing helps ensure that workflows function as intended, while deployment tools streamline the release process.
-- **Collaboration-Friendly Design:** Low-code tools in Kola for VS Code promote collaboration between developers and business teams by allowing users with different technical backgrounds to contribute to integration projects. This inclusive approach helps bridge the gap between technical and non-technical team members.
-- **Visual design:** Kola for VS Code provides a visual design experience that simplifies integration development.
-By offering these low-code features, Kola for VS Code makes integration development accessible, faster, and more flexible. It enables teams to focus on delivering value through integration rather than getting bogged down in complex coding tasks, ultimately accelerating digital transformation efforts.
-
-
-### AI-assisted development
-Kola empowers developers by using AI to streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. Here’s how Kola’s AI capabilities make a difference:
-
-- **Code Suggestions and Autocompletion:** The AI in Kola for VS Code provides context-aware suggestions, helping developers complete lines of code or entire blocks accurately. These real-time prompts assist in selecting the best methods, properties, or configurations, which can significantly speed up the coding process.
-- **Error Detection and Fix Recommendations:** AI continuously analyzes the code as it's written, flagging potential errors or inconsistencies and suggesting fixes. This proactive error handling helps prevent bugs and enhances code quality, enabling developers to correct issues early, reducing the need for extensive debugging.
-- **Pattern Recognition and Code Optimization:** By recognizing patterns in the code, Kola’s AI suggests optimizations, streamlining performance or even recommending best practices. This can be particularly useful for new developers or teams looking to standardize code across projects.
-- **Natural Language Code Search and Commands:** Kola’s AI allows developers to use natural language to search for code snippets, methods, or libraries, reducing the time spent manually browsing documentation or previous code. This also enables quicker onboarding, as developers can intuitively ask questions or search within the IDE.
-- **Smart Refactoring and Code Restructuring:** As applications evolve, restructuring code becomes critical. Kola’s AI offers intelligent refactoring options, enabling developers to restructure code confidently without breaking functionality. This minimizes technical debt and makes the codebase cleaner and more maintainable.
-
-Together, these AI-driven features in Kola for VS Code create a more efficient, accurate, and productive development experience, reducing the learning curve and enabling developers to focus on high-value tasks rather than repetitive or error-prone coding tasks.
-
-
-### Leverage the Power of Ballerina
-Kola to take advantage of a language purpose-built for integration development, allowing developers to handle cloud-native, API-driven integrations with simplicity and efficiency. [Ballerina](https://ballerina.io), the foundation of Kola, empowers developers with:
-
-- **Integration-Centric Syntax:** Ballerina’s syntax is intuitive for integration, reducing the need for boilerplate code and allowing developers to write integration logic clearly and concisely. Its language constructs, like workers, channels, and error handling, are specifically designed for scenarios like API orchestration and data transformation.
-- **Cloud-Native and API-First Design:** Ballerina is cloud-native by design, meaning that it includes built-in support for modern protocols like HTTP, WebSocket, gRPC, and Kafka, essential for microservices and cloud-based architectures. This enables developers to connect and interact with various APIs, making it ideal for the API-first strategies prevalent in modern enterprises.
-- **Visual Flow Representation:** Ballerina’s unique graphical representation allows developers to visualize integrations as they code, bridging the gap between code and design. This approach provides a flow-based overview of data movement and logic, which is invaluable for understanding complex workflows.
-- **In-Built Observability and Resilience:** Ballerina includes observability features, enabling developers to monitor integrations out of the box. This includes support for distributed tracing, metrics, and logging, essential for maintaining and debugging integrations in a distributed environment.
-- **Unified Data Handling and Transformations:** Ballerina simplifies data handling with straightforward syntax for defining data transformations and mappings, essential in integration workflows where data is frequently transformed between systems. This reduces complexity when integrating heterogeneous data sources.
-- **Built-in Testing and Deployment Tools:** Ballerina supports testing and deployment automation, making it easy to validate and deploy integrations in cloud environments. By leveraging these tools, developers can ensure reliability and scalability for integrations, even as they deploy them across diverse infrastructures.
-Integrating Kola with Ballerina brings the best of both worlds: a developer-friendly environment with powerful language features designed to make integration projects easier, faster, and more robust.
-
+<div class="homePage">
+    <div class="section01">
+        <div class="leftContent">
+            <div class="about-home">
+                <div>
+                    <b>Kola</b> is a comprehensive integration solution that simplifies your digital transformation journey. The Kola extension for Visual Studio Code (Kola for VS Code) enables developers to utilize the popular Visual Studio Code editor for integration development, enhancing the overall experience. This AI-assisted development environment offers a faster, customizable, and more intuitive experience, boosting productivity in integration development.
+                    Kola provides a range of features that streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. By leveraging AI capabilities, Kola empowers developers to focus on high-value tasks, accelerating digital transformation efforts.
+                    <div class="linkSet2" onclick="location.href='{{base_path}}/get-started/quick-start-guide';">
+                        <a href="get-started/quick-start-guide"><h3>Quick Start Guide</h3></a>
+                        <p>
+                            Get started with Kola by running a simple integration use case in your local environment.
+                        </p>
+                    </div>
+                </div>
+                <div  style="text-align:right">
+                    <a href="{{base_path}}/assets/img/introduction/kola.png"><img src="{{base_path}}/assets/img/introduction/kola.png" alt="Kola" width="95%"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section02">
+        <div class="leftContent">
+                <div class="about-home">
+                    <div>
+                        <h3>Low-code integration development</h3>
+                        <p>
+                            Kola provides a streamlined, user-friendly environment for building integrations with minimal coding, opening up integration tasks to both experienced developers and those new to coding. Here’s how Kola’s low-code capabilities simplify the integration development process:
+                        </p>
+                        <ul>
+                            <li><b>Design Visually:</b> Kola’s interface allows users to visually design integrations, making it easy to create and manage integration flows.</li>
+                            <li><b>Pre-built connectors:</b> Kola offers a range of pre-built connectors that simplify the process of connecting to various systems and services.</li>
+                            <li><b>Reuse components:</b> Kola enables users to create reusable components that can be shared across multiple integrations, reducing development time and effort.</li>
+                            <li><b>Automate testing:</b> Kola provides automated testing capabilities that help users identify and resolve issues early in the development process.</li>
+                            <li><b>AI-assisted development:</b> Kola’s AI capabilities provide intelligent suggestions and recommendations that help users write code more efficiently and accurately.</li>
+                        </ul>
+                    </div>
+                    <div  style="text-align:right">
+                        <a href="{{base_path}}/assets/img/introduction/low-code.gif"><img src="{{base_path}}/assets/img/introduction/low-code.gif" alt="low-code" width="90%" style="padding-top: 60px" ></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+     <div class="section02">
+        <div class="rightContent">
+                <div class="about-home">
+                    <div  style="text-align:left">
+                        <a href="{{base_path}}/assets/img/introduction/ai.gif"><img src="{{base_path}}/assets/img/introduction/ai.gif" alt="AI" width="90%" style="padding-top: 60px; padding-right: 50px" ></a>
+                    </div>
+                    <div>
+                        <h3>AI-assisted development</h3>
+                        <p>
+                            Kola empowers developers by using AI to streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. Here’s how Kola’s AI capabilities make a difference:
+                        </p>
+                        <ul>
+                            <li><b>Code Suggestions and Autocompletion:</b> The AI in Kola for VS Code provides context-aware suggestions, helping developers complete lines of code or entire blocks accurately. These real-time prompts assist in selecting the best methods, properties, or configurations, which can significantly speed up the coding process.</li>
+                            <li><b>Error Detection and Fix Recommendations:</b> AI continuously analyzes the code as it's written, flagging potential errors or inconsistencies and suggesting fixes. This proactive error handling helps prevent bugs and enhances code quality, enabling developers to correct issues early, reducing the need for extensive debugging.</li>
+                            <li><b>Pattern Recognition and Code Optimization:</b> By recognizing patterns in the code, Kola’s AI suggests optimizations, streamlining performance or even recommending best practices. This can be particularly useful for new developers or teams looking to standardize code across projects.</li>
+                            <li><b>Natural Language Code Search and Commands:</b> Kola’s AI allows developers to use natural language to search for code snippets, methods, or libraries, reducing the time spent manually browsing documentation or previous code. This also enables quicker onboarding, as developers can intuitively ask questions or search within the IDE.</li>
+                            <li><b>Smart Refactoring and Code Restructuring:</b> As applications evolve, restructuring code becomes critical. Kola’s AI offers intelligent refactoring options, enabling developers to restructure code confidently without breaking functionality. This minimizes technical debt and makes the codebase cleaner and more maintainable.</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="section02">
+        <div class="leftContent">
+                <div class="about-home">
+                    <div>
+                        <h3>Leverage the Power of Ballerina</h3>
+                        <p>
+                            Kola to take advantage of a language purpose-built for integration development, allowing developers to handle cloud-native, API-driven integrations with simplicity and efficiency. <a href="https://ballerina.io">Ballerina</a>, the foundation of Kola, empowers developers with:
+                        </p>
+                        <ul>
+                            <li><b>Integration-Centric Syntax:</b> Ballerina’s intuitive syntax is tailored for integration, minimizing boilerplate code and enabling developers to write integration logic in a clear, concise way. With constructs like workers, channels, and error handling, Ballerina is ideal for tasks like API orchestration and data transformation.</li>
+                            <li><b>Cloud-Native and API-First Design:</b> Ballerina is built for the cloud, supporting protocols such as HTTP, WebSocket, gRPC, and Kafka, which are crucial for microservices and cloud-based architectures. This design enables seamless API interactions, making Ballerina ideal for modern API-first strategies.</li>
+                            <li><b>Visual Flow Representation:</b> Ballerina’s graphical representation lets developers visualize integrations as they code, creating a bridge between code and design. This visual approach offers a flow-based overview of data movement and logic, essential for understanding complex workflows.</li>
+                            <li><b>In-Built Observability and Resilience:</b> Ballerina provides observability features out of the box, allowing developers to monitor integrations with distributed tracing, metrics, and logging—key tools for maintaining and debugging in distributed environments.</li> 
+                            <li><b>Unified Data Handling and Transformations:</b> Ballerina simplifies data handling by offering easy syntax for defining data transformations and mappings, reducing complexity when integrating diverse data sources in integration workflows.</li> 
+                            <li><b>Built-In Testing and Deployment Tools:</b> Ballerina includes testing and deployment automation, streamlining validation and deployment in cloud environments. These tools ensure reliable, scalable integrations, even across diverse infrastructures.</li>
+                        </ul>
+                    </div>
+                    <div  style="text-align:right">
+                        <a href="{{base_path}}/assets/img/introduction/ballerina.png"><img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="80%" style="padding-top: 250px" ></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
 {% raw %}
 <style>
 .md-sidebar.md-sidebar--primary {
@@ -53,11 +98,9 @@ Integrating Kola with Ballerina brings the best of both worlds: a developer-frie
     display: flex;
     justify-content: space-between;
 }
-
-[//]: # (header.md-header .md-header__button:not([hidden]) {)
-[//]: # (    display: none;)
-[//]: # (})
-
+header.md-header .md-header__button:not([hidden]) {
+    /* display: none; */
+}
 .about-home {
     display: flex;
 }
