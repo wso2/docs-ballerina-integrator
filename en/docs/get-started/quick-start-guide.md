@@ -17,7 +17,7 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 ### Step 3: Setup Kola for the first time.
 1. Go to the Extensions view by clicking on the extension icon on the sidebar or pressing `Ctrl + Shift + X` on Windows and Linux, or `shift + ⌘ + X` on a Mac.
 2. Search for `Kola` in the Extensions view search box.
-3. Click on the **`Install`** button to install the Ballerina Composer plugin.
+3. Click on the **`Install`** button to install the `Kola` extension.
    <a href="{{base_path}}/assets/img/get-started/kola-extension.png"><img src="{{base_path}}/assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a>
 4. This will install Kola, KolaB extension to the Visual Studio Code IDE.
 
@@ -65,7 +65,7 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
    <a href="{{base_path}}/assets/img/get-started/add-return.gif"><img src="{{base_path}}/assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a>
 
 ### Step 8: Run the Integration.
-1. Click on the **`Run`** on the run button at top right corner to run the integration.
+1. Click on the **`Run`** button at top right corner to run the integration.
 2. The integration will be compiled and started in the embedded Ballerina runtime.
 3. Once the integration is started, you can access the service by navigating to `http://localhost:9090/hello/greeting` in your web browser.
    
