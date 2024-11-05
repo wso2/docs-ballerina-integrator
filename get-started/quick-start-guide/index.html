@@ -304,7 +304,7 @@ This documentation is a work in progress.
   
   
     <li class="md-tabs__item">
-      <a href="../../learn/json-xml-transform/" class="md-tabs__link">
+      <a href="../../learn/message-transformation/" class="md-tabs__link">
         Learn
       </a>
     </li>
@@ -490,8 +490,8 @@ This documentation is a work in progress.
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-install-the-kola-vs-code-profile" class="md-nav__link">
-    Step 2: Install the Kola VS Code profile.
+  <a href="#step-2-create-a-profile-in-visual-studio-code" class="md-nav__link">
+    Step 2: Create a profile in Visual Studio Code.
   </a>
   
 </li>
@@ -504,29 +504,36 @@ This documentation is a work in progress.
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-create-a-new-integration-project" class="md-nav__link">
-    Step 4: Create a new integration project.
+  <a href="#step-4-setup-kola-for-the-first-time" class="md-nav__link">
+    Step 4: Setup Kola for the first time.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-create-an-integration-service" class="md-nav__link">
-    Step 4: Create an Integration Service.
+  <a href="#step-5-create-a-new-integration-project" class="md-nav__link">
+    Step 5: Create a new integration project.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-design-the-integration" class="md-nav__link">
-    Step 5: Design the Integration.
+  <a href="#step-6-create-an-integration-service" class="md-nav__link">
+    Step 6: Create an Integration Service.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-run-the-integration" class="md-nav__link">
-    Step 6: Run the Integration.
+  <a href="#step-7-design-the-integration" class="md-nav__link">
+    Step 7: Design the Integration.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-run-the-integration" class="md-nav__link">
+    Step 8: Run the Integration.
   </a>
   
 </li>
@@ -600,22 +607,8 @@ This documentation is a work in progress.
   
   
     <li class="md-nav__item">
-      <a href="../../learn/json-xml-transform/" class="md-nav__link">
+      <a href="../../learn/message-transformation/" class="md-nav__link">
         Message Transformation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../learn/connect-database/" class="md-nav__link">
-        Work with Database
       </a>
     </li>
   
@@ -794,8 +787,8 @@ This documentation is a work in progress.
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-install-the-kola-vs-code-profile" class="md-nav__link">
-    Step 2: Install the Kola VS Code profile.
+  <a href="#step-2-create-a-profile-in-visual-studio-code" class="md-nav__link">
+    Step 2: Create a profile in Visual Studio Code.
   </a>
   
 </li>
@@ -808,29 +801,36 @@ This documentation is a work in progress.
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-create-a-new-integration-project" class="md-nav__link">
-    Step 4: Create a new integration project.
+  <a href="#step-4-setup-kola-for-the-first-time" class="md-nav__link">
+    Step 4: Setup Kola for the first time.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-4-create-an-integration-service" class="md-nav__link">
-    Step 4: Create an Integration Service.
+  <a href="#step-5-create-a-new-integration-project" class="md-nav__link">
+    Step 5: Create a new integration project.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-5-design-the-integration" class="md-nav__link">
-    Step 5: Design the Integration.
+  <a href="#step-6-create-an-integration-service" class="md-nav__link">
+    Step 6: Create an Integration Service.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-run-the-integration" class="md-nav__link">
-    Step 6: Run the Integration.
+  <a href="#step-7-design-the-integration" class="md-nav__link">
+    Step 7: Design the Integration.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-run-the-integration" class="md-nav__link">
+    Step 8: Run the Integration.
   </a>
   
 </li>
@@ -874,30 +874,37 @@ This documentation is a work in progress.
   <h1>Quick Start Guide</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>In this guide, you'll build a simple integration using the Kola plugin for Visual Studio Code. You'll create an HTTP service with a single resource named <code>greeting</code> that invokes the public <a href="(https://apis.wso2.com/zvdz/mi-qsg/v1.0)">Hello World API endpoint</a> and returns the response.</p>
+<p>In this guide, you'll build a simple integration using the Kola plugin for Visual Studio Code. You'll create an HTTP service with a single resource named <code>greeting</code> that invokes the public <a href="https://apis.wso2.com/zvdz/mi-qsg/v1.0">Hello World API endpoint</a> and returns the response.</p>
 <p><a href="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a></p>
 <h3 id="step-1-install-visual-studio-code">Step 1: Install Visual Studio Code<a class="headerlink" href="#step-1-install-visual-studio-code" title="Permanent link">&para;</a></h3>
 <p>Download and install the <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.</p>
-<h3 id="step-2-install-the-kola-vs-code-profile">Step 2: Install the Kola VS Code profile.<a class="headerlink" href="#step-2-install-the-kola-vs-code-profile" title="Permanent link">&para;</a></h3>
+<h3 id="step-2-create-a-profile-in-visual-studio-code">Step 2: Create a profile in Visual Studio Code.<a class="headerlink" href="#step-2-create-a-profile-in-visual-studio-code" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Download and unzip the <a href="https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/7094ecfbd0aadd86346726832d495a8d6dff72c5.zip">Kola VS Code profile</a>.</li>
 <li>Open the Visual Studio Code.</li>
 <li>Navigate to <strong>Settings</strong>-&gt;<strong>Profile</strong>-&gt;<strong>Profiles</strong>.</li>
-<li>Click on <strong>New Profile</strong> dropdown and select <strong>Import Profile</strong>.</li>
-<li>Select the extracted Kola VS Code <code>Kola.code-profile</code> profile and click <strong>Create</strong>.
-    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/import-profile.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/import-profile.gif" alt="Import Profile" width="70%"></a></li>
-<li>Navigate to <strong>Settings</strong>-&gt;<strong>Profile</strong> and select the <code>Kola</code> profile from the dropdown.</li>
+<li>Click on <strong>New Profile</strong> dropdown and select <strong>Create Profile</strong>.</li>
+<li>Enter the profile name as <code>Kola</code> and click <strong>Create</strong>.</li>
+<li>Click on the ✔️ sign in front of the <code>Kola</code> profile to select the profile. <br />
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-profile.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-profile.gif" alt="Create Profile" width="70%"></a></li>
 </ol>
 <h3 id="step-3-setup-kola-for-the-first-time">Step 3: Setup Kola for the first time.<a class="headerlink" href="#step-3-setup-kola-for-the-first-time" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the Kola icon on the sidebar.
+<li>Go to the Extensions view by clicking on the extension icon on the sidebar or pressing <code>Ctrl + Shift + X</code> on Windows and Linux, or <code>shift + ⌘ + X</code> on a Mac.</li>
+<li>Search for <code>Kola</code> in the Extensions view search box.</li>
+<li>Click on the <strong><code>Install</code></strong> button to install the <code>Kola</code> extension.
+   <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-extension.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-extension.png" alt="Kola Extension" width="70%"></a></li>
+<li>This will install Kola, KolaB extension to the Visual Studio Code IDE.</li>
+</ol>
+<h3 id="step-4-setup-kola-for-the-first-time">Step 4: Setup Kola for the first time.<a class="headerlink" href="#step-4-setup-kola-for-the-first-time" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the Kola icon on the sidebar.  <br />
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-icon.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a></li>
-<li>Click on the <code>Set Up Kola</code> button.</li>
+<li>Click on the <strong><code>Set Up Kola</code></strong> button.</li>
 <li>The setup wizard will install and configure the <a href="https://ballerina.io/">Ballerina</a> distribution required for Kola.</li>
-<li>Click on the <code>Restart VSCode</code> button to complete the setup.
+<li>Click on the <strong><code>Restart VSCode</code></strong> button to complete the setup.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-setup.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a></li>
 </ol>
-<h3 id="step-4-create-a-new-integration-project">Step 4: Create a new integration project.<a class="headerlink" href="#step-4-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
+<h3 id="step-5-create-a-new-integration-project">Step 5: Create a new integration project.<a class="headerlink" href="#step-5-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the Kola Integrator icon on the sidebar.</li>
 <li>Click on the <code>Create New Integration</code> button.</li>
@@ -906,44 +913,44 @@ This documentation is a work in progress.
 <li>Click on the <code>Create New Integration</code> button to create the integration project.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-integration.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a></li>
 </ol>
-<h3 id="step-4-create-an-integration-service">Step 4: Create an Integration Service.<a class="headerlink" href="#step-4-create-an-integration-service" title="Permanent link">&para;</a></h3>
+<h3 id="step-6-create-an-integration-service">Step 6: Create an Integration Service.<a class="headerlink" href="#step-6-create-an-integration-service" title="Permanent link">&para;</a></h3>
 <ol>
-<li>In the design view, click on the <code>Add Construct</code> button.</li>
-<li>Select <code>Service</code> from the menu.</li>
-<li>Select <code>HTTP Service</code> from the Service Type dropdown.</li>
-<li>Select <code>Design From Scratch</code> option. </li>
+<li>In the design view, click on the <strong><code>Add Construct</code></strong> button.</li>
+<li>Select <strong><code>Service</code></strong> from the menu.</li>
+<li>Select <strong><code>HTTP Service</code></strong> from the Service Type dropdown.</li>
+<li>Select <strong><code>Design From Scratch</code></strong> option. </li>
 <li>Enter the service name as <code>HelloWorldService</code>, path as <code>/hello</code>, and <code>9090</code> as the port.</li>
-<li>Click on the <code>Create Service</code> button to create the new service with the specified configurations.
+<li>Click on the <strong><code>Create Service</code></strong> button to create the new service with the specified configurations.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-service.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-service.gif" alt="Create Service" width="70%"></a></li>
 </ol>
-<h3 id="step-5-design-the-integration">Step 5: Design the Integration.<a class="headerlink" href="#step-5-design-the-integration" title="Permanent link">&para;</a></h3>
+<h3 id="step-7-design-the-integration">Step 7: Design the Integration.<a class="headerlink" href="#step-7-design-the-integration" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Now that you have created the service, you can design the integration by adding resources and methods to it. The generated service will have a default resource named <code>greeting</code> with a <code>GET</code> method.</li>
 <li>Click on the <code>greeting</code> resource to view the resource details. Let's modify the resource to invoke the <a href="https://apis.wso2.com/zvdz/mi-qsg/v1.0"><code>HelloWorld</code></a> API endpoint.</li>
 <li>Hover to the arrow after start and click the ➕ button to add a new action to the resource.</li>
-<li>Select <code>Add Connection</code> from the node panel on the left. </li>
-<li>Select <code>HTTP Connection</code> as the connection type.</li>
+<li>Select <strong><code>Add Connection</code></strong> from the node panel on the left. </li>
+<li>Select <strong><code>HTTP Connection</code></strong> as the connection type.</li>
 <li>Change the variable name to <code>externalEP</code>.</li>
 <li>
-<p>Add the URL <code>https://apis.wso2.com</code> to the connection URL field and click <code>Save</code>.
+<p>Add the URL <code>https://apis.wso2.com</code> to the connection URL field and click <strong><code>Save</code></strong>.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-connection.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a></p>
 </li>
 <li>
-<p>Click the ➕ button again and select <code>Connections</code>-&gt;<code>externalEP</code>-&gt;<code>Get</code> from the node panel.</p>
+<p>Click the ➕ button again and select <strong><code>Connections</code>-&gt;<code>externalEP</code>-&gt;<code>Get</code></strong> from the node panel.</p>
 </li>
 <li>
-<p>Enter the path <code>/zvdz/mi-qsg/v1.0</code> in the URL field and click <code>Save</code>.
+<p>Enter the path <code>/zvdz/mi-qsg/v1.0</code> in the URL field and click <strong><code>Save</code></strong>.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/add-action.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a></p>
 </li>
 <li>
-<p>Click on the ➕ button again and select <code>Return</code> from the node panel.</p>
+<p>Click on the ➕ button again and select <strong><code>Return</code></strong> from the node panel.</p>
 </li>
-<li>Select the <code>value</code> variable from the dropdown and click <code>Save</code>. This step will return the response from the <code>HelloWorld</code> API endpoint.
+<li>Select the <code>value</code> variable from the dropdown and click <strong><code>Save</code></strong>. This step will return the response from the <code>HelloWorld</code> API endpoint.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/add-return.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/add-return.gif" alt="Add Return" width="70%"></a></li>
 </ol>
-<h3 id="step-6-run-the-integration">Step 6: Run the Integration.<a class="headerlink" href="#step-6-run-the-integration" title="Permanent link">&para;</a></h3>
+<h3 id="step-8-run-the-integration">Step 8: Run the Integration.<a class="headerlink" href="#step-8-run-the-integration" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the <code>Run</code> on the run button at top right corner to run the integration.</li>
+<li>Click on the <strong><code>Run</code></strong> button at top right corner to run the integration.</li>
 <li>The integration will be compiled and started in the embedded Ballerina runtime.</li>
 <li>Once the integration is started, you can access the service by navigating to <code>http://localhost:9090/hello/greeting</code> in your web browser.</li>
 </ol>
