@@ -1,33 +1,34 @@
 ## Overview
-In this guide, a simple integration will be built using the Kola Integrator plugin for Visual Studio Code. An HTTP service with a single resource (`greeting`) will be created to invoke the public [`HelloWorld`](https://apis.wso2.com/zvdz/mi-qsg/v1.0) API endpoint and return the response.
+In this guide, you'll build a simple integration using the Kola plugin for Visual Studio Code. You'll create an HTTP service with a single resource named `greeting` that invokes the public [Hello World API endpoint]((https://apis.wso2.com/zvdz/mi-qsg/v1.0)) and returns the response.
+
 <a href="{{base_path}}/assets/img/get-started/introduction.png"><img src="{{base_path}}/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a>
 
-### Step 1: Download the Visual Studio Code (VSCode) IDE.
-Download and install the Visual Studio Code IDE from [here](https://code.visualstudio.com/download).
+### Step 1: Install Visual Studio Code
+Download and install the [Visual Studio Code](https://code.visualstudio.com/download).
 
-### Step 2: Install the Kola VSCode profile.
-1. Open the Visual Studio Code IDE.
-2. Download and unzip the Kola VSCode profile from [here](https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/e3facddf34e08ac5c0e4f15b98527354388b6fc1.zip).
-3. Navigate to Settings->Profile->Profiles.
-4. Click on Profile dropdown and select `Import Profile`.
-5. Select the extracted Kola VSCode `Kola.code-profile` profile and click `Create`.
+
+### Step 2: Install the Kola VS Code profile.
+1. Download and unzip the [Kola VS Code profile](https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/7094ecfbd0aadd86346726832d495a8d6dff72c5.zip).
+2. Open the Visual Studio Code.
+3. Navigate to **Settings**->**Profile**->**Profiles**.
+4. Click on **New Profile** dropdown and select **Import Profile**.
+5. Select the extracted Kola VS Code `Kola.code-profile` profile and click **Create**.
     <a href="{{base_path}}/assets/img/get-started/import-profile.gif"><img src="{{base_path}}/assets/img/get-started/import-profile.gif" alt="Import Profile" width="70%"></a>
-6. Navigate to Settings->Profile and select the `Kola` profile from the dropdown.
-
+6. Navigate to **Settings**->**Profile** and select the `Kola` profile from the dropdown.
 
 ### Step 3: Setup Kola for the first time.
-1. Click on the Kola Integrator icon on the sidebar.
+1. Click on the Kola icon on the sidebar.
    <a href="{{base_path}}/assets/img/get-started/kola-icon.png"><img src="{{base_path}}/assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a>
-2. Click on the `Setup` button.
+2. Click on the `Set Up Kola` button.
 3. The setup wizard will install and configure the [Ballerina](https://ballerina.io/) distribution required for Kola.
 4. Click on the `Restart VSCode` button to complete the setup.
    <a href="{{base_path}}/assets/img/get-started/kola-setup.gif"><img src="{{base_path}}/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a>
 
-### Step 4: Create a new Integration Project.
+### Step 4: Create a new integration project.
 1. Click on the Kola Integrator icon on the sidebar.
 2. Click on the `Create New Integration` button.
-3. Enter the project name as `HelloWorld`.
-4. Select Project Directory by clicking on the `Select Location` button.
+3. Enter the **Integration Name** as `HelloWorld`.
+4. Select Project Directory by clicking on the **Select Location** button.
 5. Click on the `Create New Integration` button to create the integration project.
    <a href="{{base_path}}/assets/img/get-started/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a>
 
