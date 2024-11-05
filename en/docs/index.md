@@ -6,7 +6,7 @@
                     <b>Kola</b> is a comprehensive integration solution that simplifies your digital transformation journey. The Kola extension for Visual Studio Code (Kola for VS Code) enables developers to utilize the popular Visual Studio Code editor for integration development, enhancing the overall experience. This AI-assisted development environment offers a faster, customizable, and more intuitive experience, boosting productivity in integration development.
                     Kola provides a range of features that streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. By leveraging AI capabilities, Kola empowers developers to focus on high-value tasks, accelerating digital transformation efforts.
                     <div class="linkSet2" onclick="location.href='{{base_path}}/get-started/quick-start-guide';">
-                        <a href="get-started/quick-start-guide"><h3>Quick Start Guide</h3></a>
+                        <a href="get-started/quick-start-guide"><h3>Quick Start Guide ></h3></a>
                         <p>
                             Get started with Kola by running a simple integration use case in your local environment.
                         </p>
@@ -18,9 +18,13 @@
             </div>
         </div>
     </div>
+    <hr class="rounded">
     <div class="section02">
-        <div class="leftContent">
+        <div class="rightContent">
                 <div class="about-home">
+                    <div  style="text-align:left">
+                        <a href="{{base_path}}/assets/img/introduction/low-code.gif"><img src="{{base_path}}/assets/img/introduction/low-code.gif" alt="low-code" width="90%" style="padding-top: 60px" ></a>
+                    </div>
                     <div>
                         <h3>Low-code integration development</h3>
                         <p>
@@ -34,18 +38,13 @@
                             <li><b>AI-assisted development:</b> Kola’s AI capabilities provide intelligent suggestions and recommendations that help users write code more efficiently and accurately.</li>
                         </ul>
                     </div>
-                    <div  style="text-align:right">
-                        <a href="{{base_path}}/assets/img/introduction/low-code.gif"><img src="{{base_path}}/assets/img/introduction/low-code.gif" alt="low-code" width="90%" style="padding-top: 60px" ></a>
-                    </div>
                 </div>
         </div>
     </div>
+     <hr class="rounded">
      <div class="section02">
-        <div class="rightContent">
+        <div class="leftContent">
                 <div class="about-home">
-                    <div  style="text-align:left">
-                        <a href="{{base_path}}/assets/img/introduction/ai.gif"><img src="{{base_path}}/assets/img/introduction/ai.gif" alt="AI" width="90%" style="padding-top: 60px; padding-right: 50px" ></a>
-                    </div>
                     <div>
                         <h3>AI-assisted development</h3>
                         <p>
@@ -59,12 +58,19 @@
                             <li><b>Smart Refactoring and Code Restructuring:</b> Kola’s AI offers refactoring options, enabling confident code restructuring for a cleaner, maintainable codebase.</li>
                         </ul>
                     </div>
+                    <div  style="text-align:right">
+                        <a href="{{base_path}}/assets/img/introduction/ai.gif"><img src="{{base_path}}/assets/img/introduction/ai.gif" alt="AI" width="90%" style="padding-top: 60px; padding-right: 50px" ></a>
+                    </div>
                 </div>
         </div>
     </div>
+    <hr class="rounded">
     <div class="section02">
-        <div class="leftContent">
+        <div class="rightContent">
                 <div class="about-home">
+                    <div  style="text-align:left">
+                        <a href="{{base_path}}/assets/img/introduction/ballerina.png"><img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="80%" style="padding-top: 250px" ></a>
+                    </div>
                     <div>
                         <h3>Leverage the Power of Ballerina</h3>
                         <p>
@@ -78,9 +84,6 @@
                             <li><b>Unified Data Handling and Transformations:</b> Ballerina simplifies data handling with easy syntax for data transformations, reducing complexity in diverse data integrations.</li>
                             <li><b>Built-In Testing and Deployment Tools:</b> Ballerina includes tools for testing and deployment, ensuring scalable, reliable integrations in cloud environments.</li>
                         </ul>
-                    </div>
-                    <div  style="text-align:right">
-                        <a href="{{base_path}}/assets/img/introduction/ballerina.png"><img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="80%" style="padding-top: 250px" ></a>
                     </div>
                 </div>
         </div>
