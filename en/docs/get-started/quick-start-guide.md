@@ -14,7 +14,7 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 5. Click on the ✔️ sign in front of the `Kola` profile to select the profile.   
    <a href="{{base_path}}/assets/img/get-started/create-profile.gif"><img src="{{base_path}}/assets/img/get-started/create-profile.gif" alt="Create Profile" width="70%"></a>
 
-### Step 3: Setup Kola for the first time.
+### Step 3: Install the Kola extension.
 1. Go to the Extensions view by clicking on the extension icon on the sidebar or pressing `Ctrl + Shift + X` on Windows and Linux, or `shift + ⌘ + X` on a Mac.
 2. Search for `Kola` in the Extensions view search box.
 3. Click on the **`Install`** button to install the `Kola` extension.
