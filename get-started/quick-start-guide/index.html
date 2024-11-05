@@ -483,15 +483,15 @@ This documentation is a work in progress.
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-download-the-visual-studio-code-vscode-ide" class="md-nav__link">
-    Step 1: Download the Visual Studio Code (VSCode) IDE.
+  <a href="#step-1-install-visual-studio-code" class="md-nav__link">
+    Step 1: Install Visual Studio Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-install-the-kola-vscode-profile" class="md-nav__link">
-    Step 2: Install the Kola VSCode profile.
+  <a href="#step-2-install-the-kola-vs-code-profile" class="md-nav__link">
+    Step 2: Install the Kola VS Code profile.
   </a>
   
 </li>
@@ -505,7 +505,7 @@ This documentation is a work in progress.
         
           <li class="md-nav__item">
   <a href="#step-4-create-a-new-integration-project" class="md-nav__link">
-    Step 4: Create a new Integration Project.
+    Step 4: Create a new integration project.
   </a>
   
 </li>
@@ -787,15 +787,15 @@ This documentation is a work in progress.
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-download-the-visual-studio-code-vscode-ide" class="md-nav__link">
-    Step 1: Download the Visual Studio Code (VSCode) IDE.
+  <a href="#step-1-install-visual-studio-code" class="md-nav__link">
+    Step 1: Install Visual Studio Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-install-the-kola-vscode-profile" class="md-nav__link">
-    Step 2: Install the Kola VSCode profile.
+  <a href="#step-2-install-the-kola-vs-code-profile" class="md-nav__link">
+    Step 2: Install the Kola VS Code profile.
   </a>
   
 </li>
@@ -809,7 +809,7 @@ This documentation is a work in progress.
         
           <li class="md-nav__item">
   <a href="#step-4-create-a-new-integration-project" class="md-nav__link">
-    Step 4: Create a new Integration Project.
+    Step 4: Create a new integration project.
   </a>
   
 </li>
@@ -874,35 +874,35 @@ This documentation is a work in progress.
   <h1>Quick Start Guide</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>In this guide, a simple integration will be built using the Kola Integrator plugin for Visual Studio Code. An HTTP service with a single resource (<code>greeting</code>) will be created to invoke the public <a href="https://apis.wso2.com/zvdz/mi-qsg/v1.0"><code>HelloWorld</code></a> API endpoint and return the response.
-<a href="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a></p>
-<h3 id="step-1-download-the-visual-studio-code-vscode-ide">Step 1: Download the Visual Studio Code (VSCode) IDE.<a class="headerlink" href="#step-1-download-the-visual-studio-code-vscode-ide" title="Permanent link">&para;</a></h3>
-<p>Download and install the Visual Studio Code IDE from <a href="https://code.visualstudio.com/download">here</a>.</p>
-<h3 id="step-2-install-the-kola-vscode-profile">Step 2: Install the Kola VSCode profile.<a class="headerlink" href="#step-2-install-the-kola-vscode-profile" title="Permanent link">&para;</a></h3>
+<p>In this guide, you'll build a simple integration using the Kola plugin for Visual Studio Code. You'll create an HTTP service with a single resource named <code>greeting</code> that invokes the public <a href="(https://apis.wso2.com/zvdz/mi-qsg/v1.0)">Hello World API endpoint</a> and returns the response.</p>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/introduction.png" alt="introduction" width="70%"></a></p>
+<h3 id="step-1-install-visual-studio-code">Step 1: Install Visual Studio Code<a class="headerlink" href="#step-1-install-visual-studio-code" title="Permanent link">&para;</a></h3>
+<p>Download and install the <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.</p>
+<h3 id="step-2-install-the-kola-vs-code-profile">Step 2: Install the Kola VS Code profile.<a class="headerlink" href="#step-2-install-the-kola-vs-code-profile" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Open the Visual Studio Code IDE.</li>
-<li>Download and unzip the Kola VSCode profile from <a href="https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/e3facddf34e08ac5c0e4f15b98527354388b6fc1.zip">here</a>.</li>
-<li>Navigate to Settings-&gt;Profile-&gt;Profiles.</li>
-<li>Click on Profile dropdown and select <code>Import Profile</code>.</li>
-<li>Select the extracted Kola VSCode <code>Kola.code-profile</code> profile and click <code>Create</code>.
+<li>Download and unzip the <a href="https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/7094ecfbd0aadd86346726832d495a8d6dff72c5.zip">Kola VS Code profile</a>.</li>
+<li>Open the Visual Studio Code.</li>
+<li>Navigate to <strong>Settings</strong>-&gt;<strong>Profile</strong>-&gt;<strong>Profiles</strong>.</li>
+<li>Click on <strong>New Profile</strong> dropdown and select <strong>Import Profile</strong>.</li>
+<li>Select the extracted Kola VS Code <code>Kola.code-profile</code> profile and click <strong>Create</strong>.
     <a href="https://wso2.github.io/docs-kola/assets/img/get-started/import-profile.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/import-profile.gif" alt="Import Profile" width="70%"></a></li>
-<li>Navigate to Settings-&gt;Profile and select the <code>Kola</code> profile from the dropdown.</li>
+<li>Navigate to <strong>Settings</strong>-&gt;<strong>Profile</strong> and select the <code>Kola</code> profile from the dropdown.</li>
 </ol>
 <h3 id="step-3-setup-kola-for-the-first-time">Step 3: Setup Kola for the first time.<a class="headerlink" href="#step-3-setup-kola-for-the-first-time" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the Kola Integrator icon on the sidebar.
+<li>Click on the Kola icon on the sidebar.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-icon.png"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-icon.png" alt="Kola Icon" width="70%"></a></li>
-<li>Click on the <code>Setup</code> button.</li>
+<li>Click on the <code>Set Up Kola</code> button.</li>
 <li>The setup wizard will install and configure the <a href="https://ballerina.io/">Ballerina</a> distribution required for Kola.</li>
 <li>Click on the <code>Restart VSCode</code> button to complete the setup.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/kola-setup.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a></li>
 </ol>
-<h3 id="step-4-create-a-new-integration-project">Step 4: Create a new Integration Project.<a class="headerlink" href="#step-4-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
+<h3 id="step-4-create-a-new-integration-project">Step 4: Create a new integration project.<a class="headerlink" href="#step-4-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the Kola Integrator icon on the sidebar.</li>
 <li>Click on the <code>Create New Integration</code> button.</li>
-<li>Enter the project name as <code>HelloWorld</code>.</li>
-<li>Select Project Directory by clicking on the <code>Select Location</code> button.</li>
+<li>Enter the <strong>Integration Name</strong> as <code>HelloWorld</code>.</li>
+<li>Select Project Directory by clicking on the <strong>Select Location</strong> button.</li>
 <li>Click on the <code>Create New Integration</code> button to create the integration project.
    <a href="https://wso2.github.io/docs-kola/assets/img/get-started/create-integration.gif"><img src="https://wso2.github.io/docs-kola/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a></li>
 </ol>
