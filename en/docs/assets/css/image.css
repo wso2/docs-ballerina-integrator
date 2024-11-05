@@ -65,3 +65,8 @@ th, td {
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
     background-color: hsla(var(--md-hue),25%,25%,1)
 }
+
+hr.rounded {
+    border-top: 1px #bbb;
+    border-radius: 1px;
+}
