@@ -20,7 +20,7 @@
     
     
       
-        <title>Connecting to Redis with Kola - Kola Documentation</title>
+        <title>Message Routing - Kola Documentation</title>
       
     
     
@@ -52,7 +52,7 @@
     
       <link rel="stylesheet" href="../../assets/css/mitheme.css">
     
-      <link rel="stylesheet" href="../../assets/css/image.css">
+      <link rel="stylesheet" href="../../assets/css/custom.css">
     
       <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#connecting-to-redis-with-kola" class="md-skip">
+        <a href="#message-routing" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +152,7 @@ This documentation is a work in progress.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Connecting to Redis with Kola
+              Message Routing
             
           </span>
         </div>
@@ -673,7 +673,7 @@ This documentation is a work in progress.
                   
 
   
-    <a href="https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/learn/connect-database.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/learn/message-routing.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -682,15 +682,16 @@ This documentation is a work in progress.
     
       
     
-    <a href="https://github.com/wso2/docs-ballerina-integrator/raw/main/en/docs/learn/connect-database.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-ballerina-integrator/raw/main/en/docs/learn/message-routing.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="connecting-to-redis-with-kola">Connecting to Redis with Kola<a class="headerlink" href="#connecting-to-redis-with-kola" title="Permanent link">&para;</a></h1>
-<p>In this guide, you will learn how to connect to a redis server and perform basic operations such as <code>set</code>, <code>get</code>, <code>delete</code>, and <code>exists</code> using the Kola Integrator.</p>
+<h1 id="message-routing">Message Routing<a class="headerlink" href="#message-routing" title="Permanent link">&para;</a></h1>
+<p>In this guide, you will learn how to create a simple integration to route messages based on the content of the message using the Kola. 
+An HTTP service with a single resource (<code>route</code>) will be created to accept a message and route the message based on the content. </p>
 
 
 

@@ -56,7 +56,7 @@
     
       <link rel="stylesheet" href="../../assets/css/mitheme.css">
     
-      <link rel="stylesheet" href="../../assets/css/image.css">
+      <link rel="stylesheet" href="../../assets/css/custom.css">
     
       <link rel="stylesheet" href="../../assets/lib/json-formatter/json-formatter.css">
     
@@ -856,30 +856,30 @@ This documentation is a work in progress.
 <h3 id="step-1-create-a-new-integration-project">Step 1: Create a new Integration Project.<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the Kola Integrator icon on the sidebar.</li>
-<li>Click on the <code>Create New Integration</code> button.</li>
+<li>Click on the <strong><code>Create New Integration</code></strong> button.</li>
 <li>Enter the project name as <code>JsonToXml</code>.</li>
-<li>Select Project Directory by clicking on the <code>Select Location</code> button.</li>
-<li>Click on the <code>Create New Integration</code> button to create the integration project.
+<li>Select Project Directory by clicking on the <strong><code>Select Location</code></strong> button.</li>
+<li>Click on the <strong><code>Create New Integration</code></strong> button to create the integration project.
    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/create-integration.gif"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/create-integration.gif" alt="Create Integration" width="70%"></a></li>
 </ol>
 <h3 id="step-2-create-an-integration-service">Step 2: Create an Integration Service.<a class="headerlink" href="#step-2-create-an-integration-service" title="Permanent link">&para;</a></h3>
 <ol>
-<li>In the design view, click on the <code>Add Construct</code> button.</li>
-<li>Select <code>Service</code> from the menu.</li>
-<li>Select <code>HTTP Service</code> from the Service Type dropdown.</li>
-<li>Select <code>Design From Scratch</code> option.</li>
+<li>In the design view, click on the <strong><code>Add Construct</code></strong> button.</li>
+<li>Select <strong><code>Service</code></strong> from the menu.</li>
+<li>Select <strong><code>HTTP Service</code></strong> from the Service Type dropdown.</li>
+<li>Select <strong><code>Design From Scratch</code></strong> option.</li>
 <li>Enter the service name as <code>JsonToXml</code>, path as <code>/convert</code>, and <code>9090</code> as the port.</li>
-<li>Click on the <code>Create Service</code> button to create the new service with the specified configurations.</li>
+<li>Click on the <strong><code>Create Service</code></strong> button to create the new service with the specified configurations.</li>
 </ol>
 <h3 id="step-3-update-the-resource-method">Step 3: Update the resource method<a class="headerlink" href="#step-3-update-the-resource-method" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on three dots appear in front of the <code>greeting</code> resource and select edit to view and update the resource details.</li>
-<li>Change the resource HTTP method to <code>POST</code>.</li>
+<li>Change the resource HTTP method to <strong><code>POST</code></strong>.</li>
 <li>Change the resource name as <code>toXml</code></li>
 <li>Add a payload parameter named <code>input</code> to the resource of type <code>json</code>. </li>
 <li>Change the 200 response return type to <code>xml</code>.</li>
-<li>Add a new response of type <code>HttpBadRequest</code> under the responses. </li>
-<li>Click on the <code>Save</code> button to update the resource with the specified configurations.
+<li>Add a new response of type <strong><code>HttpBadRequest</code></strong> under the responses. </li>
+<li>Click on the <strong><code>Save</code></strong> button to update the resource with the specified configurations.
     <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/update-resource.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/update-resource.png" alt="Update Resource" width="70%"></a></li>
 </ol>
 <div class="admonition info">
@@ -890,7 +890,7 @@ This documentation is a work in progress.
 <ol>
 <li>Click on the <code>toXml</code> resource to navigate to the resource implementation designer view.</li>
 <li>Hover to the arrow after start and click the ➕ button to add a new action to the resource.</li>
-<li>Select <code>Variable</code> from the node panel on the left.</li>
+<li>Select <strong><code>Variable</code></strong> from the node panel on the left.</li>
 <li>Change the variable name to <code>xmlData</code>, type as <code>xml | ()</code> and expression to <code>check xmldata:fromJson(input)</code>.
    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-variable.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-variable.png"" alt="Add variable" width="70%"></a></li>
 </ol>
@@ -900,14 +900,14 @@ This documentation is a work in progress.
 </div>
 <h3 id="step-5-error-handling">Step 5: Error handling<a class="headerlink" href="#step-5-error-handling" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the ➕ button again and select <code>If</code> from the node panel.</li>
-<li>Enter the condition as <code>xmlData is xml</code> and press <code>save</code>.
+<li>Click on the ➕ button again and select <strong><code>If</code></strong> from the node panel.</li>
+<li>Enter the condition as <code>xmlData is xml</code> and press <strong><code>Save</code></strong>.
    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-if.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-if.png"" alt="Add If" width="70%"></a></li>
-<li>Click on the <code>If</code> condition true(<code>xmlData is xml</code>)  path ➕ sign and add a <code>Return</code> from the node panel.</li>
-<li>Select the <code>xmlData</code> variable from the dropdown and click <code>Save</code>.
+<li>Click on the <code>If</code> condition true(<code>xmlData is xml</code>)  path ➕ sign and add a <strong><code>Return</code></strong> from the node panel.</li>
+<li>Select the <code>xmlData</code> variable from the dropdown and click <strong><code>Save</code></strong>.
    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-return.png"" alt="Add Return" width="70%"></a></li>
-<li>Click on the <code>If</code> condition <code>Else</code> path ➕ sign and add another <code>Return</code> from the node panel.</li>
-<li>Enter <code>http:BadRequest</code> as the value and click <code>Save</code>.
+<li>Click on the <code>If</code> condition <code>Else</code> path ➕ sign and add another <strong><code>Return</code></strong> from the node panel.</li>
+<li>Enter <code>http:BadRequest</code> as the value and click <strong><code>Save</code></strong>.
    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-else-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/add-else-return.png"" alt="Add Else Return" width="70%"></a></li>
 <li>The final design will look like below.           <br />
    <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/final-design.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/final-design.png"" alt="Final Design" width="70%"></a></li>
@@ -939,7 +939,7 @@ service /convert on new http:Listener(9090) {
 </ol>
 <h3 id="step-6-run-the-integration">Step 6: Run the integration<a class="headerlink" href="#step-6-run-the-integration" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the <code>Run</code> on the run button in the top right corner to run the integration.</li>
+<li>Click on the <strong><code>Run</code></strong> on the run button in the top right corner to run the integration.</li>
 <li>The integration will start and the service will be available at <code>http://localhost:9090/convert</code>.</li>
 <li>The service can be tested using a tool like <a href="https://www.postman.com/">Postman</a> or <a href="https://curl.se/">curl</a> by sending a POST request with a JSON payload to the service endpoint.
    <div class="highlight"><pre><span></span><code>curl -X POST &quot;http://localhost:9090/convert/toXml&quot; -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;car&quot;:&quot;Honda&quot;}&#39;
