@@ -76,8 +76,7 @@ nav:
       - Quick Start Guide: get-started/quick-start-guide.md
       - Key Concepts: get-started/key-concepts.md
   - Learn:
-      - Message Transformation: learn/json-xml-transform.md
-      - Work with Database: learn/connect-database.md
+      - Message Transformation: learn/message-transformation.md
   - Build:
       - Build an executable JAR: build/jar.md
       - Build a Docker Image : build/docker.md
