@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div  style="text-align:right">
-                    <a href="{{base_path}}/assets/img/introduction/kola.png"><img src="{{base_path}}/assets/img/introduction/kola.png" alt="Kola" width="95%"></a>
+                    <a href="{{base_path}}/assets/img/introduction/img.png"><img src="{{base_path}}/assets/img/introduction/img.png" alt="Kola" width="95%"></a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
         <div class="rightContent">
                 <div class="about-home">
                     <div  style="text-align:left">
-                        <a href="{{base_path}}/assets/img/introduction/ballerina.png"><img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="80%" style="padding-top: 250px" ></a>
+                        <a href="{{base_path}}/assets/img/introduction/ballerina.png"><img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="50%" style="padding-top: 250px" ></a>
                     </div>
                     <div>
                         <h3>Leverage the Power of Ballerina</h3>

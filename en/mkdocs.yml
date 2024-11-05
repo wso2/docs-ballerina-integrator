@@ -77,6 +77,7 @@ nav:
       - Key Concepts: get-started/key-concepts.md
   - Learn:
       - Message Transformation: learn/message-transformation.md
+      - Message Routing: learn/message-routing.md
   - Build:
       - Build an executable JAR: build/jar.md
       - Build a Docker Image : build/docker.md
@@ -162,5 +163,5 @@ extra:
     - type: linkedin
       link: https://www.linkedin.com/company/wso2
   # site_version: Uncomment to specify a version
-  base_path: https://wso2.github.io/docs-kola
-#  base_path: http://localhost:8000
+#  base_path: https://wso2.github.io/docs-kola
+  base_path: http://localhost:8000

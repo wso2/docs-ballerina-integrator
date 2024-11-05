@@ -14,6 +14,9 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 5. Click on the ✔️ sign in front of the `Kola` profile to select the profile.   
    <a href="{{base_path}}/assets/img/get-started/create-profile.gif"><img src="{{base_path}}/assets/img/get-started/create-profile.gif" alt="Create Profile" width="70%"></a>
 
+!!! info "Profile"
+    To learn more about profiles, see [Visual Studio Code Profiles](https://code.visualstudio.com/docs/editor/profiles).
+
 ### Step 3: Install the Kola extension.
 1. Go to the Extensions view by clicking on the extension icon on the sidebar or pressing `Ctrl + Shift + X` on Windows and Linux, or `shift + ⌘ + X` on a Mac.
 2. Search for `Kola` in the Extensions view search box.
@@ -31,10 +34,10 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 
 ### Step 5: Create a new integration project.
 1. Click on the Kola Integrator icon on the sidebar.
-2. Click on the `Create New Integration` button.
-3. Enter the **Integration Name** as `HelloWorld`.
-4. Select Project Directory by clicking on the **Select Location** button.
-5. Click on the `Create New Integration` button to create the integration project.
+2. Click on the **`Create New Integration`** button.
+3. Enter the Integration Name as `HelloWorld`.
+4. Select Project Directory by clicking on the **`Select Location`** button.
+5. Click on the **`Create New Integration`** button to create the integration project.
    <a href="{{base_path}}/assets/img/get-started/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a>
 
 ### Step 6: Create an Integration Service.
