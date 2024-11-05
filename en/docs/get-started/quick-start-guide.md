@@ -6,6 +6,7 @@ In this guide, you'll build a simple integration using the Kola plugin for Visua
 ### Step 1: Install Visual Studio Code
 Download and install the [Visual Studio Code](https://code.visualstudio.com/download).
 
+
 ### Step 2: Install the Kola VS Code profile.
 1. Download and unzip the [Kola VS Code profile](https://gist.github.com/kanushka/8d08c83230151840ac22a64fdbe2fb6f/archive/7094ecfbd0aadd86346726832d495a8d6dff72c5.zip).
 2. Open the Visual Studio Code.

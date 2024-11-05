@@ -1,13 +1,13 @@
-# WSO2 Ballerina Integrator Documentation
+# WSO2 Kola Documentation
 
-[![pages-build-deployment](https://github.com/wso2/docs-ballerina-integrator/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/wso2/docs-ballerina-integrator/actions/workflows/pages/pages-build-deployment)
-[![Ballerina Integrator Docs Publish](https://github.com/wso2/docs-ballerina-integrator/actions/workflows/publish_docs.yaml/badge.svg)](https://github.com/wso2/docs-ballerina-integrator/actions/workflows/publish_docs.yaml)
+[![pages-build-deployment](https://github.com/wso2/docs-kola/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/wso2/docs-kola/actions/workflows/pages/pages-build-deployment)
+[![Ballerina Integrator Docs Publish](https://github.com/wso2/docs-kola/actions/workflows/publish_docs.yaml/badge.svg)](https://github.com/wso2/docs-kola/actions/workflows/publish_docs.yaml)
 
 This repository contains the source code for WSO2 Ballerina Integrator documentation.
 
 This repository is open and we welcome your contributions!
 
-[//]: # ( To access the WSO2 Ballerina Integrator documentation site, visit https://ballerina-integrator.docs.wso2.com/.)
+[//]: # ( To access the WSO2 Ballerina Integrator documentation site, visit https://wso2.github.io/docs-kola/.)
 
 Follow the below topics to learn more:
 
@@ -45,14 +45,14 @@ Follow the steps below if you need to perform a major modification (For example:
 
 2. In your forked repository, make your changes in a new Git branch.
 
-3. The `docs-ballerina-integrator/en/docs/` directory contains all the `.md` files with content. Find the relevant location and do the modification.
+3. The `docs-kola/en/docs/` directory contains all the `.md` files with content. Find the relevant location and do the modification.
 
    > **NOTE:**
    >
    > Refer to the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for styling and formatting.
 >
 
-4. Navigate to the `docs-ballerina-integrator/en/` directory in the terminal and build the repository with the following command:
+4. Navigate to the `docs-kola/en/` directory in the terminal and build the repository with the following command:
 
     ```shell
     mkdocs serve
@@ -141,14 +141,14 @@ pip is already installed if you are using Python 3 >=3.4 downloaded from [python
 
 ### Step 3 - Fork the repository
 
-Fork the GitHub repository: https://github.com/wso2/docs-ballerina-integrator.git
+Fork the GitHub repository: https://github.com/wso2/docs-kola.git
 
 ### Step 4 - Clone the repository
 
 Navigate to the location where you want to clone the repository and clone the forked repository.
 
    ```shell
-   git clone https://github.com/<git-username>/docs-ballerina-integrator.git
+   git clone https://github.com/<git-username>/docs-kola.git
    ```
 
 ### Step 5 - Install the dependencies
@@ -156,7 +156,7 @@ Navigate to the location where you want to clone the repository and clone the fo
 1. Navigate to the `<language-folder>` (`en`) inside the folder containing the repository that you cloned.
 
     ```shell
-    cd docs-ballerina-integrator/en/
+    cd docs-kola/en/
     ```
 
 2. Install the required pip packages.
@@ -216,7 +216,7 @@ Navigate to the location where you want to clone the repository and clone the fo
    >
    > If you are adding new images or new pages to the doc space, update the base path when locally running the project.
    >
-   > 1. Open the `mkdocs.yml` file located in the `docs-ballerina-integrator/en/docs/` directory.
+   > 1. Open the `mkdocs.yml` file located in the `docs-kola/en/docs/` directory.
    >
    > 2. Update the `base_path` to `http://localhost:8000/en/latest` by uncommenting the entry.
    >
