@@ -14,6 +14,10 @@
       
       
       
+        <link rel="prev" href="../message-transformation/">
+      
+      
+        <link rel="next" href="../../build/jar/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
@@ -292,13 +296,15 @@ This documentation is a work in progress.
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../message-transformation/" class="md-tabs__link">
+      <a href="../message-transformation/" class="md-tabs__link md-tabs__link--active">
         Learn
       </a>
     </li>
@@ -471,14 +477,16 @@ This documentation is a work in progress.
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -487,7 +495,7 @@ This documentation is a work in progress.
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Learn
@@ -503,6 +511,123 @@ This documentation is a work in progress.
       <a href="../message-transformation/" class="md-nav__link">
         Message Transformation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Message Routing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Message Routing
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new Integration Project.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-an-integration-service" class="md-nav__link">
+    Step 2: Create an Integration Service.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-define-types" class="md-nav__link">
+    Step 3: Define types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-connectors" class="md-nav__link">
+    Step 3: Add connectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-a-resource-method" class="md-nav__link">
+    Step 3: Add a resource method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-add-the-routing-logic" class="md-nav__link">
+    Step 4: Add the routing logic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-run-the-service" class="md-nav__link">
+    Step 5: Run the service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -660,6 +785,83 @@ This documentation is a work in progress.
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new Integration Project.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-an-integration-service" class="md-nav__link">
+    Step 2: Create an Integration Service.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-define-types" class="md-nav__link">
+    Step 3: Define types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-connectors" class="md-nav__link">
+    Step 3: Add connectors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-add-a-resource-method" class="md-nav__link">
+    Step 3: Add a resource method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-add-the-routing-logic" class="md-nav__link">
+    Step 4: Add the routing logic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-run-the-service" class="md-nav__link">
+    Step 5: Run the service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -690,8 +892,339 @@ This documentation is a work in progress.
 
 
 <h1 id="message-routing">Message Routing<a class="headerlink" href="#message-routing" title="Permanent link">&para;</a></h1>
-<p>In this guide, you will learn how to create a simple integration to route messages based on the content of the message using the Kola. 
-An HTTP service with a single resource (<code>route</code>) will be created to accept a message and route the message based on the content. </p>
+<p>In this tutorial, you'll create a service that allows users to reserve appointments at various hospitals. Requests will be directed to the appropriate hospital based on the request payload's content.
+To accomplish this, you’ll build a REST service with a single resource in Visual Studio Code using the Ballerina Swan Lake extension. The resource will handle user requests, identify the hospital endpoint based on the hospital ID, forward the request to the specified hospital service to make the reservation, and return the reservation details.</p>
+<p>Here’s an overview of the process flow.</p>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/message-routing/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/introduction.png" alt="Message Routing" width="70%"></a></p>
+<ol>
+<li>Receive a request with a JSON payload similar to the following.
+    <div class="highlight"><span class="filename">ReservationRequest.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hospital_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grandoak&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;appointment_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>
+<p>Extract the <code>hospital_id</code> field and select the corresponding hospital service endpoint.</p>
+<ul>
+<li>grandoak -&gt; http://localhost:9090/grandoak/categories</li>
+<li>clemency -&gt; http://localhost:9090/clemency/categories</li>
+<li>pinevalley -&gt; http://localhost:9090/pinevalley/categories </li>
+</ul>
+</li>
+<li>
+<p>Forward the request to the selected hospital service and retrieve the response which will be similar to the following.
+    <div class="highlight"><span class="filename">ReservationResponse.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;appointmentNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">       </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgery&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;availability&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9.00 a.m - 11.00 a.m&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;fee&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7000.0</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">       </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Download the JAR file for the <a href="https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar">backend service</a> and execute the following command to start the service.</li>
+<li>Install the latest <a href="https://ballerina.io/downloads/">Ballerina Swan Lake</a> version.</li>
+</ol>
+<h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
+<p>Follow the steps below to implement the message routing service.</p>
+<h3 id="step-1-create-a-new-integration-project">Step 1: Create a new Integration Project.<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the Kola Integrator icon on the sidebar.</li>
+<li>Click on the <strong><code>Create New Integration</code></strong> button.</li>
+<li>Enter the project name as <code>MessageRouting</code>.</li>
+<li>Select Project Directory and click on the <strong><code>Select Location</code></strong> button.</li>
+<li>Click on the <strong><code>Create New Integration</code></strong> button to create the integration project.</li>
+</ol>
+<h3 id="step-2-create-an-integration-service">Step 2: Create an Integration Service.<a class="headerlink" href="#step-2-create-an-integration-service" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In the design view, click on the <strong><code>Add Construct</code></strong> button.</li>
+<li>Select <strong><code>Service</code></strong> from the menu.</li>
+<li>Select <strong><code>HTTP Service</code></strong> from the Service Type dropdown.</li>
+<li>Select <strong><code>Design From Scratch</code></strong> option.</li>
+<li>Enter the service name as <code>HealthCare</code>, path as <code>/healthcare</code>, and <code>8290</code> as the port.</li>
+<li>Click on the <strong><code>Create Service</code></strong> button to create the new service with the specified configurations.</li>
+</ol>
+<h3 id="step-3-define-types">Step 3: Define types<a class="headerlink" href="#step-3-define-types" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <strong><code>Add Construct</code></strong> button and select <strong><code>Type</code></strong>.</li>
+<li>Select <strong><code>Import a JSON</code></strong> from the Type dropdown.</li>
+<li>Generate record types corresponding to the response from the hospital backend service by providing a sample of the expected JSON payload.
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;appointmentNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgery&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;availability&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9.00 a.m - 11.00 a.m&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;fee&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7000.0</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>Click on the <strong><code>Create Type</code></strong> button to create the new type with the specified configurations.
+<a href="https://wso2.github.io/docs-kola/assets/img/message-routing/types.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/types.png" alt="Create Type" width="70%"></a></li>
+</ol>
+<h3 id="step-3-add-connectors">Step 3: Add connectors<a class="headerlink" href="#step-3-add-connectors" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Navigate to design view and click on the <strong><code>Add Connector</code></strong> button.</li>
+<li>Search and select the <strong><code>HTTP</code></strong> connector.</li>
+<li>Enter the connector name as <code>grandOakEP</code>, URL as <code>http://localhost:9090/grandoak/categories</code>, and config as <code>{}</code>.</li>
+<li>Click on the <strong><code>Create Connector</code></strong> button to create the new connector with the specified configurations.
+<a href="https://wso2.github.io/docs-kola/assets/img/message-routing/add-connector.gif"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/add-connector.gif" alt="Add Connector" width="70%"></a></li>
+<li>
+<p>Repeat the above steps to add connectors for the <code>clemency</code> and <code>pinevalley</code> hospitals with the following configurations.</p>
+<table>
+<thead>
+<tr>
+<th>Connector Name</th>
+<th>URL</th>
+<th>Config</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>grandOakEP</td>
+<td>http://localhost:9090/grandoak/categories</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td>clemencyEP</td>
+<td>http://localhost:9090/clemency/categories</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td>pineValleyEP</td>
+<td>http://localhost:9090/pinevalley/categories</td>
+<td><code>{}</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>The final connectors will look like below.   <br />
+<a href="https://wso2.github.io/docs-kola/assets/img/message-routing/connectors.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/connectors.png" alt="Connectors" width="70%"></a></p>
+</li>
+</ol>
+<details class="info"><summary>HTTP Connector</summary><p>To learn more about HTTP client, see <a href="https://ballerina.io/learn/by-example/http-client-send-request-receive-response/">Ballerina HTTP Client</a>.
+See supported client configurations in the <a href="https://central.ballerina.io/ballerina/http/2.12.2#ClientConfiguration">HTTP Client Configurations</a>.</p>
+</details>
+<h3 id="step-3-add-a-resource-method">Step 3: Add a resource method<a class="headerlink" href="#step-3-add-a-resource-method" title="Permanent link">&para;</a></h3>
+<ol>
+<li>The service will be generated with a default resource named <code>greeting</code>. Click on the service to view and update the resource details.</li>
+<li>Click on three dots appear in front of the <code>greeting</code> resource and select edit to view and update the resource details.</li>
+<li>Change the resource HTTP method to <strong><code>POST</code></strong>.</li>
+<li>Change the resource name as <code>categories/[string category]/reserve</code></li>
+<li>Add a payload parameter named <code>reservation</code> to the resource of type <code>ReservationRequest</code>.</li>
+<li>Change the 201 response return type to <code>ReservationResponse</code>.</li>
+<li>Add a new response of type <strong><code>HttpNotFound</code></strong> under the responses.</li>
+<li>Click on the <strong><code>Save</code></strong> button to update the resource with the specified configurations.
+   <a href="https://wso2.github.io/docs-kola/assets/img/message-routing/update-resource.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/update-resource.png" alt="Update Resource" width="70%"></a></li>
+</ol>
+<h3 id="step-4-add-the-routing-logic">Step 4: Add the routing logic<a class="headerlink" href="#step-4-add-the-routing-logic" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <code>categories/[string category]/reserve</code> resource to navigate to the resource implementation designer view.</li>
+<li>Hover to the arrow after start and click the ➕ button to add a new action to the resource.</li>
+<li>Select <strong><code>Variable</code></strong> from the node panel on the left. This variable will be used to store the request payload for the hospital service.</li>
+<li>Change the variable name to <code>hospitalRequset</code>, type as <code>json</code> and expression:
+    <div class="highlight"><pre><span></span><code>     {
+     patient: reservation.patient.toJson(),
+     doctor: reservation.doctor,
+     hospital: reservation.hospital,
+     appointment_date: reservation.appointment_date
+    }
+</code></pre></div></li>
+<li>Select <strong><code>If</code></strong> from the node panel on the left.</li>
+<li>Enter the conditions as <strong><code>If</code></strong> <strong><code>Else If</code></strong> blocks as below for each hospital id and press <strong><code>Save</code></strong>.
+ conditions:<ul>
+<li>grandOak -&gt; <code>reservation.hospital_id == "grandoak"</code></li>
+<li>clemency -&gt; <code>reservation.hospital_id == "clemency"</code></li>
+<li>pineValley -&gt; <code>reservation.hospital_id == "pinevalley"</code>
+   <a href="https://wso2.github.io/docs-kola/assets/img/message-routing/add-if.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/add-if.png"" alt="Add If" width="70%"></a></li>
+</ul>
+</li>
+<li>Select the <code>grandOakEP</code> condition true path ➕ sign and select <strong><code>grandOakEP</code></strong> connector from the node panel.
+<a href="https://wso2.github.io/docs-kola/assets/img/message-routing/add-connector-action.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/add-connector-action.png" alt="Add Connector Action" width="70%"></a></li>
+<li>
+<p>Select <strong><code>Post</code></strong> from the dropdown. Then fill the required fields with values given below and click <strong><code>Save</code></strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td><code>oakEPResponse</code></td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td><code>ReserveResponse</code></td>
+</tr>
+<tr>
+<td>Resource Path</td>
+<td><code>/[category]/reserve</code></td>
+</tr>
+<tr>
+<td>message</td>
+<td><code>hospitalRequset</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click on the ➕ sign again and select <strong><code>Return</code></strong> from the node panel. Select the <code>epReponse</code> variable from the dropdown and click <strong><code>Save</code></strong>.</p>
+</li>
+<li>
+<p>Repeat the 7,8,9 steps for the <code>clemency</code> and <code>pinevalley</code> hospitals with the following configurations.</p>
+<p><strong>clemency:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td><code>clemncyEPResponse</code></td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td><code>ReserveResponse</code></td>
+</tr>
+<tr>
+<td>Resource Path</td>
+<td><code>/[category]/reserve</code></td>
+</tr>
+<tr>
+<td>message</td>
+<td><code>hospitalRequset</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>pinevalley:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td><code>pineValleyEPResponse</code></td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td><code>ReserveResponse</code></td>
+</tr>
+<tr>
+<td>Resource Path</td>
+<td><code>/[category]/reserve</code></td>
+</tr>
+<tr>
+<td>message</td>
+<td><code>hospitalRequset</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>For the else condition, click on the <code>If</code> condition <code>Else</code> path ➕ sign and add a <strong><code>Return</code></strong> from the node panel. Enter <code>http:NOT_FOUND</code> as the value and click <strong><code>Save</code></strong>.             </p>
+</li>
+<li>The final design will look like below.           <br />
+    <a href="https://wso2.github.io/docs-kola/assets/img/message-routing/final-design.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/final-design.png"" alt="Final Design" width="70%"></a></li>
+</ol>
+<h3 id="step-5-run-the-service">Step 5: Run the service<a class="headerlink" href="#step-5-run-the-service" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Start the backend service by executing the following command.
+    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>bal<span class="w"> </span>run<span class="w"> </span>hospitalservice.jar
+</code></pre></div></li>
+<li>Click on the <strong><code>Run</code></strong> on the run button in the top right corner to run the service.</li>
+<li>The service will start and the service will be available at <code>http://localhost:8290/healthcare/categories/[category]/reserve</code>.</li>
+<li>Use a tool like <a href="https://www.postman.com/">Postman</a> to send a POST request to the service with the following payload.
+   <div class="highlight"><pre><span></span><code><span class="w"> </span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://localhost:8290/healthcare/categories/surgery/reserve&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1"> &quot;patient&quot;: {</span>
+<span class="s1"> &quot;name&quot;: &quot;John Doe&quot;,</span>
+<span class="s1"> &quot;dob&quot;: &quot;1940-03-19&quot;,</span>
+<span class="s1"> &quot;ssn&quot;: &quot;234-23-525&quot;,</span>
+<span class="s1"> &quot;address&quot;: &quot;California&quot;,</span>
+<span class="s1"> &quot;phone&quot;: &quot;8770586755&quot;,</span>
+<span class="s1"> &quot;email&quot;: &quot;johndoe@gmail.com&quot;</span>
+<span class="s1"> },</span>
+<span class="s1"> &quot;doctor&quot;: &quot;thomas collins&quot;,</span>
+<span class="s1"> &quot;hospital_id&quot;: &quot;grandoak&quot;,</span>
+<span class="s1"> &quot;hospital&quot;: &quot;grand oak community hospital&quot;,</span>
+<span class="s1"> &quot;appointment_date&quot;: &quot;2023-10-02&quot;</span>
+<span class="s1"> }&#39;</span>
+</code></pre></div></li>
+<li>The response will be similar to the following.
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;appointmentNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
+<span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgery&quot;</span><span class="p">,</span>
+<span class="nt">&quot;availability&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9.00 a.m - 11.00 a.m&quot;</span><span class="p">,</span>
+<span class="nt">&quot;fee&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7000.0</span>
+<span class="p">},</span>
+<span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
+<span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
+<span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
+<span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
+<span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ol>
 
 
 
@@ -708,6 +1241,42 @@ An HTTP service with a single resource (<code>route</code>) will be created to a
       
       
         <footer class="md-footer">
+  
+  
+  <nav class="md-footer__inner md-grid" aria-label="Footer" >
+    
+    
+    <a href="../message-transformation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Message Transformation" rel="prev">
+      <div class="md-footer__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </div>
+      <div class="md-footer__title">
+        <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+          Message Transformation
+        </div>
+      </div>
+    </a>
+    
+    
+    
+    <a href="../../build/jar/" class="md-footer__link md-footer__link--next" aria-label="Next: Build an executable JAR" rel="next">
+      <div class="md-footer__title">
+        <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+          Build an executable JAR
+        </div>
+      </div>
+      <div class="md-footer__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+      </div>
+    </a>
+    
+  </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

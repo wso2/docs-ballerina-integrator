@@ -17,7 +17,7 @@
         <link rel="prev" href="../../get-started/key-concepts/">
       
       
-        <link rel="next" href="../../build/jar/">
+        <link rel="next" href="../message-routing/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#message-transformation-json-to-xml" class="md-skip">
+        <a href="#message-transformation" class="md-skip">
           Skip to content
         </a>
       
@@ -605,6 +605,20 @@ This documentation is a work in progress.
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../message-routing/" class="md-nav__link">
+        Message Routing
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -849,7 +863,7 @@ This documentation is a work in progress.
   
 
 
-<h1 id="message-transformation-json-to-xml">Message Transformation: JSON to XML<a class="headerlink" href="#message-transformation-json-to-xml" title="Permanent link">&para;</a></h1>
+<h1 id="message-transformation">Message Transformation<a class="headerlink" href="#message-transformation" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This guide explains how to create a simple integration to convert a JSON payload to an XML payload using the Kola. An HTTP service with a single resource (<code>toXml</code>) will be created to accept a JSON payload and return the XML representation of the payload.
 <a href="https://wso2.github.io/docs-kola/assets/img/json-to-xml/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/json-to-xml/introduction.png" alt="JSON to XML" width="70%"></a></p>
@@ -988,13 +1002,13 @@ service /convert on new http:Listener(9090) {
     
     
     
-    <a href="../../build/jar/" class="md-footer__link md-footer__link--next" aria-label="Next: Build an executable JAR" rel="next">
+    <a href="../message-routing/" class="md-footer__link md-footer__link--next" aria-label="Next: Message Routing" rel="next">
       <div class="md-footer__title">
         <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-          Build an executable JAR
+          Message Routing
         </div>
       </div>
       <div class="md-footer__button md-icon">
