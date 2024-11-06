@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div  style="text-align:right">
-                    <a href="{{base_path}}/assets/img/introduction/img.png"><img src="{{base_path}}/assets/img/introduction/img.png" alt="Kola" width="95%"></a>
+                    <a href="{{base_path}}/assets/img/introduction/kola.png"><img src="{{base_path}}/assets/img/introduction/kola.png" alt="Kola" width="95%"></a>
                 </div>
             </div>
         </div>

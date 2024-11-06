@@ -56,16 +56,19 @@ Here’s an overview of the process flow.
     ```   
  
 ## Prerequisites
-Download the JAR file for the [backend service](https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar) and execute the following command to start the service.
-
-```bash
-$ bal run hospitalservice.jar
-```
+1. Download the JAR file for the [backend service](https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar) and execute the following command to start the service.
+2. Install the latest [Ballerina Swan Lake](https://ballerina.io/downloads/) version.
 
 ## Implementation
 Follow the steps below to implement the message routing service.
 
-### Step 1: Set up the project structure
+### Step 1: Create a new Integration Project.
+1. Click on the Kola Integrator icon on the sidebar.
+2. Click on the **`Create New Integration`** button.
+3. Enter the project name as `MessageRouting`.
+4. Select Project Directory and click on the **`Select Location`** button.
+5. Click on the **`Create New Integration`** button to create the integration project.
+
 
 ### Step 2: Create an Integration Service.
 1. In the design view, click on the **`Add Construct`** button.
@@ -74,6 +77,36 @@ Follow the steps below to implement the message routing service.
 4. Select **`Design From Scratch`** option.
 5. Enter the service name as `HealthCare`, path as `/healthcare`, and `8290` as the port.
 6. Click on the **`Create Service`** button to create the new service with the specified configurations.
+
+### Step 3: Define types
+1. Click on the **`Add Construct`** button and select **`Type`**.
+2. Select **`Import a JSON`** from the Type dropdown.
+3. Generate record types corresponding to the response from the hospital backend service by providing a sample of the expected JSON payload.
+    ```json
+    {
+        "appointmentNumber": 1,
+        "doctor": {
+            "name": "thomas collins",
+            "hospital": "grand oak community hospital",
+            "category": "surgery",
+            "availability": "9.00 a.m - 11.00 a.m",
+            "fee": 7000.0
+        },
+        "patient": {
+            "name": "John Doe",
+            "dob": "1940-03-19",
+            "ssn": "234-23-525",
+            "address": "California",
+            "phone": "8770586755",
+            "email": "johndoe@gmail.com"
+        },
+        "hospital": "grand oak community hospital",
+        "confirmed": false,
+        "appointmentDate": "2023-10-02"
+    }
+    ```
+4. Click on the **`Create Type`** button to create the new type with the specified configurations.
+<a href="{{base_path}}/assets/img/message-routing/types.png"><img src="{{base_path}}/assets/img/message-routing/types.png" alt="Create Type" width="70%"></a>
 
 ### Step 3: Add connectors
 1. Navigate to design view and click on the **`Add Connector`** button.
@@ -138,9 +171,8 @@ Follow the steps below to implement the message routing service.
     |Resource Path|`/[category]/reserve`|
     |message|`hospitalRequset`|
 
-9. Click on the ➕ sign again and select **`Return`** from the node panel.
-10. Select the `oakEPResponse` variable from the dropdown and click **`Save`**.
- Repeat the above steps for the `clemency` and `pinevalley` hospitals with the following configurations.
+9. Click on the ➕ sign again and select **`Return`** from the node panel. Select the `epReponse` variable from the dropdown and click **`Save`**.
+10. Repeat the 7,8,9 steps for the `clemency` and `pinevalley` hospitals with the following configurations.
     
     **clemency:**
 
@@ -191,7 +223,7 @@ Follow the steps below to implement the message routing service.
     }'
    ```
  5. The response will be similar to the following.
-    ```json title="ReservationResponse.json"
+    ```json
     {
     "appointmentNumber": 1,
     "doctor": {
