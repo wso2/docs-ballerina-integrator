@@ -108,7 +108,7 @@ Follow the steps below to implement the message routing service.
 4. Click on the **`Create Type`** button to create the new type with the specified configurations.
 <a href="{{base_path}}/assets/img/message-routing/types.png"><img src="{{base_path}}/assets/img/message-routing/types.png" alt="Create Type" width="70%"></a>
 
-### Step 3: Add connectors
+### Step 4: Add connectors
 1. Navigate to design view and click on the **`Add Connector`** button.
 2. Search and select the **`HTTP`** connector.
 3. Enter the connector name as `grandOakEP`, URL as `http://localhost:9090/grandoak/categories`, and config as `{}`.
@@ -129,7 +129,7 @@ Follow the steps below to implement the message routing service.
     To learn more about HTTP client, see [Ballerina HTTP Client](https://ballerina.io/learn/by-example/http-client-send-request-receive-response/).
     See supported client configurations in the [HTTP Client Configurations](https://central.ballerina.io/ballerina/http/2.12.2#ClientConfiguration).
 
-### Step 3: Add a resource method
+### Step 5: Add a resource method
 1. The service will be generated with a default resource named `greeting`. Click on the service to view and update the resource details.
 2. Click on three dots appear in front of the `greeting` resource and select edit to view and update the resource details.
 3. Change the resource HTTP method to **`POST`**.
@@ -140,7 +140,7 @@ Follow the steps below to implement the message routing service.
 8. Click on the **`Save`** button to update the resource with the specified configurations.
    <a href="{{base_path}}/assets/img/message-routing/update-resource.png"><img src="{{base_path}}/assets/img/message-routing/update-resource.png" alt="Update Resource" width="70%"></a>
 
-### Step 4: Add the routing logic
+### Step 6: Add the routing logic
 1. Click on the `categories/[string category]/reserve` resource to navigate to the resource implementation designer view.
 2. Hover to the arrow after start and click the ➕ button to add a new action to the resource.
 3. Select **`Variable`** from the node panel on the left. This variable will be used to store the request payload for the hospital service.
@@ -196,7 +196,7 @@ Follow the steps below to implement the message routing service.
 12. The final design will look like below.             
     <a href="{{base_path}}/assets/img/message-routing/final-design.png"><img src="{{base_path}}/assets/img/message-routing/final-design.png"" alt="Final Design" width="70%"></a>
 
-### Step 5: Run the service
+### Step 7: Run the service
 1. Start the backend service by executing the following command.
     ```bash
     $ bal run hospitalservice.jar
