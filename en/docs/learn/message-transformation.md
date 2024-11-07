@@ -2,18 +2,18 @@
 
 ## Overview
 This guide explains how to create a simple integration to convert a JSON payload to an XML payload using the Kola. An HTTP service with a single resource (`toXml`) will be created to accept a JSON payload and return the XML representation of the payload.
-<a href="{{base_path}}/assets/img/json-to-xml/introduction.png"><img src="{{base_path}}/assets/img/json-to-xml/introduction.png" alt="JSON to XML" width="70%"></a>
+<a href="{{base_path}}/assets/img/message-transformation/introduction.png"><img src="{{base_path}}/assets/img/message-transformation/introduction.png" alt="JSON to XML" width="70%"></a>
 
 ### Step 1: Create a new Integration Project.
 1. Click on the Kola Integrator icon on the sidebar.
 2. Click on the **`Create New Integration`** button.
 3. Enter the project name as `JsonToXml`.
-4. Select Project Directory by clicking on the **`Select Location`** button.
+4. Select project directory location by clicking on the **`Select Location`** button.
 5. Click on the **`Create New Integration`** button to create the integration project.
-   <a href="{{base_path}}/assets/img/json-to-xml/create-integration.gif"><img src="{{base_path}}/assets/img/json-to-xml/create-integration.gif" alt="Create Integration" width="70%"></a>
+   <a href="{{base_path}}/assets/img/message-transformation/create-integration.gif"><img src="{{base_path}}/assets/img/message-transformation/create-integration.gif" alt="Create Integration" width="70%"></a>
 
 
-### Step 2: Create an Integration Service.
+### Step 2: Create a HTTP Service.
 1. In the design view, click on the **`Add Construct`** button.
 2. Select **`Service`** from the menu.
 3. Select **`HTTP Service`** from the Service Type dropdown.
@@ -29,7 +29,7 @@ This guide explains how to create a simple integration to convert a JSON payload
 5. Change the 200 response return type to `xml`.
 6. Add a new response of type **`HttpBadRequest`** under the responses. 
 7. Click on the **`Save`** button to update the resource with the specified configurations.
-    <a href="{{base_path}}/assets/img/json-to-xml/update-resource.png"><img src="{{base_path}}/assets/img/json-to-xml/update-resource.png" alt="Update Resource" width="70%"></a>
+    <a href="{{base_path}}/assets/img/message-transformation/update-resource.png"><img src="{{base_path}}/assets/img/message-transformation/update-resource.png" alt="Update Resource" width="70%"></a>
 
 !!! info "Resource Method"
     To learn more about resources, see [Ballerina Resources](https://ballerina.io/learn/by-example/resource-methods/).
@@ -39,7 +39,7 @@ This guide explains how to create a simple integration to convert a JSON payload
 2. Hover to the arrow after start and click the ➕ button to add a new action to the resource.
 3. Select **`Variable`** from the node panel on the left.
 4. Change the variable name to `xmlData`, type as `xml | ()` and expression to `check xmldata:fromJson(input)`.
-   <a href="{{base_path}}/assets/img/json-to-xml/add-variable.png"><img src="{{base_path}}/assets/img/json-to-xml/add-variable.png"" alt="Add variable" width="70%"></a>
+   <a href="{{base_path}}/assets/img/message-transformation/add-variable.png"><img src="{{base_path}}/assets/img/message-transformation/add-variable.png"" alt="Add variable" width="70%"></a>
 
 !!! info "JSON to XML Conversion"
     To learn more about json to xml conversion, see [Ballerina JSON to XML conversion](https://ballerina.io/learn/by-example/xml-from-json-conversion/).
@@ -48,15 +48,15 @@ This guide explains how to create a simple integration to convert a JSON payload
 ### Step 5: Error handling
 1. Click on the ➕ button again and select **`If`** from the node panel.
 2. Enter the condition as `xmlData is xml` and press **`Save`**.
-   <a href="{{base_path}}/assets/img/json-to-xml/add-if.png"><img src="{{base_path}}/assets/img/json-to-xml/add-if.png"" alt="Add If" width="70%"></a>
+   <a href="{{base_path}}/assets/img/message-transformation/add-if.png"><img src="{{base_path}}/assets/img/message-transformation/add-if.png"" alt="Add If" width="70%"></a>
 3. Click on the `If` condition true(`xmlData is xml`)  path ➕ sign and add a **`Return`** from the node panel.
 4. Select the `xmlData` variable from the dropdown and click **`Save`**.
-   <a href="{{base_path}}/assets/img/json-to-xml/add-return.png"><img src="{{base_path}}/assets/img/json-to-xml/add-return.png"" alt="Add Return" width="70%"></a>
+   <a href="{{base_path}}/assets/img/message-transformation/add-return.png"><img src="{{base_path}}/assets/img/message-transformation/add-return.png"" alt="Add Return" width="70%"></a>
 5. Click on the `If` condition `Else` path ➕ sign and add another **`Return`** from the node panel.
 6. Enter `http:BadRequest` as the value and click **`Save`**.
-   <a href="{{base_path}}/assets/img/json-to-xml/add-else-return.png"><img src="{{base_path}}/assets/img/json-to-xml/add-else-return.png"" alt="Add Else Return" width="70%"></a>
+   <a href="{{base_path}}/assets/img/message-transformation/add-else-return.png"><img src="{{base_path}}/assets/img/message-transformation/add-else-return.png"" alt="Add Else Return" width="70%"></a>
 7. The final design will look like below.             
-   <a href="{{base_path}}/assets/img/json-to-xml/final-design.png"><img src="{{base_path}}/assets/img/json-to-xml/final-design.png"" alt="Final Design" width="70%"></a>
+   <a href="{{base_path}}/assets/img/message-transformation/final-design.png"><img src="{{base_path}}/assets/img/message-transformation/final-design.png"" alt="Final Design" width="70%"></a>
 8. The final code will look like below. The source view can be accessed by clicking on the `</>` button in the top right corner.
    ```ballerina
    import ballerina/http;

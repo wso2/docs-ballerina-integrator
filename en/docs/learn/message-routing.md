@@ -1,7 +1,7 @@
 # Message Routing
 
 In this tutorial, you'll create a service that allows users to reserve appointments at various hospitals. Requests will be directed to the appropriate hospital based on the request payload's content.
-To accomplish this, you’ll build a REST service with a single resource in Visual Studio Code using the Ballerina Swan Lake extension. The resource will handle user requests, identify the hospital endpoint based on the hospital ID, forward the request to the specified hospital service to make the reservation, and return the reservation details.
+To accomplish this, you’ll build a REST service with a single resource in Kola extension. The resource will handle user requests, identify the hospital endpoint based on the hospital ID, forward the request to the specified hospital service to make the reservation, and return the reservation details.
 
 Here’s an overview of the process flow.
 
@@ -56,7 +56,7 @@ Here’s an overview of the process flow.
     ```   
  
 ## Prerequisites
-1. Download the JAR file for the [backend service](https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar) and execute the following command to start the service.
+1. Download the JAR file for the [backend service](https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar).
 2. Install the latest [Ballerina Swan Lake](https://ballerina.io/downloads/) version.
 
 ## Implementation
@@ -70,7 +70,7 @@ Follow the steps below to implement the message routing service.
 5. Click on the **`Create New Integration`** button to create the integration project.
 
 
-### Step 2: Create an Integration Service.
+### Step 2: Create an HTTP Service.
 1. In the design view, click on the **`Add Construct`** button.
 2. Select **`Service`** from the menu.
 3. Select **`HTTP Service`** from the Service Type dropdown.
@@ -153,16 +153,17 @@ Follow the steps below to implement the message routing service.
          appointment_date: reservation.appointment_date
         }
     ```
-5. Select **`If`** from the node panel on the left.
-6. Enter the conditions as **`If`** **`Else If`** blocks as below for each hospital id and press **`Save`**.
+5. Click on the **`Save`** button to add the variable.   
+6. Select **`If`** from the node panel on the left.
+7. Enter the conditions as **`If`** **`Else If`** blocks as below for each hospital id and press **`Save`**.
  conditions:
     * grandOak -> `reservation.hospital_id == "grandoak"`
     * clemency -> `reservation.hospital_id == "clemency"`
     * pineValley -> `reservation.hospital_id == "pinevalley"`
    <a href="{{base_path}}/assets/img/message-routing/add-if.png"><img src="{{base_path}}/assets/img/message-routing/add-if.png"" alt="Add If" width="70%"></a>
-7. Select the `grandOakEP` condition true path ➕ sign and select **`grandOakEP`** connector from the node panel.
+8. Select the `grandOakEP` condition true path ➕ sign and select **`grandOakEP`** connector from the node panel.
 <a href="{{base_path}}/assets/img/message-routing/add-connector-action.png"><img src="{{base_path}}/assets/img/message-routing/add-connector-action.png" alt="Add Connector Action" width="70%"></a>
-8. Select **`Post`** from the dropdown. Then fill the required fields with values given below and click **`Save`**.
+9. Select **`post`** from the dropdown. Then fill the required fields with values given below and click **`Save`**.
 
     |Field|Value|
     |---|---|
@@ -171,8 +172,8 @@ Follow the steps below to implement the message routing service.
     |Resource Path|`/[category]/reserve`|
     |message|`hospitalRequset`|
 
-9. Click on the ➕ sign again and select **`Return`** from the node panel. Select the `epReponse` variable from the dropdown and click **`Save`**.
-10. Repeat the 7,8,9 steps for the `clemency` and `pinevalley` hospitals with the following configurations.
+10. Click on the ➕ sign again and select **`Return`** from the node panel. Select the `epReponse` variable from the dropdown and click **`Save`**.
+11. Repeat the 7,8,9 steps for the `clemency` and `pinevalley` hospitals with the following configurations.
     
     **clemency:**
 
@@ -192,8 +193,8 @@ Follow the steps below to implement the message routing service.
     |Resource Path| `/[category]/reserve`  |
     |message| `hospitalRequset`      |
 
-11. For the else condition, click on the `If` condition `Else` path ➕ sign and add a **`Return`** from the node panel. Enter `http:NOT_FOUND` as the value and click **`Save`**.             
-12. The final design will look like below.             
+12. For the else condition, click on the `If` condition `Else` path ➕ sign and add a **`Return`** from the node panel. Enter `http:NOT_FOUND` as the value and click **`Save`**.             
+13. The final design will look like below.             
     <a href="{{base_path}}/assets/img/message-routing/final-design.png"><img src="{{base_path}}/assets/img/message-routing/final-design.png"" alt="Final Design" width="70%"></a>
 
 ### Step 7: Run the service
@@ -246,3 +247,4 @@ Follow the steps below to implement the message routing service.
     "appointmentDate": "2023-10-02"
     }
     ```  
+ 
