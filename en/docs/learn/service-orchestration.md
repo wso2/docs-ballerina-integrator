@@ -1,4 +1,4 @@
-# Service Orchestration
+# Service orchestration
 
 In this tutorial, you’ll create a service to process appointment requests for hospitals. The service will call multiple backend services sequentially, using data from each call to inform the next. This approach integrates several services into one, known as service orchestration.
 To implement this, you’ll build a REST service with a single resource in Kola extension and then run the service. The resource will receive user requests, make the necessary backend calls, and respond with the appointment details.
@@ -9,8 +9,8 @@ The flow is as follows.
     ```json
       {
         "patient":{
-           "name":"John Doe",
-           "dob":"1940-03-19",
+          "name":"John Doe",
+          "dob":"1940-03-19",
           "ssn":"234-23-525",
           "address":"California",
           "phone":"8770586755",
@@ -33,7 +33,7 @@ The flow is as follows.
           "category": "surgery",
           "availability": "9.00 a.m - 11.00 a.m",
           "fee": 7000
-        },
+       },
        "patient": {
           "name": "John Doe",
           "dob": "1940-03-19",
@@ -76,7 +76,7 @@ The flow is as follows.
 ## Implementation
 Follow the steps below to implement the service orchestration.
 
-### Step 1: Create a new Integration Project.
+### Step 1: Create a new integration project.
 1. Click on the Kola Integrator icon on the sidebar.
 2. Click on the **`Create New Integration`** button.
 3. Enter the project name as `ServiceOrchestration`.
@@ -84,7 +84,7 @@ Follow the steps below to implement the service orchestration.
 5. Click on the **`Create New Integration`** button to create the integration project.
     <a href="{{base_path}}/assets/img/service-orchestration/create-integration.png"><img src="{{base_path}}/assets/img/service-orchestration/create-integration.png" alt="Create Integration" width="70%"></a>
 
-### Step 2: Create a HTTP Service.
+### Step 2: Create a HTTP service.
 1. In the design view, click on the **`Add Construct`** button.
 2. Select **`Service`** from the menu.
 3. Select **`HTTP Service`** from the Service Type dropdown.
@@ -136,7 +136,7 @@ Follow the steps below to implement the service orchestration.
 
 ### Step 5: Design the resource
 1. The service will be generated with a default resource named `greeting`. Click on the service to view and update the resource details.
-2. Click on three dots appear in front of the `greeting` resource and select edit to view and update the resource details.
+2. Click on three dots that appear in front of the `greeting` resource and select edit to view and update the resource details.
 3. Define an HTTP resource that allows the **`POST`** operation on the resource path `categories/[string category]/reserve` and accepts the category path parameter (corresponding to the specialization). 
 4. Add **`ReservationRequest`** as a parameter indicating that the resource expects a `JSON` object corresponding to **`ReservationRequest`** as the payload. 
 5. Add `ReservationStatus`, `http:NotFound`, and `http:InternalServerError` as the response types.
@@ -167,7 +167,7 @@ Follow the steps below to implement the service orchestration.
 5. Click on the **`Save`** button to add the variable.   
 <a href="{{base_path}}/assets/img/service-orchestration/variable.png"><img src="{{base_path}}/assets/img/service-orchestration/variable.png" alt="Variable" width="70%"></a>
 6. Click ➕ sign and select **`hospitalServicesEP`** connector from the node panel.
-7. Select **`post`** from the dropdown. Then fill the required fields with values given below and click **`Save`**.
+7. Select **`post`** from the dropdown. Then, fill in the required fields with the values given below and click **`Save`**.
 
       |Field| Value                                                                 |
       |---|-----------------------------------------------------------------------|
@@ -180,16 +180,16 @@ Follow the steps below to implement the service orchestration.
 8. Click on the ➕ sign and select **`Variable`** from the node panel. Add a variable named `appointmentNumber` with the type **`int`** and expression `appointment.appointmentNumber`.  
 <a href="{{base_path}}/assets/img/service-orchestration/appointment.png"><img src="{{base_path}}/assets/img/service-orchestration/appointment.png" alt="Appointment Number" width="70%"></a>   
 9. Let's add another connector to get the fee for the appointment. Click on the ➕ sign and select **`hospitalServicesEP`** connector from the node panel.  
-10. Select **`get`** from the dropdown. Then fill the required fields with values given below and click **`Save`**.
+10. Select **`get`** from the dropdown. Then, fill in the required fields with the values given below and click **`Save`**.
 
    |Field| Value                                                            |
-         |---|------------------------------------------------------------------|
+   |---|------------------------------------------------------------------|
    |Variable Name| `fee`                                                            |
    |Variable Type| `Fee`                                                            |
    |Resource Path| `/[reservation.hospital_id]/categories/appointments/[appointmentNumber]/fee` |
 
    <a href="{{base_path}}/assets/img/service-orchestration/fee.png"><img src="{{base_path}}/assets/img/service-orchestration/fee.png" alt="Hospital Service Request" width="70%"></a>  
-11. Click on the ➕ sign and select **`Variable`** from the node panel. Add a variable named `actualFee` with the type **`dobule`** and expression `decimal:fromString(fee.actualFee)`.
+11. Click on the ➕ sign and select **`Variable`** from the node panel. Add a variable named `actualFee` with the type **`decimal`** and expression `decimal:fromString(fee.actualFee)`.
 12. Create another new to prepare the payment request. Click on the ➕ sign and select **`Variable`** from the node panel. Add a variable named `paymentRequest` with the type **`json`** and expression as follows.
     ```ballerina
     {
@@ -203,7 +203,7 @@ Follow the steps below to implement the service orchestration.
     ```
    <a href="{{base_path}}/assets/img/service-orchestration/payment-request.png"><img src="{{base_path}}/assets/img/service-orchestration/payment-request.png" alt="Payment Request" width="70%"></a>  
 13. Let's add another connector action to make the payment. Click on the ➕ sign and select **`paymentEP`** connector from the node panel.   
-14. Select **`post`** from the dropdown. Then fill the required fields with values given below and click **`Save`**.
+14. Select **`post`** from the dropdown. Then, fill in the required fields with the values given below and click **`Save`**.
 
    |Field| Value            |
          |---|------------------|
@@ -229,18 +229,18 @@ Follow the steps below to implement the service orchestration.
     -H "Content-Type: application/json" \
     -d '{
     "patient": {
-    "name": "John Doe",
-    "dob": "1940-03-19",
-    "ssn": "234-23-525",
-    "address": "California",
-    "phone": "8770586755",
-    "email": "johndoe@gmail.com",
-     "cardNo": "7844481124110331"
-    },
-    "doctor": "thomas collins",
-    "hospital_id": "grandoak",
-    "hospital": "grand oak community hospital",
-    "appointment_date": "2023-10-02"
+      "name": "John Doe",
+      "dob": "1940-03-19",
+      "ssn": "234-23-525",
+      "address": "California",
+      "phone": "8770586755",
+      "email": "johndoe@gmail.com",
+      "cardNo": "7844481124110331"
+     },
+     "doctor": "thomas collins",
+     "hospital_id": "grandoak",
+     "hospital": "grand oak community hospital",
+     "appointment_date": "2023-10-02"
     }'
    ```
 6. The response will be similar to the following.

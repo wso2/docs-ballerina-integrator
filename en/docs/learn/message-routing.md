@@ -1,4 +1,4 @@
-# Message Routing
+# Message routing
 
 In this tutorial, you'll create a service that allows users to reserve appointments at various hospitals. Requests will be directed to the appropriate hospital based on the request payload's content.
 To accomplish this, you’ll build a REST service with a single resource in Kola extension. The resource will handle user requests, identify the hospital endpoint based on the hospital ID, forward the request to the specified hospital service to make the reservation, and return the reservation details.
@@ -62,7 +62,7 @@ Here’s an overview of the process flow.
 ## Implementation
 Follow the steps below to implement the message routing service.
 
-### Step 1: Create a new Integration Project.
+### Step 1: Create a new integration project.
 1. Click on the Kola Integrator icon on the sidebar.
 2. Click on the **`Create New Integration`** button.
 3. Enter the project name as `MessageRouting`.
@@ -70,7 +70,7 @@ Follow the steps below to implement the message routing service.
 5. Click on the **`Create New Integration`** button to create the integration project.
 
 
-### Step 2: Create an HTTP Service.
+### Step 2: Create an HTTP service.
 1. In the design view, click on the **`Add Construct`** button.
 2. Select **`Service`** from the menu.
 3. Select **`HTTP Service`** from the Service Type dropdown.
@@ -147,10 +147,10 @@ Follow the steps below to implement the message routing service.
 4. Change the variable name to `hospitalRequset`, type as `json` and expression:
     ```ballerina
          {
-         patient: reservation.patient.toJson(),
-         doctor: reservation.doctor,
-         hospital: reservation.hospital,
-         appointment_date: reservation.appointment_date
+          patient: reservation.patient.toJson(),
+          doctor: reservation.doctor,
+          hospital: reservation.hospital,
+          appointment_date: reservation.appointment_date
         }
     ```
 5. Click on the **`Save`** button to add the variable.   
@@ -163,7 +163,7 @@ Follow the steps below to implement the message routing service.
    <a href="{{base_path}}/assets/img/message-routing/add-if.png"><img src="{{base_path}}/assets/img/message-routing/add-if.png"" alt="Add If" width="70%"></a>
 8. Select the `grandOakEP` condition true path ➕ sign and select **`grandOakEP`** connector from the node panel.
 <a href="{{base_path}}/assets/img/message-routing/add-connector-action.png"><img src="{{base_path}}/assets/img/message-routing/add-connector-action.png" alt="Add Connector Action" width="70%"></a>
-9. Select **`post`** from the dropdown. Then fill the required fields with values given below and click **`Save`**.
+9. Select **`post`** from the dropdown. Then, fill in the required fields with the values given below and click **`Save`**.
 
     |Field|Value|
     |---|---|
