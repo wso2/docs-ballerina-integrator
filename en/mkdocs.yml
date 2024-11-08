@@ -72,18 +72,19 @@ strict: false # Set to true to break the build if there are warnings
 # Navigation structure
 nav:
   - Home: index.md
-  - Get Started:
-      - Quick Start Guide: get-started/quick-start-guide.md
-      - Key Concepts: get-started/key-concepts.md
+  - Get started:
+      - Quick start guide: get-started/quick-start-guide.md
+      - Key concepts: get-started/key-concepts.md
   - Learn:
-      - Message Transformation: learn/message-transformation.md
-      - Message Routing: learn/message-routing.md
-      - Service Orchestration: learn/service-orchestration.md
+      - Message transformation: learn/message-transformation.md
+      - Message routing: learn/message-routing.md
+      - Service orchestration: learn/service-orchestration.md
+      - AI-assisted integrations: learn/integration-ai.md
   - Build:
       - Build an executable JAR: build/jar.md
-      - Build a Docker Image : build/docker.md
+      - Build a Docker image : build/docker.md
   - Roadmap:
-      - Language Feature Support: roadmap/language-support.md
+      - Language feature support: roadmap/language-support.md
       - Roadmap: roadmap/roadmap.md
 
 # Markdown extensions configuration

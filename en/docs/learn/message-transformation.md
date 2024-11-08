@@ -52,8 +52,8 @@ This guide explains how to create a simple integration to convert a JSON payload
 3. Click on the `If` condition true(`xmlData is xml`)  path ➕ sign and add a **`Return`** from the node panel.
 4. Select the `xmlData` variable from the dropdown and click **`Save`**.
    <a href="{{base_path}}/assets/img/message-transformation/add-return.png"><img src="{{base_path}}/assets/img/message-transformation/add-return.png"" alt="Add Return" width="70%"></a>
-5. Click on the `If` condition `Else` path ➕ sign and add another **`Return`** from the node panel.
-6. Enter `http:BadRequest` as the value and click **`Save`**.
+5. Click on the `If` condition `Else` path ➕ sign and add another **`Return`** from the node panel.  
+6. Enter `http:BadRequest` as the value and click **`Save`**.  
    <a href="{{base_path}}/assets/img/message-transformation/add-else-return.png"><img src="{{base_path}}/assets/img/message-transformation/add-else-return.png"" alt="Add Else Return" width="70%"></a>
 7. The final design will look like below.             
    <a href="{{base_path}}/assets/img/message-transformation/final-design.png"><img src="{{base_path}}/assets/img/message-transformation/final-design.png"" alt="Final Design" width="70%"></a>

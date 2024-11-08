@@ -3,12 +3,11 @@
         <div class="leftContent">
             <div class="about-home">
                 <div>
-                    <b>Kola</b> is a comprehensive integration solution that simplifies your digital transformation journey. The Kola extension for VS Code (Kola for VS Code) enables developers to utilize the popular Visual Studio Code editor for integration development, enhancing the overall experience. This AI-assisted development environment offers a fast, customizable, and more intuitive experience, boosting productivity in integration development.
-                    Kola provides a range of features that streamline coding tasks, enhance code quality, and reduce time spent on error-prone processes. By leveraging AI capabilities, Kola empowers developers to focus on high-value tasks, accelerating digital transformation efforts.
-                    <div class="linkSet2" onclick="location.href='{{base_path}}/get-started/quick-start-guide';">
-                        <a href="get-started/quick-start-guide"><h3>Quick Start Guide ></h3></a>
+                    <b>Kola</b> is a low-code integration solution built on <a href="https://ballerina.io">Ballerina</a>, enabling fast and efficient integration development with minimal coding. The Kola extension for Visual Studio Code (VS Code) provides a familiar, AI-assisted environment that streamlines tasks and enhances accuracy, accelerating digital transformation efforts.
+                    <div style="width: 75%" class="linkSet2" onclick="location.href='{{base_path}}/get-started/quick-start-guide';">
+                    <a href="get-started/quick-start-guide"><h3>Quick Start Guide </h3></a>
                         <p>
-                            Get started with Kola by running a simple integration use case in your local environment.
+                        Get started with Kola by running a simple integration use case in your local environment.
                         </p>
                     </div>
                 </div>
@@ -68,8 +67,8 @@
     <div class="section02">
         <div class="rightContent">
                 <div class="about-home">
-                    <div  style="text-align:left">
-                        <a href="{{base_path}}/assets/img/introduction/ballerina.png"><img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="50%" style="padding-top: 250px" ></a>
+                    <div  style="text-align:left; display: flex; flex-direction: column;  justify-content: center">
+                        <img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="50%" >
                     </div>
                     <div>
                         <h3>Leverage the power of Ballerina</h3>

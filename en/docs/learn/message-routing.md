@@ -159,7 +159,7 @@ Follow the steps below to implement the message routing service.
  conditions:
     * grandOak -> `reservation.hospital_id == "grandoak"`
     * clemency -> `reservation.hospital_id == "clemency"`
-    * pineValley -> `reservation.hospital_id == "pinevalley"`
+    * pineValley -> `reservation.hospital_id == "pinevalley"`  
    <a href="{{base_path}}/assets/img/message-routing/add-if.png"><img src="{{base_path}}/assets/img/message-routing/add-if.png"" alt="Add If" width="70%"></a>
 8. Select the `grandOakEP` condition true path ➕ sign and select **`grandOakEP`** connector from the node panel.
 <a href="{{base_path}}/assets/img/message-routing/add-connector-action.png"><img src="{{base_path}}/assets/img/message-routing/add-connector-action.png" alt="Add Connector Action" width="70%"></a>
