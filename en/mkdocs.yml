@@ -78,6 +78,7 @@ nav:
   - Learn:
       - Message Transformation: learn/message-transformation.md
       - Message Routing: learn/message-routing.md
+      - Service Orchestration: learn/service-orchestration.md
   - Build:
       - Build an executable JAR: build/jar.md
       - Build a Docker Image : build/docker.md
