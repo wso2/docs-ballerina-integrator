@@ -212,7 +212,7 @@ Follow the steps below to implement the service orchestration.
    |Resource Path| `"/"` |
    |message| `paymentRequest` |
 
-   <a href="{{base_path}}/assets/img/service-orchestration/payment.png"><img src="{{base_path}}/assets/img/service-orchestration/payment.png" alt="Payment" width="70%"></a>
+   <a href="{{base_path}}/assets/img/service-orchestration/payment.png"><img src="{{base_path}}/assets/img/service-orchestration/payment.png" alt="Payment" width="70%"></a>  
 15. Click on the ➕ sign and select **`Return`** from the node panel. Add the `status` variable to the return node.
 
 ### Step 7: Run the service
