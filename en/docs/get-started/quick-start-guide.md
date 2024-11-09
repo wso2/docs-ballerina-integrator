@@ -54,7 +54,7 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 2. Click on the `greeting` resource to view the resource details. Let's modify the resource to invoke the [`HelloWorld`](https://apis.wso2.com/zvdz/mi-qsg/v1.0) API endpoint.
 3. Hover to the arrow after start and click the ➕ button to add a new action to the resource.
 4. Select **`Add Connection`** from the node panel. 
-5. Search for `HTTP` in the search bar and select **`HTTP Connection`** as the connection type.
+5. Search for `HTTP` in the search bar and select **`HTTP`** as the connection type.
 6. Change the variable name to `externalEP`.
 7. Add the URL `https://apis.wso2.com` to the connection URL field and click **`Save`**.
    <a href="{{base_path}}/assets/img/get-started/create-connection.gif"><img src="{{base_path}}/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a>
