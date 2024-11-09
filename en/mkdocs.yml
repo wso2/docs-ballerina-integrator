@@ -79,7 +79,7 @@ nav:
       - Message transformation: learn/message-transformation.md
       - Message routing: learn/message-routing.md
       - Service orchestration: learn/service-orchestration.md
-      - AI-assisted integrations: learn/integration-ai.md
+      - AI-assisted integration: learn/integration-ai.md
   - Build:
       - Build an executable JAR: build/jar.md
       - Build a Docker image : build/docker.md

@@ -68,7 +68,7 @@
         <div class="rightContent">
                 <div class="about-home">
                     <div  style="text-align:left; display: flex; flex-direction: column;  justify-content: center">
-                        <img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="50%" >
+                        <img src="{{base_path}}/assets/img/introduction/ballerina.png" alt="ballerina" width="70%" >
                     </div>
                     <div>
                         <h3>Leverage the power of Ballerina</h3>
