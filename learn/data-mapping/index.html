@@ -14,17 +14,17 @@
       
       
       
-        <link rel="prev" href="../../get-started/key-concepts/">
+        <link rel="prev" href="../integration-ai/">
       
       
-        <link rel="next" href="../message-routing/">
+        <link rel="next" href="../../build/jar/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Message transformation - Kola Documentation</title>
+        <title>Data Mapping - Kola Documentation</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#message-transformation" class="md-skip">
+        <a href="#data-mapping" class="md-skip">
           Skip to content
         </a>
       
@@ -156,7 +156,7 @@ This documentation is a work in progress.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Message transformation
+              Data Mapping
             
           </span>
         </div>
@@ -304,7 +304,7 @@ This documentation is a work in progress.
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../message-transformation/" class="md-tabs__link md-tabs__link--active">
         Learn
       </a>
     </li>
@@ -506,100 +506,11 @@ This documentation is a work in progress.
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Message transformation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../message-transformation/" class="md-nav__link">
         Message transformation
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
-    Step 1: Create a new integration project.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-a-http-service" class="md-nav__link">
-    Step 2: Create a HTTP service.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-update-the-resource-method" class="md-nav__link">
-    Step 3: Update the resource method
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-add-the-transformation-logic" class="md-nav__link">
-    Step 4: Add the transformation logic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-error-handling" class="md-nav__link">
-    Step 5: Error handling
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-run-the-integration" class="md-nav__link">
-    Step 6: Run the integration
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -651,11 +562,162 @@ This documentation is a work in progress.
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../data-mapping/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data Mapping
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Data Mapping
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
+    Step 1: Create a new integration project.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-define-input-and-output-types" class="md-nav__link">
+    Step 2: Define input and output types
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Define input and output types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-a-http-service" class="md-nav__link">
+    Step 3: Create a HTTP service.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-update-the-resource-method" class="md-nav__link">
+    Step 4: Update the resource method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-add-data-mapper" class="md-nav__link">
+    Step 5: Add Data Mapper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-create-mappings" class="md-nav__link">
+    Step 6: Create Mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Create Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-simple-mapping" class="md-nav__link">
+    Create Simple Mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-mapping" class="md-nav__link">
+    Auto Mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#many-to-one-mapping" class="md-nav__link">
+    Many-to-One Mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-mapping-expression" class="md-nav__link">
+    Edit Mapping Expression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolving-errors" class="md-nav__link">
+    Resolving Errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-return-the-transformed-payload" class="md-nav__link">
+    Step 7: Return the transformed payload
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-run-the-integration" class="md-nav__link">
+    Step 6: Run the integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -820,57 +882,119 @@ This documentation is a work in progress.
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#step-1-create-a-new-integration-project" class="md-nav__link">
     Step 1: Create a new integration project.
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-define-input-and-output-types" class="md-nav__link">
+    Step 2: Define input and output types
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Define input and output types">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-2-create-a-http-service" class="md-nav__link">
-    Step 2: Create a HTTP service.
+  <a href="#input" class="md-nav__link">
+    Input
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-update-the-resource-method" class="md-nav__link">
-    Step 3: Update the resource method
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-add-the-transformation-logic" class="md-nav__link">
-    Step 4: Add the transformation logic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5-error-handling" class="md-nav__link">
-    Step 5: Error handling
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-run-the-integration" class="md-nav__link">
-    Step 6: Run the integration
+  <a href="#output" class="md-nav__link">
+    Output
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-a-http-service" class="md-nav__link">
+    Step 3: Create a HTTP service.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-update-the-resource-method" class="md-nav__link">
+    Step 4: Update the resource method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-add-data-mapper" class="md-nav__link">
+    Step 5: Add Data Mapper
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-create-mappings" class="md-nav__link">
+    Step 6: Create Mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 6: Create Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-simple-mapping" class="md-nav__link">
+    Create Simple Mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-mapping" class="md-nav__link">
+    Auto Mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#many-to-one-mapping" class="md-nav__link">
+    Many-to-One Mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-mapping-expression" class="md-nav__link">
+    Edit Mapping Expression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolving-errors" class="md-nav__link">
+    Resolving Errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-return-the-transformed-payload" class="md-nav__link">
+    Step 7: Return the transformed payload
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-run-the-integration" class="md-nav__link">
+    Step 6: Run the integration
+  </a>
   
 </li>
       
@@ -889,7 +1013,7 @@ This documentation is a work in progress.
                   
 
   
-    <a href="https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/learn/message-transformation.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-ballerina-integrator/edit/main/en/docs/learn/data-mapping.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -898,114 +1022,231 @@ This documentation is a work in progress.
     
       
     
-    <a href="https://github.com/wso2/docs-ballerina-integrator/raw/main/en/docs/learn/message-transformation.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/wso2/docs-ballerina-integrator/raw/main/en/docs/learn/data-mapping.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="message-transformation">Message transformation<a class="headerlink" href="#message-transformation" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This guide explains how to create a simple integration to convert a JSON payload to an XML payload using Kola. An HTTP service with a single resource (<code>toXml</code>) will be created to accept a JSON payload and return the XML representation of the payload.
-<a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/introduction.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/introduction.png" alt="JSON to XML" width="70%"></a></p>
+<h1 id="data-mapping">Data Mapping<a class="headerlink" href="#data-mapping" title="Permanent link">&para;</a></h1>
+<p>The following instructions demonstrate how to build an integration that transforms a JSON payload into a different JSON structure using Kola Data Mapper. An HTTP service with a single resource (<code>transform</code>) will be created to receive a JSON payload and return the transformed result.</p>
 <h3 id="step-1-create-a-new-integration-project">Step 1: Create a new integration project.<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the Kola Integrator icon on the sidebar.</li>
-<li>Click on the <strong><code>Create Integration</code></strong> button.</li>
-<li>Enter the project name as <code>JsonToXml</code>.</li>
+<li>Click on the <strong><code>Create New Integration</code></strong> button.</li>
+<li>Enter the project name as <code>Transformer</code>.</li>
 <li>Select project directory location by clicking on the <strong><code>Select Location</code></strong> button.</li>
-<li>Click on the <strong><code>Create Integration</code></strong> button to create the integration project.
-   <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/create-integration.gif"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/create-integration.gif" alt="Create Integration" width="70%"></a></li>
+<li>Click on the <strong><code>Create New Integration</code></strong> button to create the integration project.<br />
+    <a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-integration.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-integration.png" alt="Create Integration" width="70%"></a>
+<!-- en/docs/assets/img/message-transformation/introduction.png --></li>
 </ol>
-<h3 id="step-2-create-a-http-service">Step 2: Create a HTTP service.<a class="headerlink" href="#step-2-create-a-http-service" title="Permanent link">&para;</a></h3>
+<h3 id="step-2-define-input-and-output-types">Step 2: Define input and output types<a class="headerlink" href="#step-2-define-input-and-output-types" title="Permanent link">&para;</a></h3>
 <ol>
+<li>Click on the <strong><code>Add Construct</code></strong> button and select <strong><code>Types</code></strong>.</li>
+<li>Click on <strong><code>Add Type</code></strong> to add a new type</li>
+<li>Select <strong><code>Import a JSON</code></strong> from the Type dropdown.</li>
+<li>Generate record types corresponding to the input and output JSON payloads given below.</li>
+<li>
+<p>Click on the <strong><code>Create Type</code></strong> button to create the new type with the specified configurations.</p>
+<h6 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h6>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;firstName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;lastName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Doe&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;street&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123 Elm St&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;postalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">94107</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;phoneNumbers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;123-456-7890&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;098-765-4321&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;account&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A123456789&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;lastTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h6 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h6>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;fullName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;contactDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;primaryPhone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123-456-7890&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;zipCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94107&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;accountInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A123456789&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;transactionDate&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-types.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-types.png" alt="Create Types" width="70%"></a></p>
+</li>
+</ol>
+<h3 id="step-3-create-a-http-service">Step 3: Create a HTTP service.<a class="headerlink" href="#step-3-create-a-http-service" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on <code>Home</code> button to navigate back to the design view</li>
 <li>In the design view, click on the <strong><code>Add Construct</code></strong> button.</li>
 <li>Select <strong><code>Service</code></strong> from the menu.</li>
-<li>Select <strong><code>HTTP Service</code></strong> from the Service Type dropdown.</li>
-<li>Select <strong><code>Design From Scratch</code></strong> option.</li>
-<li>Enter the service name as <code>JsonToXml</code>, path as <code>/convert</code>, and <code>9090</code> as the port.</li>
-<li>Click on the <strong><code>Create Service</code></strong> button to create the new service with the specified configurations.</li>
+<li>Select <strong><code>HTTP Service</code></strong> and select <strong><code>Design From Scratch</code></strong> option.</li>
+<li>Enter the service name as <code>Transform</code>, path as <code>/</code>, and <code>8290</code> as the port.</li>
+<li>Click on the <strong><code>Create Service</code></strong> button.  <br />
+    <a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-service.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-service.png" alt="Create Service" width="70%"></a></li>
 </ol>
-<h3 id="step-3-update-the-resource-method">Step 3: Update the resource method<a class="headerlink" href="#step-3-update-the-resource-method" title="Permanent link">&para;</a></h3>
+<h3 id="step-4-update-the-resource-method">Step 4: Update the resource method<a class="headerlink" href="#step-4-update-the-resource-method" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on three dots appear in front of the <code>greeting</code> resource and select edit to view and update the resource details.</li>
+<li>Click on <code>Edit Resource</code> button</li>
 <li>Change the resource HTTP method to <strong><code>POST</code></strong>.</li>
-<li>Change the resource name as <code>toXml</code>.</li>
-<li>Add a payload parameter named <code>input</code> to the resource of type <code>json</code>. </li>
-<li>Change the 201 response return type to <code>xml</code>.</li>
-<li>Add a new response of type <strong><code>http:BadRequest</code></strong> under the responses. </li>
-<li>Click on the <strong><code>Save</code></strong> button to update the resource with the specified configurations.
-    <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/update-resource.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/update-resource.png" alt="Update Resource" width="70%"></a></li>
+<li>Change the resource name as <code>transform</code>.</li>
+<li>Add a payload parameter named <code>input</code> to the resource of type <code>Input</code>. </li>
+<li>
+<p>Click on the <strong><code>Save</code></strong> button to update the resource with the specified configurations. </p>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/edit-resource.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/edit-resource.png" alt="Edit Resource" width="70%"></a></p>
+</li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Resource Method</p>
 <p>To learn more about resources, see <a href="https://ballerina.io/learn/by-example/resource-methods/">Ballerina Resources</a>.</p>
 </div>
-<h3 id="step-4-add-the-transformation-logic">Step 4: Add the transformation logic<a class="headerlink" href="#step-4-add-the-transformation-logic" title="Permanent link">&para;</a></h3>
+<h3 id="step-5-add-data-mapper">Step 5: Add Data Mapper<a class="headerlink" href="#step-5-add-data-mapper" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the <code>toXml</code> resource to navigate to the resource implementation designer view.</li>
+<li>Click on the <code>transform</code> resource to navigate to the resource implementation designer view.</li>
 <li>Hover to the arrow after start and click the ➕ button to add a new action to the resource.</li>
-<li>Select <strong><code>Variable</code></strong> from the node panel.</li>
-<li>Change the variable name to <code>xmlData</code>, type as <code>xml | ()</code> and expression to <code>check xmldata:fromJson(input)</code>.
-   <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-variable.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-variable.png"" alt="Add variable" width="70%"></a></li>
+<li>Select <strong><code>Data Mapper</code></strong> from the node panel.</li>
+<li>Fill in the required fields with the values given below and <code>Create Mapping</code> button to start data mapping.</li>
 </ol>
-<div class="admonition info">
-<p class="admonition-title">JSON to XML Conversion</p>
-<p>To learn more about json to xml conversion, see <a href="https://ballerina.io/learn/by-example/xml-from-json-conversion/">Ballerina JSON to XML conversion</a>.</p>
-</div>
-<h3 id="step-5-error-handling">Step 5: Error handling<a class="headerlink" href="#step-5-error-handling" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td><code>transformed</code></td>
+</tr>
+<tr>
+<td>Function Name</td>
+<td><code>tnf</code></td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>Input input</code></td>
+</tr>
+<tr>
+<td>Output</td>
+<td><code>Output</code></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/add-data-mapper.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/add-data-mapper.png" alt="Add Data Mapper" width="70%"></a></p>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/data-mapper-added.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/data-mapper-added.png" alt="Data Mapper Added" width="70%"></a>   </p>
+<h3 id="step-6-create-mappings">Step 6: Create Mappings<a class="headerlink" href="#step-6-create-mappings" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the ➕ button again and select <strong><code>If</code></strong> from the node panel.</li>
-<li>Enter the condition as <code>xmlData is xml</code> and press <strong><code>Save</code></strong>.
-   <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-if.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-if.png"" alt="Add If" width="70%"></a></li>
-<li>Click on the <code>If</code> condition true(<code>xmlData is xml</code>)  path ➕ sign and add a <strong><code>Return</code></strong> from the node panel.</li>
-<li>Select the <code>xmlData</code> variable from the dropdown and click <strong><code>Save</code></strong>.
-   <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-return.png"" alt="Add Return" width="70%"></a></li>
-<li>Click on the <code>If</code> condition <code>Else</code> path ➕ sign and add another <strong><code>Return</code></strong> from the node panel.  </li>
-<li>Enter <code>http:BadRequest</code> as the value and click <strong><code>Save</code></strong>.<br />
-   <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-else-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/add-else-return.png"" alt="Add Else Return" width="70%"></a></li>
-<li>The final design will look like below.           <br />
-   <a href="https://wso2.github.io/docs-kola/assets/img/message-transformation/final-design.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-transformation/final-design.png"" alt="Final Design" width="70%"></a></li>
-<li>The final code will look like below. The source view can be accessed by clicking on the <code>&lt;/&gt;</code> button in the top right corner.
-   <div class="highlight"><pre><span></span><code>import ballerina/http;
-import ballerina/xmldata;
+<li>First click on the input field and then click on the desired output field to create a mapping</li>
+</ol>
+<h4 id="create-simple-mapping">Create Simple Mapping<a class="headerlink" href="#create-simple-mapping" title="Permanent link">&para;</a></h4>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/simple-mapping.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/simple-mapping.gif" alt="Simple Mapping" width="70%"></a></p>
+<h4 id="auto-mapping">Auto Mapping<a class="headerlink" href="#auto-mapping" title="Permanent link">&para;</a></h4>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/auto-mapping.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/auto-mapping.gif" alt="Auto Mapping" width="70%"></a></p>
+<h4 id="many-to-one-mapping">Many-to-One Mapping<a class="headerlink" href="#many-to-one-mapping" title="Permanent link">&para;</a></h4>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/many-to-one-mapping.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/many-to-one-mapping.gif" alt="Many to One Mapping" width="70%"></a></p>
+<h4 id="edit-mapping-expression">Edit Mapping Expression<a class="headerlink" href="#edit-mapping-expression" title="Permanent link">&para;</a></h4>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/edit-mapping.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/edit-mapping.gif" alt="Edit Mapping Expression" width="70%"></a></p>
+<h4 id="resolving-errors">Resolving Errors<a class="headerlink" href="#resolving-errors" title="Permanent link">&para;</a></h4>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/error-resolving.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/error-resolving.gif" alt="Error Resolving" width="70%"></a></p>
+<ol>
+<li>When you are done click on the <code>Go Back</code> Button to return to the flow diagram</li>
+</ol>
+<h3 id="step-7-return-the-transformed-payload">Step 7: Return the transformed payload<a class="headerlink" href="#step-7-return-the-transformed-payload" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Hover to the arrow after the Data Mapper node in the flow diagram and click the ➕ button</li>
+<li>
+<p>Select <strong><code>Return</code></strong> from the node panel. </p>
+<p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/add-return.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/add-return.png" alt="Add Return" width="70%"></a></p>
+</li>
+<li>
+<p>Provide <code>transformed</code> as the return expression.</p>
+</li>
+<li>The final code will look like below. The source view can be accessed by clicking on the <code>&lt;/&gt;</code> button in the top right corner. </li>
+</ol>
+<div class="highlight"><pre><span></span><code>import ballerina/http;
+import ballerina/log;
 
-service /convert on new http:Listener(9090) {
+service / on new http:Listener(8290) {
 
     function init() returns error? {
     }
 
-    resource function post toXml(@http:Payload json input) returns xml|http:InternalServerError|http:BadRequest {
+    resource function post transform(@http:Payload Input input) returns Output|http:InternalServerError {
         do {
-
-            xml? xmlData = check xmldata:fromJson(input);
-            if xmlData is xml {
-                return xmlData;
-            } else {
-                return http:BAD_REQUEST;
-            }
-
+            Output transformed = tnf(input);
+            return transformed;
         } on fail error e {
+            log:printError(&quot;Error: &quot;, &#39;error = e);
             return http:INTERNAL_SERVER_ERROR;
         }
     }
 }
-</code></pre></div></li>
-</ol>
+</code></pre></div>
+
 <h3 id="step-6-run-the-integration">Step 6: Run the integration<a class="headerlink" href="#step-6-run-the-integration" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Click on the <strong><code>Run</code></strong> on the run button in the top right corner to run the integration.</li>
-<li>The integration will start and the service will be available at <code>http://localhost:9090/convert</code>.</li>
-<li>The service can be tested using a tool like <a href="https://www.postman.com/">Postman</a> or <a href="https://curl.se/">curl</a> by sending a POST request with a JSON payload to the service endpoint.
-   <div class="highlight"><pre><span></span><code>curl -X POST &quot;http://localhost:9090/convert/toXml&quot; -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;car&quot;:&quot;Honda&quot;}&#39;
+<li>The integration will start and the service will be available at <code>http://localhost:8290/transform</code>.</li>
+<li>The service can be tested using a tool like <a href="https://www.postman.com/">Postman</a> or <a href="https://curl.se/">curl</a> by sending a POST request with a JSON payload to the service endpoint. <br />
+<code>curl
+   curl -X POST "http://localhost:8290/transform" -H "Content-Type: application/json" -d '{
+    "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "address": {
+            "street": "123 Elm St",
+            "city": "San Francisco",
+            "state": "CA",
+            "postalCode": 94107
+        },
+        "phoneNumbers": ["123-456-7890", "098-765-4321"]
+    },
+    "account": {
+        "accountNumber": "A123456789",
+        "balance": 2500,
+        "lastTransaction": "2023-10-15T14:30:00Z"
+    }
+}
+'</code></li>
+<li>The response will be the transformed JSON payload.<br />
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;fullName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;contactDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;primaryPhone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123-456-7890&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;zipCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94107&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;accountInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;accountNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A123456789&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;balance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;transactionDate&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
+<span class="p">}</span>
 </code></pre></div></li>
-<li>The response will be an XML representation of the JSON payload.<br />
-<code>&lt;root&gt;
-        &lt;name&gt;John&lt;/name&gt;
-        &lt;age&gt;30&lt;/age&gt;
-        &lt;car&gt;Honda&lt;/car&gt;
-    &lt;/root&gt;</code></li>
 </ol>
 
 
@@ -1028,7 +1269,7 @@ service /convert on new http:Listener(9090) {
   <nav class="md-footer__inner md-grid" aria-label="Footer" >
     
     
-    <a href="../../get-started/key-concepts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Key concepts" rel="prev">
+    <a href="../integration-ai/" class="md-footer__link md-footer__link--prev" aria-label="Previous: AI-assisted integration" rel="prev">
       <div class="md-footer__button md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </div>
@@ -1037,20 +1278,20 @@ service /convert on new http:Listener(9090) {
                 <span class="md-footer__direction">
                   Previous
                 </span>
-          Key concepts
+          AI-assisted integration
         </div>
       </div>
     </a>
     
     
     
-    <a href="../message-routing/" class="md-footer__link md-footer__link--next" aria-label="Next: Message routing" rel="next">
+    <a href="../../build/jar/" class="md-footer__link md-footer__link--next" aria-label="Next: Build an executable JAR" rel="next">
       <div class="md-footer__title">
         <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-          Message routing
+          Build an executable JAR
         </div>
       </div>
       <div class="md-footer__button md-icon">
