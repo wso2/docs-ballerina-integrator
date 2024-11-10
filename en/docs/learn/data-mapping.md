@@ -9,13 +9,13 @@ The following instructions demonstrate how to build an integration that transfor
 4. Select project directory location by clicking on the **`Select Location`** button.
 5. Click on the **`Create New Integration`** button to create the integration project.  
     <a href="{{base_path}}/assets/img/data-mapping/create-integration.png"><img src="{{base_path}}/assets/img/data-mapping/create-integration.png" alt="Create Integration" width="70%"></a>
-<!-- en/docs/assets/img/message-transformation/introduction.png -->
+
 ### Step 2: Define input and output types
 1. Click on the **`Add Construct`** button and select **`Types`**.
 2. Click on **`Add Type`** to add a new type
-2. Select **`Import a JSON`** from the Type dropdown.
-3. Generate record types corresponding to the input and output JSON payloads given below.
-4. Click on the **`Create Type`** button to create the new type with the specified configurations.
+3. Select **`Import a JSON`** from the Type dropdown.
+4. Generate record types corresponding to the input and output JSON payloads given below.
+5. Click on the **`Create Type`** button to create the new type with the specified configurations.
 
     ###### Input
     ```json
@@ -78,7 +78,7 @@ The following instructions demonstrate how to build an integration that transfor
 2. Change the resource HTTP method to **`POST`**.
 3. Change the resource name as `transform`.
 4. Add a payload parameter named `input` to the resource of type `Input`. 
-6. Click on the **`Save`** button to update the resource with the specified configurations. 
+5. Click on the **`Save`** button to update the resource with the specified configurations. 
 
     <a href="{{base_path}}/assets/img/data-mapping/edit-resource.png"><img src="{{base_path}}/assets/img/data-mapping/edit-resource.png" alt="Edit Resource" width="70%"></a>
 
@@ -106,6 +106,7 @@ The following instructions demonstrate how to build an integration that transfor
 
 ### Step 6: Create Mappings
 1. First click on the input field and then click on the desired output field to create a mapping
+2. When you are done click on the **`Go Back`** Button to return to the flow diagram
 
 #### Create Simple Mapping
 <a href="{{base_path}}/assets/img/data-mapping/simple-mapping.gif"><img src="{{base_path}}/assets/img/data-mapping/simple-mapping.gif" alt="Simple Mapping" width="70%"></a>
@@ -123,8 +124,6 @@ The following instructions demonstrate how to build an integration that transfor
 <a href="{{base_path}}/assets/img/data-mapping/error-resolving.gif"><img src="{{base_path}}/assets/img/data-mapping/error-resolving.gif" alt="Error Resolving" width="70%"></a>
 
 
-2. When you are done click on the `Go Back` Button to return to the flow diagram
-
 ### Step 7: Return the transformed payload
 1. Hover to the arrow after the Data Mapper node in the flow diagram and click the ➕ button
 2. Select **`Return`** from the node panel. 
@@ -132,7 +131,7 @@ The following instructions demonstrate how to build an integration that transfor
     <a href="{{base_path}}/assets/img/data-mapping/add-return.png"><img src="{{base_path}}/assets/img/data-mapping/add-return.png" alt="Add Return" width="70%"></a>
 
 3. Provide `transformed` as the return expression.
-3. The final code will look like below. The source view can be accessed by clicking on the `</>` button in the top right corner. 
+4. The final code will look like below. The source view can be accessed by clicking on the `</>` button in the top right corner. 
 
 ```ballerina
 import ballerina/http;
@@ -177,10 +176,10 @@ service / on new http:Listener(8290) {
         "accountNumber": "A123456789",
         "balance": 2500,
         "lastTransaction": "2023-10-15T14:30:00Z"
-    }
-}
-'
+    } 
+   }'
    ```
+   
 4. The response will be the transformed JSON payload.  
     ```json
     {
