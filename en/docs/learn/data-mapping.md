@@ -10,7 +10,7 @@ The following instructions demonstrate how to build an integration that transfor
 5. Click on the **`Create New Integration`** button to create the integration project.  
     <a href="{{base_path}}/assets/img/data-mapping/create-integration.png"><img src="{{base_path}}/assets/img/data-mapping/create-integration.png" alt="Create Integration" width="70%"></a>
 <!-- en/docs/assets/img/message-transformation/introduction.png -->
-### Step 2: Define Input and Output Types
+### Step 2: Define input and output types
 1. Click on the **`Add Construct`** button and select **`Types`**.
 2. Click on **`Add Type`** to add a new type
 2. Select **`Import a JSON`** from the Type dropdown.
