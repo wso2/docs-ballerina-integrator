@@ -1038,8 +1038,7 @@ This documentation is a work in progress.
 <li>Enter the project name as <code>Transformer</code>.</li>
 <li>Select project directory location by clicking on the <strong><code>Select Location</code></strong> button.</li>
 <li>Click on the <strong><code>Create New Integration</code></strong> button to create the integration project.<br />
-    <a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-integration.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-integration.png" alt="Create Integration" width="70%"></a>
-<!-- en/docs/assets/img/message-transformation/introduction.png --></li>
+    <a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-integration.png"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/create-integration.png" alt="Create Integration" width="70%"></a></li>
 </ol>
 <h3 id="step-2-define-input-and-output-types">Step 2: Define input and output types<a class="headerlink" href="#step-2-define-input-and-output-types" title="Permanent link">&para;</a></h3>
 <ol>
@@ -1156,6 +1155,7 @@ This documentation is a work in progress.
 <h3 id="step-6-create-mappings">Step 6: Create Mappings<a class="headerlink" href="#step-6-create-mappings" title="Permanent link">&para;</a></h3>
 <ol>
 <li>First click on the input field and then click on the desired output field to create a mapping</li>
+<li>When you are done click on the <strong><code>Go Back</code></strong> Button to return to the flow diagram</li>
 </ol>
 <h4 id="create-simple-mapping">Create Simple Mapping<a class="headerlink" href="#create-simple-mapping" title="Permanent link">&para;</a></h4>
 <p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/simple-mapping.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/simple-mapping.gif" alt="Simple Mapping" width="70%"></a></p>
@@ -1167,9 +1167,6 @@ This documentation is a work in progress.
 <p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/edit-mapping.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/edit-mapping.gif" alt="Edit Mapping Expression" width="70%"></a></p>
 <h4 id="resolving-errors">Resolving Errors<a class="headerlink" href="#resolving-errors" title="Permanent link">&para;</a></h4>
 <p><a href="https://wso2.github.io/docs-kola/assets/img/data-mapping/error-resolving.gif"><img src="https://wso2.github.io/docs-kola/assets/img/data-mapping/error-resolving.gif" alt="Error Resolving" width="70%"></a></p>
-<ol>
-<li>When you are done click on the <code>Go Back</code> Button to return to the flow diagram</li>
-</ol>
 <h3 id="step-7-return-the-transformed-payload">Step 7: Return the transformed payload<a class="headerlink" href="#step-7-return-the-transformed-payload" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Hover to the arrow after the Data Mapper node in the flow diagram and click the ➕ button</li>
@@ -1206,29 +1203,31 @@ service / on new http:Listener(8290) {
 <ol>
 <li>Click on the <strong><code>Run</code></strong> on the run button in the top right corner to run the integration.</li>
 <li>The integration will start and the service will be available at <code>http://localhost:8290/transform</code>.</li>
-<li>The service can be tested using a tool like <a href="https://www.postman.com/">Postman</a> or <a href="https://curl.se/">curl</a> by sending a POST request with a JSON payload to the service endpoint. <br />
-<code>curl
-   curl -X POST "http://localhost:8290/transform" -H "Content-Type: application/json" -d '{
-    "user": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "email": "john.doe@example.com",
-        "address": {
-            "street": "123 Elm St",
-            "city": "San Francisco",
-            "state": "CA",
-            "postalCode": 94107
-        },
-        "phoneNumbers": ["123-456-7890", "098-765-4321"]
-    },
-    "account": {
-        "accountNumber": "A123456789",
-        "balance": 2500,
-        "lastTransaction": "2023-10-15T14:30:00Z"
-    }
-}
-'</code></li>
-<li>The response will be the transformed JSON payload.<br />
+<li>
+<p>The service can be tested using a tool like <a href="https://www.postman.com/">Postman</a> or <a href="https://curl.se/">curl</a> by sending a POST request with a JSON payload to the service endpoint. <br />
+   <div class="highlight"><pre><span></span><code>curl -X POST &quot;http://localhost:8290/transform&quot; -H &quot;Content-Type: application/json&quot; -d &#39;{
+ &quot;user&quot;: {
+     &quot;firstName&quot;: &quot;John&quot;,
+     &quot;lastName&quot;: &quot;Doe&quot;,
+     &quot;email&quot;: &quot;john.doe@example.com&quot;,
+     &quot;address&quot;: {
+         &quot;street&quot;: &quot;123 Elm St&quot;,
+         &quot;city&quot;: &quot;San Francisco&quot;,
+         &quot;state&quot;: &quot;CA&quot;,
+         &quot;postalCode&quot;: 94107
+     },
+     &quot;phoneNumbers&quot;: [&quot;123-456-7890&quot;, &quot;098-765-4321&quot;]
+ },
+ &quot;account&quot;: {
+     &quot;accountNumber&quot;: &quot;A123456789&quot;,
+     &quot;balance&quot;: 2500,
+     &quot;lastTransaction&quot;: &quot;2023-10-15T14:30:00Z&quot;
+ } 
+}&#39;
+</code></pre></div></p>
+</li>
+<li>
+<p>The response will be the transformed JSON payload.<br />
     <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;fullName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;contactDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1246,7 +1245,8 @@ service / on new http:Listener(8290) {
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="nt">&quot;transactionDate&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;2023-10-15T14:30:00Z&quot;</span>
 <span class="p">}</span>
-</code></pre></div></li>
+</code></pre></div></p>
+</li>
 </ol>
 
 
