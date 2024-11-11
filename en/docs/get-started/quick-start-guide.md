@@ -14,7 +14,7 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 5. Click on the ✔️ sign in front of the `Kola` profile to select the profile.   
    <a href="{{base_path}}/assets/img/get-started/create-profile.gif"><img src="{{base_path}}/assets/img/get-started/create-profile.gif" alt="Create Profile" width="70%"></a>
 
-!!! info "Profile"
+???+ info "VS Code Profile"
     To learn more about profiles, see [Visual Studio Code Profiles](https://code.visualstudio.com/docs/editor/profiles).
 
 ### Step 3: Install the Kola extension
@@ -31,6 +31,10 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
 3. The setup wizard will install and configure the [Ballerina](https://ballerina.io/) distribution required for Kola.
 4. Click on the **`Restart VS Code`** button to complete the setup.
    <a href="{{base_path}}/assets/img/get-started/kola-setup.gif"><img src="{{base_path}}/assets/img/get-started/kola-setup.gif" alt="Kola Setup" width="70%"></a>
+
+???+ info "Update Kola's Ballerina Distribution"
+    The setup wizard will install the Ballerina distribution required for Kola in to `<USER_HOME>/.ballerina/ballerina-home` directory.
+    Press `Ctrl + Shift + P` on Windows and Linux, or `shift + ⌘ + P` on a Mac and type `Ballerina: Update Kola` to update the installed Ballerina distribution.
 
 ### Step 5: Create a new integration project
 1. Click on the Kola Integrator icon on the sidebar.
