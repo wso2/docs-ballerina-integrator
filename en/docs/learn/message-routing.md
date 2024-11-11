@@ -41,14 +41,7 @@ Here’s an overview of the process flow.
            "availability": "9.00 a.m - 11.00 a.m",
            "fee": 7000.0
        },
-       "patient": {
-           "name": "John Doe",
-           "dob": "1940-03-19",
-           "ssn": "234-23-525",
-           "address": "California",
-           "phone": "8770586755",
-           "email": "johndoe@gmail.com"
-       },
+       "patientName": "John Doe",
        "hospital": "grand oak community hospital",
        "confirmed": false,
        "appointmentDate": "2023-10-02"
@@ -56,8 +49,7 @@ Here’s an overview of the process flow.
     ```   
  
 ## Prerequisites
-1. Download the JAR file for the [backend service](https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar).
-2. Install the latest [Ballerina Swan Lake](https://ballerina.io/downloads/) version.
+1. **[Docker](https://docs.docker.com/engine/install/)** installed on the machine.
 
 ## Implementation
 Follow the steps below to implement the message routing service.
@@ -79,19 +71,13 @@ Follow the steps below to implement the message routing service.
 6. Click on the **`Create Service`** button to create the new service with the specified configurations.
 
 ### Step 3: Define types
-1. Click on the **`Add Construct`** button and select **`Type`**.
-2. Select **`Import a JSON`** from the Type dropdown.
-3. Generate record types corresponding to the response from the hospital backend service by providing a sample of the expected JSON payload.
-    ```json
+1. Click on the **`Add Construct`** button and select **`Types`**.
+2. Click on **`Add Type`** to add a new type
+3. Select **`Import a JSON`** from the Type dropdown.    
+   <a href="{{base_path}}/assets/img/message-routing/add-type.gif"><img src="{{base_path}}/assets/img/message-routing/add-type.gif" alt="Create Type" width="70%"></a>
+4. Add the **`Record Name`** as `ReservationRequest` and paste the following JSON payload. Select **`Make Separate Record Definitions`** and click on the **`Save`** button.
+   ```json
     {
-        "appointmentNumber": 1,
-        "doctor": {
-            "name": "thomas collins",
-            "hospital": "grand oak community hospital",
-            "category": "surgery",
-            "availability": "9.00 a.m - 11.00 a.m",
-            "fee": 7000.0
-        },
         "patient": {
             "name": "John Doe",
             "dob": "1940-03-19",
@@ -100,12 +86,30 @@ Follow the steps below to implement the message routing service.
             "phone": "8770586755",
             "email": "johndoe@gmail.com"
         },
+        "doctor": "thomas collins",
         "hospital": "grand oak community hospital",
-        "confirmed": false,
-        "appointmentDate": "2023-10-02"
+        "hospital_id": "grandoak",
+        "appointment_date": "2023-10-02"
+    }
+   ```
+5. Repeat the above steps to add a new type named `ReservationResponse` with the following JSON payload.
+    ```json
+    {
+       "appointmentNumber": 8,
+       "doctor": {
+           "name": "thomas collins",
+           "hospital": "grand oak community hospital",
+           "category": "surgery",
+           "availability": "9.00 a.m - 11.00 a.m",
+           "fee": 7000.0
+       },
+       "patientName": "John Doe",
+       "hospital": "grand oak community hospital",
+       "confirmed": false,
+       "appointmentDate": "2023-10-02"
     }
     ```
-4. Click on the **`Create Type`** button to create the new type with the specified configurations.
+6. The final Type diagram will look like below.     
 <a href="{{base_path}}/assets/img/message-routing/types.png"><img src="{{base_path}}/assets/img/message-routing/types.png" alt="Create Type" width="70%"></a>
 
 ### Step 4: Add connectors
@@ -198,9 +202,9 @@ Follow the steps below to implement the message routing service.
     <a href="{{base_path}}/assets/img/message-routing/final-design.png"><img src="{{base_path}}/assets/img/message-routing/final-design.png"" alt="Final Design" width="70%"></a>
 
 ### Step 7: Run the service
-1. Start the backend service by executing the following command.
+1. Start the backend service by executing the following command. The hospital backend server will start on port `9090`.
     ```bash
-    $ bal run hospitalservice.jar
+    $ docker run --name hospital-backend -p 9090:9090 -d anuruddhal/kola-hospital-backend
     ```
 2. Click on the **`Run`** on the run button in the top right corner to run the service.
 3. The service will start and the service will be available at `http://localhost:8290/healthcare/categories/[category]/reserve`.
@@ -247,4 +251,9 @@ Follow the steps below to implement the message routing service.
     "appointmentDate": "2023-10-02"
     }
     ```  
- 
+### Step 8: Stop the integration
+1. Click on the **`Stop`** button to stop the integration.
+2. Stop the hospital backend server by running the following command:
+   ```bash
+   docker stop hospital-backend
+   ```
