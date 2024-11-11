@@ -3,7 +3,7 @@
 In this tutorial, you’ll create an HTTP service to add key-value pairs to a Redis database. The integrated AI-assistant will help you generate the integration flow.
 
 ## Prerequisites
-1. **[Docker](https://docs.docker.com/engine/install/)** installed on your machine.
+- **[Docker](https://docs.docker.com/engine/install/)** installed on your machine.
 
 ### Step 1: Create a new integration project.
 1. Click on the Kola Integrator icon on the sidebar.

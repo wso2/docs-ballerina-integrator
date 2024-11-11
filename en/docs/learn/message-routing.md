@@ -49,7 +49,7 @@ Here’s an overview of the process flow.
     ```   
  
 ## Prerequisites
-1. **[Docker](https://docs.docker.com/engine/install/)** installed on the machine.
+- **[Docker](https://docs.docker.com/engine/install/)** installed on your machine.
 
 ## Implementation
 Follow the steps below to implement the message routing service.
@@ -202,9 +202,9 @@ Follow the steps below to implement the message routing service.
     <a href="{{base_path}}/assets/img/message-routing/final-design.png"><img src="{{base_path}}/assets/img/message-routing/final-design.png"" alt="Final Design" width="70%"></a>
 
 ### Step 7: Run the service
-1. Start the backend service by executing the following command. The hospital backend server will start on port `9090`.
+1. Start the backend service by executing the following command in a terminal.
     ```bash
-    $ docker run --name hospital-backend -p 9090:9090 -d anuruddhal/kola-hospital-backend
+    docker run --name hospital-backend -p 9090:9090 -d anuruddhal/kola-hospital-backend
     ```
 2. Click on the **`Run`** on the run button in the top right corner to run the service.
 3. The service will start and the service will be available at `http://localhost:8290/healthcare/categories/[category]/reserve`.

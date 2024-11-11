@@ -45,6 +45,12 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
    <a href="{{base_path}}/assets/img/get-started/create-integration.gif"><img src="{{base_path}}/assets/img/get-started/create-integration.gif" alt="Create Integration" width="70%"></a>
 
 ### Step 6: Create an integration service
+???+ tip  "Generate with AI"
+
+    The integration service can also be generated using the AI-assistant. Click on the **`Generate with AI`** button and enter the following prompt, then press **`Add to Integration`** to generate the integration service.
+    
+    ```create a http service that has base path as /hello, and 9090 as the port. Add GET resource on /greeting that invokes https://apis.wso2.com/zvdz/mi-qsg/v1.0 endpoint and forward the response to caller.```
+
 1. In the design view, click on the **`Add Construct`** button.
 2. Select **`Service`** from the menu.
 3. Select **`HTTP Service`** from the service type.

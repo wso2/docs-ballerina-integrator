@@ -70,8 +70,7 @@ The flow is as follows.
    ```
 
 ## Prerequisites
-1. Download the JAR file for the [backend service](https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar) and execute the following command to start the service.
-2. Install the latest [Ballerina Swan Lake](https://ballerina.io/downloads/) version.
+- **[Docker](https://docs.docker.com/engine/install/)** installed on the machine.
 
 ## Implementation
 Follow the steps below to implement the service orchestration.
@@ -95,34 +94,19 @@ Follow the steps below to implement the service orchestration.
 ### Step 3: Define types
 1. Click on the **`Add Construct`** button and select **`Type`**.
 2. Select **`Import a JSON`** from the Type dropdown.
-3. Generate record types corresponding to the response from the hospital backend service by providing a sample of the expected JSON payload.
-    ```json
-    {
-        "appointmentNumber": 1,
-        "doctor": {
-            "name": "thomas collins",
-            "hospital": "grand oak community hospital",
-            "category": "surgery",
-            "availability": "9.00 a.m - 11.00 a.m",
-            "fee": 7000.0
-        },
-        "patient": {
-            "name": "John Doe",
-            "dob": "1940-03-19",
-            "ssn": "234-23-525",
-            "address": "California",
-            "phone": "8770586755",
-            "email": "johndoe@gmail.com"
-        },
-        "hospital": "grand oak community hospital",
-        "confirmed": false,
-        "appointmentDate": "2023-10-02"
-    }
-    ```
-4. Click on the **`Create Type`** button to create the new type with the specified configurations.
-   <a href="{{base_path}}/assets/img/message-routing/types.png"><img src="{{base_path}}/assets/img/message-routing/types.png" alt="Create Type" width="70%"></a>
+3. Generate record types corresponding to the response from the hospital backend service by providing a sample of the expected JSON payload. The values are given below.
+    
+    |Record Name|Sample JSON value| Make Separate Record Definition |
+    |---|---|------------------------|
+    |ReservationRequest|```{"patient":{"name":"John Doe","dob":"1940-03-19","ssn":"234-23-525","address":"California","phone":"8770586755","email":"johndoe@gmail.com","cardNo":"7844481124110331"},"doctor":"thomas collins","hospital_id":"grandoaks","hospital":"grand oak community hospital","appointment_date":"2024-11-06"}```| ☑️                     |
+    |ReservationStatus|```{"appointmentNo":1, "doctorName":"thomas collins", "patient":"John Doe", "actualFee":7000.0, "discount":20, "discounted":5600.0, "paymentID":"e560ea82-1c42-4972-a471-af5c1ad4995f", "status":"settled"}%```| ☑️                     |
+    |Appointment|```{"appointmentNumber":12345,"doctor":{"name":"Dr. Alice Carter","hospital":"Green Valley Hospital","category":"Cardiology","availability":"Mon-Fri, 9 AM - 5 PM","fee":200},"patientName":"Emma Johnson","hospital":"Green Valley Hospital","confirmed":true,"appointmentDate":"2024-11-20T10:00:00"}```| ☑️                     |
+    |Fee|```{"patientName":"Emma Johnson","doctorName":"Dr. Alice Carter","actualFee":"150.00"}```|                        |
+     
+4. The final types will look like the following.    
+    <a href="{{base_path}}/assets/img/service-orchestration/types.png"><img src="{{base_path}}/assets/img/service-orchestration/types.png" alt="Types" width="70%"></a>
 
-### Step 4: Add connectors
+### Step 4: Add connections
 1. Navigate to design view and click on the **`Add Connector`** button.
 2. Search and select the **`HTTP`** connector.
 3. Enter the connector name as `hospitalServicesEP`, URL as `http://localhost:9090`, and config as `{}`.
@@ -217,9 +201,9 @@ Follow the steps below to implement the service orchestration.
 
 ### Step 7: Run the service
 1. Click on the **`Run`** button to start the service.
-2. Start the backend service by executing the following command.
+2. Start the backend service by executing the following command in a terminal.
     ```bash
-    $ bal run hospitalservice.jar
+    docker run --name hospital-backend -p 9090:9090 -d anuruddhal/kola-hospital-backend
     ```
 3. Click on the **`Run`**  on the run button (▶️) in the top right corner to run the service.
 4. The service will start and the service will be available at `http://localhost:8290/healthcare/categories/[category]/reserve`.
@@ -228,22 +212,30 @@ Follow the steps below to implement the service orchestration.
     curl -X POST "http://localhost:8290/healthcare/categories/surgery/reserve" \
     -H "Content-Type: application/json" \
     -d '{
-    "patient": {
-      "name": "John Doe",
-      "dob": "1940-03-19",
-      "ssn": "234-23-525",
-      "address": "California",
-      "phone": "8770586755",
-      "email": "johndoe@gmail.com",
-      "cardNo": "7844481124110331"
-     },
-     "doctor": "thomas collins",
-     "hospital_id": "grandoak",
-     "hospital": "grand oak community hospital",
-     "appointment_date": "2023-10-02"
+      "patient": {
+        "name": "John Doe",
+        "dob": "1940-03-19",
+        "ssn": "234-23-525",
+        "address": "California",
+        "phone": "8770586755",
+        "email": "johndoe@gmail.com",
+        "cardNo": "7844481124110331"
+      },
+      "doctor": "thomas collins",
+      "hospital_id": "grandoak",
+      "hospital": "grand oak community hospital",
+      "appointment_date": "2023-10-02"
     }'
    ```
 6. The response will be similar to the following.
    ```json
     {"appointmentNo":1, "doctorName":"thomas collins", "patient":"John Doe", "actualFee":7000.0, "discount":20, "discounted":5600.0, "paymentID":"e560ea82-1c42-4972-a471-af5c1ad4995f", "status":"settled"}%
    ```
+
+### Step 8: Stop the integration
+1. Click on the **`Stop`** button to stop the integration or press `shift` + `F5`.
+2. Stop the hospital backend server by running the following command:
+   ```bash
+   docker stop hospital-backend
+   ```
+  
