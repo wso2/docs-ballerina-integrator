@@ -78,7 +78,7 @@ The following instructions demonstrate how to build an integration that transfor
 2. Change the resource HTTP method to **`POST`**.
 3. Change the resource name as `transform`.
 4. Add a payload parameter named `input` to the resource of type `Input`. 
-5. Change return type of the `200` response to type `Output`.
+5. Change the response status code to `201` and the return type to `Output`.
 6. Click on the **`Save`** button to update the resource with the specified configurations. 
 
     <a href="{{base_path}}/assets/img/data-mapping/edit-resource.png"><img src="{{base_path}}/assets/img/data-mapping/edit-resource.png" alt="Edit Resource" width="70%"></a>
