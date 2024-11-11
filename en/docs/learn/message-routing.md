@@ -49,7 +49,7 @@ Here’s an overview of the process flow.
     ```   
  
 ## Prerequisites
-1. **[Docker](https://docs.docker.com/engine/install/)** installed on the machine.
+- **[Docker](https://docs.docker.com/engine/install/)** installed on your machine.
 
 ## Implementation
 Follow the steps below to implement the message routing service.
