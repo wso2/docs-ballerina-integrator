@@ -675,7 +675,7 @@ This documentation is a work in progress.
   
     <li class="md-nav__item">
       <a href="../data-mapping/" class="md-nav__link">
-        Data Mapping
+        Data mapping
       </a>
     </li>
   
@@ -997,9 +997,9 @@ To accomplish this, you’ll build a REST service with a single resource in Kola
 </li>
 </ol>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong><a href="https://docs.docker.com/engine/install/">Docker</a></strong> installed on the machine.</li>
-</ol>
+<ul>
+<li><strong><a href="https://docs.docker.com/engine/install/">Docker</a></strong> installed on your machine.</li>
+</ul>
 <h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
 <p>Follow the steps below to implement the message routing service.</p>
 <h3 id="step-1-create-a-new-integration-project">Step 1: Create a new integration project.<a class="headerlink" href="#step-1-create-a-new-integration-project" title="Permanent link">&para;</a></h3>
@@ -1238,8 +1238,8 @@ See supported client configurations in the <a href="https://central.ballerina.io
 </ol>
 <h3 id="step-7-run-the-service">Step 7: Run the service<a class="headerlink" href="#step-7-run-the-service" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Start the backend service by executing the following command. The hospital backend server will start on port <code>9090</code>.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>hospital-backend<span class="w"> </span>-p<span class="w"> </span><span class="m">9090</span>:9090<span class="w"> </span>-d<span class="w"> </span>anuruddhal/kola-hospital-backend
+<li>Start the backend service by executing the following command in a terminal.
+    <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>hospital-backend<span class="w"> </span>-p<span class="w"> </span><span class="m">9090</span>:9090<span class="w"> </span>-d<span class="w"> </span>anuruddhal/kola-hospital-backend
 </code></pre></div></li>
 <li>Click on the <strong><code>Run</code></strong> on the run button in the top right corner to run the service.</li>
 <li>The service will start and the service will be available at <code>http://localhost:8290/healthcare/categories/[category]/reserve</code>.</li>
