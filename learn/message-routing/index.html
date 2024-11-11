@@ -619,6 +619,13 @@ This documentation is a work in progress.
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#step-8-stop-the-integration" class="md-nav__link">
+    Step 8: Stop the integration
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -897,6 +904,13 @@ This documentation is a work in progress.
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#step-8-stop-the-integration" class="md-nav__link">
+    Step 8: Stop the integration
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -974,14 +988,7 @@ To accomplish this, you’ll build a REST service with a single resource in Kola
 <span class="w">       </span><span class="nt">&quot;availability&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9.00 a.m - 11.00 a.m&quot;</span><span class="p">,</span>
 <span class="w">       </span><span class="nt">&quot;fee&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7000.0</span>
 <span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">       </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
-<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nt">&quot;patientName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
@@ -991,8 +998,7 @@ To accomplish this, you’ll build a REST service with a single resource in Kola
 </ol>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Download the JAR file for the <a href="https://github.com/ballerina-guides/integration-tutorials/blob/main/backends/hospital-service/hospitalservice.jar">backend service</a>.</li>
-<li>Install the latest <a href="https://ballerina.io/downloads/">Ballerina Swan Lake</a> version.</li>
+<li><strong><a href="https://docs.docker.com/engine/install/">Docker</a></strong> installed on the machine.</li>
 </ol>
 <h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
 <p>Follow the steps below to implement the message routing service.</p>
@@ -1015,32 +1021,43 @@ To accomplish this, you’ll build a REST service with a single resource in Kola
 </ol>
 <h3 id="step-3-define-types">Step 3: Define types<a class="headerlink" href="#step-3-define-types" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on the <strong><code>Add Construct</code></strong> button and select <strong><code>Type</code></strong>.</li>
-<li>Select <strong><code>Import a JSON</code></strong> from the Type dropdown.</li>
-<li>Generate record types corresponding to the response from the hospital backend service by providing a sample of the expected JSON payload.
+<li>Click on the <strong><code>Add Construct</code></strong> button and select <strong><code>Types</code></strong>.</li>
+<li>Click on <strong><code>Add Type</code></strong> to add a new type</li>
+<li>Select <strong><code>Import a JSON</code></strong> from the Type dropdown.  <br />
+   <a href="https://wso2.github.io/docs-kola/assets/img/message-routing/add-type.gif"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/add-type.gif" alt="Create Type" width="70%"></a></li>
+<li>Add the <strong><code>Record Name</code></strong> as <code>ReservationRequest</code> and paste the following JSON payload. Select <strong><code>Make Separate Record Definitions</code></strong> and click on the <strong><code>Save</code></strong> button.
+   <div class="highlight"><pre><span></span><code><span class="w"> </span><span class="p">{</span>
+<span class="w">     </span><span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
+<span class="w">     </span><span class="p">},</span>
+<span class="w">     </span><span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;hospital_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grandoak&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;appointment_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
+<span class="w"> </span><span class="p">}</span>
+</code></pre></div></li>
+<li>Repeat the above steps to add a new type named <code>ReservationResponse</code> with the following JSON payload.
     <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;appointmentNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgery&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;availability&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9.00 a.m - 11.00 a.m&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;fee&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7000.0</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;patient&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;dob&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1940-03-19&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;ssn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;234-23-525&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;California&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8770586755&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe@gmail.com&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
+<span class="w">   </span><span class="nt">&quot;appointmentNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;doctor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">       </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;thomas collins&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgery&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;availability&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9.00 a.m - 11.00 a.m&quot;</span><span class="p">,</span>
+<span class="w">       </span><span class="nt">&quot;fee&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7000.0</span>
+<span class="w">   </span><span class="p">},</span>
+<span class="w">   </span><span class="nt">&quot;patientName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;hospital&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;grand oak community hospital&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
 <span class="p">}</span>
 </code></pre></div></li>
-<li>Click on the <strong><code>Create Type</code></strong> button to create the new type with the specified configurations.
+<li>The final Type diagram will look like below.   <br />
 <a href="https://wso2.github.io/docs-kola/assets/img/message-routing/types.png"><img src="https://wso2.github.io/docs-kola/assets/img/message-routing/types.png" alt="Create Type" width="70%"></a></li>
 </ol>
 <h3 id="step-4-add-connectors">Step 4: Add connectors<a class="headerlink" href="#step-4-add-connectors" title="Permanent link">&para;</a></h3>
@@ -1221,8 +1238,8 @@ See supported client configurations in the <a href="https://central.ballerina.io
 </ol>
 <h3 id="step-7-run-the-service">Step 7: Run the service<a class="headerlink" href="#step-7-run-the-service" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Start the backend service by executing the following command.
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>bal<span class="w"> </span>run<span class="w"> </span>hospitalservice.jar
+<li>Start the backend service by executing the following command. The hospital backend server will start on port <code>9090</code>.
+    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>hospital-backend<span class="w"> </span>-p<span class="w"> </span><span class="m">9090</span>:9090<span class="w"> </span>-d<span class="w"> </span>anuruddhal/kola-hospital-backend
 </code></pre></div></li>
 <li>Click on the <strong><code>Run</code></strong> on the run button in the top right corner to run the service.</li>
 <li>The service will start and the service will be available at <code>http://localhost:8290/healthcare/categories/[category]/reserve</code>.</li>
@@ -1266,6 +1283,13 @@ See supported client configurations in the <a href="https://central.ballerina.io
 <span class="nt">&quot;confirmed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="nt">&quot;appointmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-02&quot;</span>
 <span class="p">}</span>
+</code></pre></div></li>
+</ol>
+<h3 id="step-8-stop-the-integration">Step 8: Stop the integration<a class="headerlink" href="#step-8-stop-the-integration" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Click on the <strong><code>Stop</code></strong> button to stop the integration.</li>
+<li>Stop the hospital backend server by running the following command:
+   <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span>hospital-backend
 </code></pre></div></li>
 </ol>
 
