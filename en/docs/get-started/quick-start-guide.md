@@ -70,7 +70,7 @@ Download and install the [Visual Studio Code](https://code.visualstudio.com/down
    <a href="{{base_path}}/assets/img/get-started/create-connection.gif"><img src="{{base_path}}/assets/img/get-started/create-connection.gif" alt="Create New Connection" width="70%"></a>
 
 8. Click the ➕ button again and select **`Connections` -> `externalEP` -> `get`** from the node panel.
-9. Enter the path `/zvdz/mi-qsg/v1.0` in the **`Resource Path`** field and click **`Save`**.
+9. Enter the path `/zvdz/mi\-qsg/v1\.0` in the **`Resource Path`** field and click **`Save`**.
    <a href="{{base_path}}/assets/img/get-started/add-action.gif"><img src="{{base_path}}/assets/img/get-started/add-action.gif" alt="Add Action" width="70%"></a>
 
 10. Click on the ➕ button again and select **`Return`** from the node panel.
