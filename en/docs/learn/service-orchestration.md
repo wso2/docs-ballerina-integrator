@@ -99,7 +99,7 @@ Follow the steps below to implement the service orchestration.
     |Record Name|Sample JSON value| Make Separate Record Definition |
     |---|---|------------------------|
     |ReservationRequest|```{"patient":{"name":"John Doe","dob":"1940-03-19","ssn":"234-23-525","address":"California","phone":"8770586755","email":"johndoe@gmail.com","cardNo":"7844481124110331"},"doctor":"thomas collins","hospital_id":"grandoaks","hospital":"grand oak community hospital","appointment_date":"2024-11-06"}```| ☑️                     |
-    |ReservationStatus|```{"appointmentNo":1, "doctorName":"thomas collins", "patient":"John Doe", "actualFee":7000.0, "discount":20, "discounted":5600.0, "paymentID":"e560ea82-1c42-4972-a471-af5c1ad4995f", "status":"settled"}%```| ☑️                     |
+    |ReservationStatus|```{"appointmentNo":1, "doctorName":"thomas collins", "patient":"John Doe", "actualFee":7000.0, "discount":20, "discounted":5600.0, "paymentID":"e560ea82-1c42-4972-a471-af5c1ad4995f", "status":"settled"}```| ☑️                     |
     |Appointment|```{"appointmentNumber":12345,"doctor":{"name":"Dr. Alice Carter","hospital":"Green Valley Hospital","category":"Cardiology","availability":"Mon-Fri, 9 AM - 5 PM","fee":200},"patientName":"Emma Johnson","hospital":"Green Valley Hospital","confirmed":true,"appointmentDate":"2024-11-20T10:00:00"}```| ☑️                     |
     |Fee|```{"patientName":"Emma Johnson","doctorName":"Dr. Alice Carter","actualFee":"150.00"}```|                        |
      
@@ -142,7 +142,7 @@ Follow the steps below to implement the service orchestration.
              address: reservation.patient.address,
              phone: reservation.patient.phone,
              email: reservation.patient.email
-          }
+          },
          doctor: reservation.doctor,
          hospital: reservation.hospital,
          appointment_date: reservation.appointment_date
