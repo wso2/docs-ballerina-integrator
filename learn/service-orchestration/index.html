@@ -1058,7 +1058,7 @@ To implement this, you’ll build a REST service with a single resource in Kola 
 </tr>
 <tr>
 <td>ReservationStatus</td>
-<td><code>{"appointmentNo":1, "doctorName":"thomas collins", "patient":"John Doe", "actualFee":7000.0, "discount":20, "discounted":5600.0, "paymentID":"e560ea82-1c42-4972-a471-af5c1ad4995f", "status":"settled"}%</code></td>
+<td><code>{"appointmentNo":1, "doctorName":"thomas collins", "patient":"John Doe", "actualFee":7000.0, "discount":20, "discounted":5600.0, "paymentID":"e560ea82-1c42-4972-a471-af5c1ad4995f", "status":"settled"}</code></td>
 <td>☑️</td>
 </tr>
 <tr>
@@ -1116,7 +1116,7 @@ See supported client configurations in the <a href="https://central.ballerina.io
          address: reservation.patient.address,
          phone: reservation.patient.phone,
          email: reservation.patient.email
-      }
+      },
      doctor: reservation.doctor,
      hospital: reservation.hospital,
      appointment_date: reservation.appointment_date
